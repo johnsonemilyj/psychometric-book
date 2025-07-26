@@ -1,18 +1,25 @@
-  title: webR in Quarto HTML Documents
-  format: html
-  engine: knitr
-  resources:
-  - webr-serviceworker.js
-  - webr-worker.js
-  filters:
-    - webr
-  date: "7/12/2025"
+project:
+  type: book
+
+book:
+  title: "mybook"
+  author: "Jane Doe"
+  date: "8/18/2021"
+  
   chapters:
     - index.qmd
     - intro.qmd
     - summary.qmd
     - references.qmd
 
+bibliography: references.bib
 
+format:
+  html:
+    theme: cosmo
+  epub:
+    cover-image: cover.png
 
-
+engine: knitr
+filters:
+  - webr
