@@ -3,9 +3,9 @@ project:
   output-dir: docs
 
 book:
-  title: "mybook"
-  author: "Jane Doe"
-  date: "8/18/2021"
+  title: "Applied Psychometrics Using R"
+  author: "authors"
+  date: "date"
   
   chapters:
     - index.qmd
@@ -17,10 +17,15 @@ bibliography: references.bib
 
 format:
   html:
-    theme: cosmo
+    theme: lux
   epub:
     cover-image: cover.png
 
 engine: knitr
+
+webr:
+  show-starup-message: false
+  packages: ['ggplot2','dplyr']
+
 filters:
   - webr
