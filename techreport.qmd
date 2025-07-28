@@ -1,0 +1,67 @@
+---
+title: "Technical Report"
+crossref:
+  custom:
+    - kind: float
+      reference-prefix: List
+      key: list
+---
+
+Documentation of your psychometrics project occurs within a technical report. The technical report contains, at minimum: 
+
+
+::: {#list-items style="text-align: left;"}
+
+  1. Title page
+  2. Table of Contents
+  3. Introduction
+  4. Methods
+  5. Results
+  6. Discussion
+  7. Appendices
+
+:::
+
+:::{.column-margin}
+::: {#imp-techelements .callout-important}
+
+## Technical Report Elements
+
+Take note of  @list-items element #s 2 (Table of Contents) and 7 (Appendices) as these differ from the expected content within a traditional "[APA paper](https://owl.purdue.edu/owl/research_and_citation/apa_style/apa_formatting_and_style_guide/general_format.html)". 
+
+:::
+:::
+  
+Your goal within a technical report is the exact communication of development and investigation of psychometric properties of your focal measure. You should use the reading level necessary to convey your project with the highest level of semantic integrity.^[The anticipated reading--level of technical report information should be considered and aimed at the intended audience (commonly, but not always, college--level). Information should also often be made available to a general consumer audience (7^th^--grade reading level) in the form of white papers, local validation studies, and marketing material.] 
+
+Although you can use style guidelines (such as may be found in the publication manual of the APA), you should not feel constrained by these. The *content* should reflect the elements within @list-items, but the format should reflect the authoring organization. Have some fun with the format -- use icons, images, and even (non--obtrusive) fonts with restrained abandon. You may want to consult a friend who has experience with graphic design or other artistic ventures. The format should reflect YOU, not some stodgy arbiter of margin dimensions or running head capitalization.
+
+:::{.column-margin}
+![](https://media.istockphoto.com/id/483094407/vector/cruel-grandma.jpg?s=612x612&w=0&k=20&c=FKff7AoRcRgzjlwWXapj6Gj0M-f2XQAcaUxAA_fvt8U=)
+:::
+
+# Title page {#sec-techtit}
+
+# Introduction {#sec-techintro}
+
+# Methods {#sec-techmeth}
+
+# Results {#sec-techres}
+
+# Discussion {#sec-techdisc}
+
+# References {#sec-techref}
+
+# Table of contents {#sec-techtoc}
+
+# Appendices {#sec-techappend}
+
+All of your raw (unformatted) analytical information can go in Appendices, including code used to produce the output. It's quite likely noone will ever read it, but you did it and the odds are technically non-zero that it'll be someday relevant, so go ahead and throw it in. It's good practice to include your software installations as well, which can be accomplished easily with {{< iconify devicon:r >}}. For example, running the `sessionInfo()` command on `r format(Sys.Date(),"%B %d, %Y")` gives us:
+
+```{r}
+#| echo: false
+#| 
+sessionInfo()
+```
+
+see @sec-techtit
