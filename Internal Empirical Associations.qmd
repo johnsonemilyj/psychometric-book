@@ -1,0 +1,14 @@
+---
+title: "Internal Empirical Associations"
+editor: visual
+---
+
+(Reliability, IRT, PCA, EFA, CFA, Exploratory Graph Analysis)
+
+When it's an assessment vs. test do two columns side by side
+
+IRT FOR....
+
+Assessments Tests
+
+blah blah blah item difficulty

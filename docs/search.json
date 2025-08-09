@@ -12,21 +12,85 @@
   {
     "objectID": "intro.html",
     "href": "intro.html",
-    "title": "1  Introduction",
+    "title": "Introduction",
     "section": "",
     "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "Internal Empirical Associations.html",
+    "href": "Internal Empirical Associations.html",
+    "title": "8  Internal Empirical Associations",
+    "section": "",
+    "text": "(Reliability, IRT, PCA, EFA, CFA, Exploratory Graph Analysis)\nWhen it’s an assessment vs. test do two columns side by side\nIRT FOR….\nAssessments Tests\nblah blah blah item difficulty",
+    "crumbs": [
+      "Psychometric Philosophies",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Internal Empirical Associations</span>"
+    ]
+  },
+  {
+    "objectID": "Legal Considerations & Additional Analyses.html",
+    "href": "Legal Considerations & Additional Analyses.html",
+    "title": "10  Legal Considerations & Additional Analyses",
+    "section": "",
+    "text": "I’m thinking adverse impact, etc. (I can’t remember the exact analyses)",
+    "crumbs": [
+      "Psychometric Philosophies",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Legal Considerations & Additional Analyses</span>"
+    ]
+  },
+  {
+    "objectID": "Documentation & Guides.html",
+    "href": "Documentation & Guides.html",
+    "title": "Documentation & Guides",
+    "section": "",
+    "text": "Section includes Creating Documentation and User Guides.\nNext Steps Documentation Scale Definitions Limitations Future Needs",
+    "crumbs": [
+      "Documentation & Guides"
+    ]
+  },
+  {
+    "objectID": "techreport.html",
+    "href": "techreport.html",
+    "title": "11  Technical Report",
+    "section": "",
+    "text": "12 Title page\nDocumentation of your psychometrics project occurs within a technical report. The technical report contains, at minimum:\nYour goal within a technical report is the exact communication of development and investigation of psychometric properties of your focal measure. You should use the reading level necessary to convey your project with the highest level of semantic integrity.1\nAlthough you can use style guidelines (such as may be found in the publication manual of the APA), you should not feel constrained by these. The content should reflect the elements within List 11.1, but the format should reflect the authoring organization. Have some fun with the format – use icons, images, and even (non–obtrusive) fonts with restrained abandon. You may want to consult a friend who has experience with graphic design or other artistic ventures. The format should reflect YOU, not some stodgy arbiter of margin dimensions or running head capitalization.",
+    "crumbs": [
+      "Documentation & Guides",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Technical Report</span>"
+    ]
+  },
+  {
+    "objectID": "techreport.html#footnotes",
+    "href": "techreport.html#footnotes",
+    "title": "11  Technical Report",
+    "section": "",
+    "text": "The anticipated reading–level of technical report information should be considered and aimed at the intended audience (commonly, but not always, college–level). Information should also often be made available to a general consumer audience (7th–grade reading level) in the form of white papers, local validation studies, and marketing material.↩︎",
+    "crumbs": [
+      "Documentation & Guides",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Technical Report</span>"
+    ]
+  },
+  {
+    "objectID": "Practical Guides.html",
+    "href": "Practical Guides.html",
+    "title": "Practical Guides",
+    "section": "",
+    "text": "Scale / Item level information How to find a Vendor White Papers Validation Studies",
+    "crumbs": [
+      "Practical Guides"
     ]
   },
   {
     "objectID": "summary.html",
     "href": "summary.html",
-    "title": "2  Summary",
+    "title": "12  Summary",
     "section": "",
     "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Summary</span>"
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Summary</span>"
     ]
   },
   {

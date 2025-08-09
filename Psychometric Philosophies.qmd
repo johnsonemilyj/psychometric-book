@@ -1,0 +1,4 @@
+---
+title: "Psychometric Philosophies"
+editor: visual
+---

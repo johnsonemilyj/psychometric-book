@@ -1,0 +1,9 @@
+---
+title: "Practical Guides"
+editor: visual
+---
+
+  Scale / Item level information
+  How to find a Vendor
+  White Papers
+  Validation Studies

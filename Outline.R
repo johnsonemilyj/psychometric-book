@@ -12,3 +12,43 @@ Ben to potentially help with any graphics stuff.
 
 Resources to look at:
 Andy Fields
+
+Content Domain Population
+Nomological Network
+Sampling from Content Domain
+Types of Scale / Questions
+Data Collection Phase
+  "Experiment" but not a "true research study"
+Sampling, Population 
+  Best Practices (# of items)
+Psychometric Philosophy
+  Internal vs. External, etc. 
+Internal Empirical Associations (Reliability, IRT, PCA, EFA, CFA, Exploratory Graph Analysis)
+  Pre-Experiment
+  Experiment
+  Post Experiment?
+Reflective vs. Formative Measurement
+
+External Empirical Associations
+  MTMM Matrix? 
+
+Biases?
+    
+Next Steps
+  Documentation
+  Scale Definitions
+  Limitations
+  Future Needs
+
+  
+Practical 
+  Scale / Item level information
+  How to find a Vendor
+     White Papers
+     Validation Studies
+Section on Using R? 
+
+  
+Inventory vs. Test [put these in to two columns when they branch off, e.g. IRT]
+
+  
