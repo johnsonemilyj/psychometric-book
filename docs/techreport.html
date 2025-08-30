@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -261,13 +295,14 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#sec-techtit" id="toc-sec-techtit" class="nav-link active" data-scroll-target="#sec-techtit"><span class="header-section-number">12</span> Title page</a></li>
-  <li><a href="#sec-techintro" id="toc-sec-techintro" class="nav-link" data-scroll-target="#sec-techintro"><span class="header-section-number">13</span> Introduction</a></li>
-  <li><a href="#sec-techmeth" id="toc-sec-techmeth" class="nav-link" data-scroll-target="#sec-techmeth"><span class="header-section-number">14</span> Methods</a></li>
-  <li><a href="#sec-techres" id="toc-sec-techres" class="nav-link" data-scroll-target="#sec-techres"><span class="header-section-number">15</span> Results</a></li>
-  <li><a href="#sec-techdisc" id="toc-sec-techdisc" class="nav-link" data-scroll-target="#sec-techdisc"><span class="header-section-number">16</span> Discussion</a></li>
-  <li><a href="#sec-techref" id="toc-sec-techref" class="nav-link" data-scroll-target="#sec-techref"><span class="header-section-number">17</span> References</a></li>
-  <li><a href="#sec-techtoc" id="toc-sec-techtoc" class="nav-link" data-scroll-target="#sec-techtoc"><span class="header-section-number">18</span> Table of contents</a></li>
-  <li><a href="#sec-techappend" id="toc-sec-techappend" class="nav-link" data-scroll-target="#sec-techappend"><span class="header-section-number">19</span> Appendices</a></li>
+  <li><a href="#sec-exec" id="toc-sec-exec" class="nav-link" data-scroll-target="#sec-exec"><span class="header-section-number">13</span> Executive Summary</a></li>
+  <li><a href="#sec-techintro" id="toc-sec-techintro" class="nav-link" data-scroll-target="#sec-techintro"><span class="header-section-number">14</span> Introduction</a></li>
+  <li><a href="#sec-techmeth" id="toc-sec-techmeth" class="nav-link" data-scroll-target="#sec-techmeth"><span class="header-section-number">15</span> Methods</a></li>
+  <li><a href="#sec-techres" id="toc-sec-techres" class="nav-link" data-scroll-target="#sec-techres"><span class="header-section-number">16</span> Results</a></li>
+  <li><a href="#sec-techdisc" id="toc-sec-techdisc" class="nav-link" data-scroll-target="#sec-techdisc"><span class="header-section-number">17</span> Discussion</a></li>
+  <li><a href="#sec-techref" id="toc-sec-techref" class="nav-link" data-scroll-target="#sec-techref"><span class="header-section-number">18</span> References</a></li>
+  <li><a href="#sec-techtoc" id="toc-sec-techtoc" class="nav-link" data-scroll-target="#sec-techtoc"><span class="header-section-number">19</span> Table of contents</a></li>
+  <li><a href="#sec-techappend" id="toc-sec-techappend" class="nav-link" data-scroll-target="#sec-techappend"><span class="header-section-number">20</span> Appendices</a></li>
   </ul>
 </nav>
     </div>
@@ -293,12 +328,33 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode css code-with-copy"><code class="sourceCode css"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>div<span class="fu">.bullet</span> {</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">text-align</span><span class="ch">:</span> <span class="dv">left</span> <span class="at">!important</span><span class="op">;</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>div<span class="fu">.bullet</span> ui {</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  <span class="kw">text-align</span><span class="ch">:</span> <span class="dv">left</span> <span class="at">!important</span><span class="op">;</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  <span class="kw">margin-left</span><span class="ch">:</span> <span class="dv">0</span> <span class="at">!important</span><span class="op">;</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  <span class="kw">padding-left</span><span class="ch">:</span> <span class="dv">20</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<style type="text/css">
+div.bullet {
+  text-align: left !important;
+}
+div.bullet ui {
+  text-align: left !important;
+  margin-left: 0 !important;
+  padding-left: 20px;
+}
+</style>
+</div>
 <p>Documentation of your psychometrics project occurs within a technical report. The technical report contains, at minimum:</p>
-<div id="list-items" class="quarto-float quarto-figure quarto-figure-center anchored" style="text-align: left;">
-<figure class="quarto-float quarto-float-list figure">
-<div aria-describedby="list-items-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div id="bullet-appendices" class="quarto-float quarto-figure quarto-figure-center anchored" style="text-align: left !important;" data-label="boo">
+<figure class="quarto-float quarto-float-bullet figure">
+<div aria-describedby="bullet-appendices-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <ol type="1">
 <li>Title page</li>
+<li>Executive Summary</li>
 <li>Table of Contents</li>
 <li>Introduction</li>
 <li>Methods</li>
@@ -307,8 +363,8 @@ ul.task-list li input[type="checkbox"] {
 <li>Appendices</li>
 </ol>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-list quarto-uncaptioned" id="list-items-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-List&nbsp;1
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-bullet quarto-uncaptioned" id="bullet-appendices-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Bulleted List&nbsp;1
 </figcaption>
 </figure>
 </div>
@@ -324,38 +380,41 @@ Important&nbsp;1: Technical Report Elements
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Take note of <a href="#list-items" class="quarto-xref">List&nbsp;<span>11.1</span></a> element #s 2 (Table of Contents) and 7 (Appendices) as these differ from the expected content within a traditional “<a href="https://owl.purdue.edu/owl/research_and_citation/apa_style/apa_formatting_and_style_guide/general_format.html">APA paper</a>”.</p>
+<p>Take note of <a href="#bullet-appendices" class="quarto-xref">Bulleted List&nbsp;<span>11.1</span></a> element #s 2 (Executive Summary), 3 (Table of Contents) and 8 (Appendices) as these differ from the expected content within a traditional “<a href="https://owl.purdue.edu/owl/research_and_citation/apa_style/apa_formatting_and_style_guide/general_format.html">APA paper</a>”.</p>
 </div>
 </div>
 </div></div><p>Your goal within a technical report is the exact communication of development and investigation of psychometric properties of your focal measure. You should use the reading level necessary to convey your project with the highest level of semantic integrity.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
-<p>Although you can use style guidelines (such as may be found in the publication manual of the APA), you should not feel constrained by these. The <em>content</em> should reflect the elements within <a href="#list-items" class="quarto-xref">List&nbsp;<span>11.1</span></a>, but the format should reflect the authoring organization. Have some fun with the format – use icons, images, and even (non–obtrusive) fonts with restrained abandon. You may want to consult a friend who has experience with graphic design or other artistic ventures. The format should reflect YOU, not some stodgy arbiter of margin dimensions or running head capitalization.</p>
+<p>Although you can use style guidelines (such as may be found in the publication manual of the APA), you should not feel constrained by these. The <em>content</em> should reflect the elements within <span class="citation" data-cites="list-items">(<a href="references.html#ref-list-items" role="doc-biblioref"><strong>list-items?</strong></a>)</span>, but the format should reflect the authoring organization. Have some fun with the format – use icons, images, and even (non–obtrusive) fonts with restrained abandon. You may want to consult a friend who has experience with graphic design or other artistic ventures. The format should reflect YOU, not some stodgy arbiter of margin dimensions or running head capitalization.</p>
 
 <div class="no-row-height column-margin column-container"><div class="">
-<p><img src="https://media.istockphoto.com/id/483094407/vector/cruel-grandma.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=FKff7AoRcRgzjlwWXapj6Gj0M-f2XQAcaUxAA_fvt8U=" class="img-fluid"></p>
+<p><img src="img/granny_pulling_ear.jpg" class="img-fluid"></p>
 </div></div><section id="sec-techtit" class="level1" data-number="12">
 <h1 data-number="12"><span class="header-section-number">12</span> Title page</h1>
 </section>
-<section id="sec-techintro" class="level1" data-number="13">
-<h1 data-number="13"><span class="header-section-number">13</span> Introduction</h1>
+<section id="sec-exec" class="level1" data-number="13">
+<h1 data-number="13"><span class="header-section-number">13</span> Executive Summary</h1>
 </section>
-<section id="sec-techmeth" class="level1" data-number="14">
-<h1 data-number="14"><span class="header-section-number">14</span> Methods</h1>
+<section id="sec-techintro" class="level1" data-number="14">
+<h1 data-number="14"><span class="header-section-number">14</span> Introduction</h1>
 </section>
-<section id="sec-techres" class="level1" data-number="15">
-<h1 data-number="15"><span class="header-section-number">15</span> Results</h1>
+<section id="sec-techmeth" class="level1" data-number="15">
+<h1 data-number="15"><span class="header-section-number">15</span> Methods</h1>
 </section>
-<section id="sec-techdisc" class="level1" data-number="16">
-<h1 data-number="16"><span class="header-section-number">16</span> Discussion</h1>
+<section id="sec-techres" class="level1" data-number="16">
+<h1 data-number="16"><span class="header-section-number">16</span> Results</h1>
 </section>
-<section id="sec-techref" class="level1" data-number="17">
-<h1 data-number="17"><span class="header-section-number">17</span> References</h1>
+<section id="sec-techdisc" class="level1" data-number="17">
+<h1 data-number="17"><span class="header-section-number">17</span> Discussion</h1>
 </section>
-<section id="sec-techtoc" class="level1" data-number="18">
-<h1 data-number="18"><span class="header-section-number">18</span> Table of contents</h1>
+<section id="sec-techref" class="level1" data-number="18">
+<h1 data-number="18"><span class="header-section-number">18</span> References</h1>
 </section>
-<section id="sec-techappend" class="level1" data-number="19">
-<h1 data-number="19"><span class="header-section-number">19</span> Appendices</h1>
-<p>All of your raw (unformatted) analytical information can go in Appendices, including code used to produce the output. It’s quite likely noone will ever read it, but you did it and the odds are technically non-zero that it’ll be someday relevant, so go ahead and throw it in. It’s good practice to include your software installations as well, which can be accomplished easily with <iconify-icon role="img" inline="" icon="devicon:r" aria-label="Icon r from devicon Iconify.design set." title="Icon r from devicon Iconify.design set."></iconify-icon>. For example, running the <code>sessionInfo()</code> command on August 09, 2025 gives us:</p>
+<section id="sec-techtoc" class="level1" data-number="19">
+<h1 data-number="19"><span class="header-section-number">19</span> Table of contents</h1>
+</section>
+<section id="sec-techappend" class="level1" data-number="20">
+<h1 data-number="20"><span class="header-section-number">20</span> Appendices</h1>
+<p>All of your raw (unformatted) analytical information can go in Appendices, including code used to produce the output. It’s quite likely noone will ever read it, but you did it and the odds are technically non-zero that it’ll be someday relevant, so go ahead and throw it in. It’s good practice to include your software installations as well, which can be accomplished easily with <iconify-icon role="img" inline="" icon="devicon:r" aria-label="Icon r from devicon Iconify.design set." title="Icon r from devicon Iconify.design set."></iconify-icon>. For example, running the <code>sessionInfo()</code> command on August 30, 2025 gives us:</p>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
 <pre><code>R version 4.4.1 (2024-06-14 ucrt)
