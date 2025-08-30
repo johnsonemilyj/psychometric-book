@@ -1,73 +1,53 @@
 ---
 title: "Technical Report"
-crossref:
-  custom:
-    - kind: float
-      reference-prefix: Bulleted List
-      key: bullet
 ---
 
-```{css}
-div.bullet {
-  text-align: left !important;
-}
-div.bullet ui {
-  text-align: left !important;
-  margin-left: 0 !important;
-  padding-left: 20px;
-}
-```
+Documentation of your psychometrics project occurs within a technical report (aka "tech report"). The technical report contains, at minimum: 
 
-Documentation of your psychometrics project occurs within a technical report. The technical report contains, at minimum: 
-
-::: {#bullet-appendices label="boo" style="text-align: left !important;"}
-
-  1. Title page
-  2. Executive Summary
-  3. Table of Contents
-  4. Introduction
-  5. Methods
-  6. Results
-  7. Discussion
-  8. Appendices
-
-:::
+  1. [Title page](#sec-techtit)
+  2. [[Executive Summary]{.highlight}](#sec-techintro)
+  3. [[Table of Contents]{.highlight}](#sec-techmeth)
+  4. [Introduction](#sec-techres)
+  5. [Methods](#sec-techdisc)
+  6. [Results](#sec-techref)
+  7. [Discussion](#sec-techtoc)
+  8. [[Appendices]{.highlight}](#sec-techappend)
 
 :::{.column-margin}
 ::: {#imp-techelements .callout-important}
 
 ## Technical Report Elements
 
-Take note of  @bullet-appendices element #s 2 (Executive Summary), 3 (Table of Contents) and 8 (Appendices) as these differ from the expected content within a traditional "[APA paper](https://owl.purdue.edu/owl/research_and_citation/apa_style/apa_formatting_and_style_guide/general_format.html)". 
+Take special note of elements 2 (Executive Summary), 3 (Table of Contents) and 8 (Appendices) as these are differentiating features (these elements are unique to tech reports and extend beyond the expected content within a traditional "[APA paper](https://owl.purdue.edu/owl/research_and_citation/apa_style/apa_formatting_and_style_guide/general_format.html)"). 
 
 :::
 :::
   
-Your goal within a technical report is the exact communication of development and investigation of psychometric properties of your focal measure. You should use the reading level necessary to convey your project with the highest level of semantic integrity.^[The anticipated reading--level of technical report information should be considered and aimed at the intended audience (commonly, but not always, college--level). Information should also often be made available to a general consumer audience (7^th^--grade reading level) in the form of white papers, local validation studies, and marketing material.] 
+Your goal within a technical report is the exacting descriptive communication of the development and investigation of psychometric properties of your focal measure. You should use the reading level necessary to convey your project with the highest level of descriptive integrity. Any anticipated reading--level limitations of technical report information **should not** restrain your documentation. It is okay to assume a post--baccalaureate reading level -- individuals who have similar advanced training to you. Measure--relevant information in the form of white papers, local validation studies, and marketing material are different and should be written for a general consumer audience (7^th^--grade reading level). 
 
-Although you can use style guidelines (such as may be found in the publication manual of the APA), you should not feel constrained by these. The *content* should reflect the elements within @list-items, but the format should reflect the authoring organization. Have some fun with the format -- use icons, images, and even (non--obtrusive) fonts with restrained abandon. You may want to consult a friend who has experience with graphic design or other artistic ventures. The format should reflect YOU, not some stodgy arbiter of margin dimensions or running head capitalization.
+Although you should feel free to use style guidelines (such as may be found in publication manuals such as those offered by [APA](https://apastyle.apa.org/products/publication-manual-7th-edition) or [MLA](https://www.mla.org/Publications/Bookstore/Nonseries/MLA-Handbook-Ninth-Edition)), you should not feel constrained by these. The *content* should reflect the elements within @list-items, but the format should reflect the authoring organization. Have some fun with the format -- use icons, images, and even (non--obtrusive) fonts with restrained abandon. You may want to consult a friend who has experience with graphic design or other artistic ventures. The format should reflect YOU, not some stodgy arbiter of margin dimensions or running head capitalization.
 
 :::{.column-margin}
 ![](img/granny_pulling_ear.jpg)
 :::
 
-# Title page {#sec-techtit}
+## Title page {#sec-techtit}
 
-# Executive Summary {#sec-exec}
+## Executive Summary {#sec-exec}
 
-# Introduction {#sec-techintro}
+## Introduction {#sec-techintro}
 
-# Methods {#sec-techmeth}
+## Methods {#sec-techmeth}
 
-# Results {#sec-techres}
+## Results {#sec-techres}
 
-# Discussion {#sec-techdisc}
+## Discussion {#sec-techdisc}
 
-# References {#sec-techref}
+## References {#sec-techref}
 
-# Table of contents {#sec-techtoc}
+## Table of contents {#sec-techtoc}
 
-# Appendices {#sec-techappend}
+## Appendices {#sec-techappend}
 
 All of your raw (unformatted) analytical information can go in Appendices, including code used to produce the output. It's quite likely noone will ever read it, but you did it and the odds are technically non-zero that it'll be someday relevant, so go ahead and throw it in. It's good practice to include your software installations as well, which can be accomplished easily with {{< iconify devicon:r >}}. For example, running the `sessionInfo()` command on `r format(Sys.Date(),"%B %d, %Y")` gives us:
 
