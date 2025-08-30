@@ -56,7 +56,11 @@
     "href": "techreport.html",
     "title": "11  Technical Report",
     "section": "",
+<<<<<<< HEAD
     "text": "12 Title page\nDocumentation of your psychometrics project occurs within a technical report. The technical report contains, at minimum:\nYour goal within a technical report is the exact communication of development and investigation of psychometric properties of your focal measure. You should use the reading level necessary to convey your project with the highest level of semantic integrity.1\nAlthough you can use style guidelines (such as may be found in the publication manual of the APA), you should not feel constrained by these. The content should reflect the elements within (list-items?), but the format should reflect the authoring organization. Have some fun with the format – use icons, images, and even (non–obtrusive) fonts with restrained abandon. You may want to consult a friend who has experience with graphic design or other artistic ventures. The format should reflect YOU, not some stodgy arbiter of margin dimensions or running head capitalization.",
+=======
+    "text": "11.1 Title page\nDocumentation of your psychometrics project occurs within a technical report (aka “tech report”). The technical report contains, at minimum:\nYour goal within a technical report is the exacting descriptive communication of the development and investigation of psychometric properties of your focal measure. You should use the reading level necessary to convey your project with the highest level of descriptive integrity. Any anticipated reading–level limitations of technical report information should not restrain your documentation. It is okay to assume a post–baccalaureate reading level – individuals who have similar advanced training to you. Measure–relevant information in the form of white papers, local validation studies, and marketing material are different and should be written for a general consumer audience (7th–grade reading level).\nAlthough you should feel free to use style guidelines (such as may be found in publication manuals such as those offered by APA or MLA), you should not feel constrained by these. The content should reflect the elements within (list-items?), but the format should reflect the authoring organization. Have some fun with the format – use icons, images, and even (non–obtrusive) fonts with restrained abandon. You may want to consult a friend who has experience with graphic design or other artistic ventures. The format should reflect YOU, not some stodgy arbiter of margin dimensions or running head capitalization.",
+>>>>>>> cd0723caee84617fc8a67bbab7ef0c3b4c5749e0
     "crumbs": [
       "Documentation & Guides",
       "<span class='chapter-number'>11</span>  <span class='chapter-title'>Technical Report</span>"
@@ -67,7 +71,7 @@
     "href": "techreport.html#footnotes",
     "title": "11  Technical Report",
     "section": "",
-    "text": "The anticipated reading–level of technical report information should be considered and aimed at the intended audience (commonly, but not always, college–level). Information should also often be made available to a general consumer audience (7th–grade reading level) in the form of white papers, local validation studies, and marketing material.↩︎",
+    "text": "The anticipated reading–level of technical report information should not limit your documentation. It is okay to assume a post–baccalaureate reading level – individuals who have similar advanced training to you. Measure–relevant information in the form of white papers, local validation studies, and marketing material are different and should be written for a general consumer audience (7th–grade reading level).↩︎",
     "crumbs": [
       "Documentation & Guides",
       "<span class='chapter-number'>11</span>  <span class='chapter-title'>Technical Report</span>"
@@ -101,6 +105,94 @@
     "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
     "crumbs": [
       "References"
+    ]
+  },
+  {
+    "objectID": "techreport.html#sec-exec",
+    "href": "techreport.html#sec-exec",
+    "title": "11  Technical Report",
+    "section": "11.2 Executive Summary",
+    "text": "11.2 Executive Summary",
+    "crumbs": [
+      "Documentation & Guides",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Technical Report</span>"
+    ]
+  },
+  {
+    "objectID": "techreport.html#sec-techintro",
+    "href": "techreport.html#sec-techintro",
+    "title": "11  Technical Report",
+    "section": "11.3 Introduction",
+    "text": "11.3 Introduction",
+    "crumbs": [
+      "Documentation & Guides",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Technical Report</span>"
+    ]
+  },
+  {
+    "objectID": "techreport.html#sec-techmeth",
+    "href": "techreport.html#sec-techmeth",
+    "title": "11  Technical Report",
+    "section": "11.4 Methods",
+    "text": "11.4 Methods",
+    "crumbs": [
+      "Documentation & Guides",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Technical Report</span>"
+    ]
+  },
+  {
+    "objectID": "techreport.html#sec-techres",
+    "href": "techreport.html#sec-techres",
+    "title": "11  Technical Report",
+    "section": "11.5 Results",
+    "text": "11.5 Results",
+    "crumbs": [
+      "Documentation & Guides",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Technical Report</span>"
+    ]
+  },
+  {
+    "objectID": "techreport.html#sec-techdisc",
+    "href": "techreport.html#sec-techdisc",
+    "title": "11  Technical Report",
+    "section": "11.6 Discussion",
+    "text": "11.6 Discussion",
+    "crumbs": [
+      "Documentation & Guides",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Technical Report</span>"
+    ]
+  },
+  {
+    "objectID": "techreport.html#sec-techref",
+    "href": "techreport.html#sec-techref",
+    "title": "11  Technical Report",
+    "section": "11.7 References",
+    "text": "11.7 References",
+    "crumbs": [
+      "Documentation & Guides",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Technical Report</span>"
+    ]
+  },
+  {
+    "objectID": "techreport.html#sec-techtoc",
+    "href": "techreport.html#sec-techtoc",
+    "title": "11  Technical Report",
+    "section": "11.8 Table of contents",
+    "text": "11.8 Table of contents",
+    "crumbs": [
+      "Documentation & Guides",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Technical Report</span>"
+    ]
+  },
+  {
+    "objectID": "techreport.html#sec-techappend",
+    "href": "techreport.html#sec-techappend",
+    "title": "11  Technical Report",
+    "section": "11.9 Appendices",
+    "text": "11.9 Appendices\nAll of your raw (unformatted) analytical information can go in Appendices, including code used to produce the output. It’s quite likely noone will ever read it, but you did it and the odds are technically non-zero that it’ll be someday relevant, so go ahead and throw it in. It’s good practice to include your software installations as well, which can be accomplished easily with . For example, running the sessionInfo() command on August 30, 2025 gives us:\n\n\nR version 4.3.1 (2023-06-16 ucrt)\nPlatform: x86_64-w64-mingw32/x64 (64-bit)\nRunning under: Windows 10 x64 (build 19045)\n\nMatrix products: default\n\n\nlocale:\n[1] LC_COLLATE=English_United States.utf8 \n[2] LC_CTYPE=English_United States.utf8   \n[3] LC_MONETARY=English_United States.utf8\n[4] LC_NUMERIC=C                          \n[5] LC_TIME=English_United States.utf8    \n\ntime zone: America/Chicago\ntzcode source: internal\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nloaded via a namespace (and not attached):\n [1] htmlwidgets_1.6.2 compiler_4.3.1    fastmap_1.1.1     cli_3.6.1        \n [5] tools_4.3.1       htmltools_0.5.7   rstudioapi_0.15.0 yaml_2.3.7       \n [9] rmarkdown_2.25    knitr_1.45        jsonlite_1.8.8    xfun_0.49        \n[13] digest_0.6.33     rlang_1.1.1       evaluate_0.23    \n\n\nsee Section 11.1",
+    "crumbs": [
+      "Documentation & Guides",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Technical Report</span>"
     ]
   }
 ]

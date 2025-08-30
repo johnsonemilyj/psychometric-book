@@ -6,7 +6,11 @@ book:
   title: "Applied Psychometrics Using R"
   author: "authors"
   date: "date"
-  
+  navbar:
+    right:
+      - href: "https://github.com/johnsonemilyj/psychometric-book/issues"
+        text: "Report Issues" 
+        icon: github
   chapters:
     - index.qmd
     - part: intro.qmd
@@ -38,7 +42,7 @@ bibliography: references.bib
 
 format:
   html:
-    theme: lux
+    theme: [lux, custom.css]
   epub:
     cover-image: cover.png
 
