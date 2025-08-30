@@ -48,6 +48,8 @@ format:
 
 engine: knitr
 
+lightbox: true
+
 webr:
   show-starup-message: false
   packages: ['ggplot2','dplyr']

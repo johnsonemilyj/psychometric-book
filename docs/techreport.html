@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.7.30">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -20,41 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
 }
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
 }
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
 }
-</style>
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -72,11 +58,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-de070a7b0ab54f8780927367ac907214.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-1c53e83e4fd96d857afdc4fda0ada1c4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="site_libs/quarto-contrib/iconify-3.0.0/iconify-icon.min.js"></script>
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -306,17 +295,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-<<<<<<< HEAD
-  <li><a href="#sec-techtit" id="toc-sec-techtit" class="nav-link active" data-scroll-target="#sec-techtit"><span class="header-section-number">12</span> Title page</a></li>
-  <li><a href="#sec-exec" id="toc-sec-exec" class="nav-link" data-scroll-target="#sec-exec"><span class="header-section-number">13</span> Executive Summary</a></li>
-  <li><a href="#sec-techintro" id="toc-sec-techintro" class="nav-link" data-scroll-target="#sec-techintro"><span class="header-section-number">14</span> Introduction</a></li>
-  <li><a href="#sec-techmeth" id="toc-sec-techmeth" class="nav-link" data-scroll-target="#sec-techmeth"><span class="header-section-number">15</span> Methods</a></li>
-  <li><a href="#sec-techres" id="toc-sec-techres" class="nav-link" data-scroll-target="#sec-techres"><span class="header-section-number">16</span> Results</a></li>
-  <li><a href="#sec-techdisc" id="toc-sec-techdisc" class="nav-link" data-scroll-target="#sec-techdisc"><span class="header-section-number">17</span> Discussion</a></li>
-  <li><a href="#sec-techref" id="toc-sec-techref" class="nav-link" data-scroll-target="#sec-techref"><span class="header-section-number">18</span> References</a></li>
-  <li><a href="#sec-techtoc" id="toc-sec-techtoc" class="nav-link" data-scroll-target="#sec-techtoc"><span class="header-section-number">19</span> Table of contents</a></li>
-  <li><a href="#sec-techappend" id="toc-sec-techappend" class="nav-link" data-scroll-target="#sec-techappend"><span class="header-section-number">20</span> Appendices</a></li>
-=======
   <li><a href="#sec-techtit" id="toc-sec-techtit" class="nav-link active" data-scroll-target="#sec-techtit"><span class="header-section-number">11.1</span> Title page</a></li>
   <li><a href="#sec-exec" id="toc-sec-exec" class="nav-link" data-scroll-target="#sec-exec"><span class="header-section-number">11.2</span> Executive Summary</a></li>
   <li><a href="#sec-techintro" id="toc-sec-techintro" class="nav-link" data-scroll-target="#sec-techintro"><span class="header-section-number">11.3</span> Introduction</a></li>
@@ -326,7 +304,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#sec-techref" id="toc-sec-techref" class="nav-link" data-scroll-target="#sec-techref"><span class="header-section-number">11.7</span> References</a></li>
   <li><a href="#sec-techtoc" id="toc-sec-techtoc" class="nav-link" data-scroll-target="#sec-techtoc"><span class="header-section-number">11.8</span> Table of contents</a></li>
   <li><a href="#sec-techappend" id="toc-sec-techappend" class="nav-link" data-scroll-target="#sec-techappend"><span class="header-section-number">11.9</span> Appendices</a></li>
->>>>>>> cd0723caee84617fc8a67bbab7ef0c3b4c5749e0
   </ul>
 </nav>
     </div>
@@ -335,7 +312,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Documentation &amp; Guides.html">Documentation &amp; Guides</a></li><li class="breadcrumb-item"><a href="./techreport.html"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Technical Report</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Technical Report</span></h1>
+<h1 class="title"><span id="sec-tech" class="quarto-section-identifier"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Technical Report</span></span></h1>
 </div>
 
 
@@ -352,49 +329,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<<<<<<< HEAD
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode css code-with-copy"><code class="sourceCode css"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>div<span class="fu">.bullet</span> {</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">text-align</span><span class="ch">:</span> <span class="dv">left</span> <span class="at">!important</span><span class="op">;</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>div<span class="fu">.bullet</span> ui {</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  <span class="kw">text-align</span><span class="ch">:</span> <span class="dv">left</span> <span class="at">!important</span><span class="op">;</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  <span class="kw">margin-left</span><span class="ch">:</span> <span class="dv">0</span> <span class="at">!important</span><span class="op">;</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  <span class="kw">padding-left</span><span class="ch">:</span> <span class="dv">20</span><span class="dt">px</span><span class="op">;</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<style type="text/css">
-div.bullet {
-  text-align: left !important;
-}
-div.bullet ui {
-  text-align: left !important;
-  margin-left: 0 !important;
-  padding-left: 20px;
-}
-</style>
-</div>
-<p>Documentation of your psychometrics project occurs within a technical report. The technical report contains, at minimum:</p>
-<div id="bullet-appendices" class="quarto-float quarto-figure quarto-figure-center anchored" style="text-align: left !important;" data-label="boo">
-<figure class="quarto-float quarto-float-bullet figure">
-<div aria-describedby="bullet-appendices-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<ol type="1">
-<li>Title page</li>
-<li>Executive Summary</li>
-<li>Table of Contents</li>
-<li>Introduction</li>
-<li>Methods</li>
-<li>Results</li>
-<li>Discussion</li>
-<li>Appendices</li>
-</ol>
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-bullet quarto-uncaptioned" id="bullet-appendices-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Bulleted List&nbsp;1
-</figcaption>
-</figure>
-</div>
-=======
-<p>Documentation of your psychometrics project occurs within a technical report (aka “tech report”). The technical report contains, at minimum:</p>
+<p>Documentation of your psychometrics project occurs within a technical report (aka “tech report”). The technical report contains, at a minimum:</p>
 <ol type="1">
 <li><a href="#sec-techtit">Title page</a></li>
 <li><a href="#sec-techintro"><span class="highlight">Executive Summary</span></a></li>
@@ -405,7 +340,6 @@ Bulleted List&nbsp;1
 <li><a href="#sec-techtoc">Discussion</a></li>
 <li><a href="#sec-techappend"><span class="highlight">Appendices</span></a></li>
 </ol>
->>>>>>> cd0723caee84617fc8a67bbab7ef0c3b4c5749e0
 
 <div class="no-row-height column-margin column-container"><div class="">
 <div id="imp-techelements" class="callout callout-style-default callout-important callout-titled">
@@ -418,86 +352,93 @@ Important&nbsp;11.1: Technical Report Elements
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<<<<<<< HEAD
-<p>Take note of <a href="#bullet-appendices" class="quarto-xref">Bulleted List&nbsp;<span>11.1</span></a> element #s 2 (Executive Summary), 3 (Table of Contents) and 8 (Appendices) as these differ from the expected content within a traditional “<a href="https://owl.purdue.edu/owl/research_and_citation/apa_style/apa_formatting_and_style_guide/general_format.html">APA paper</a>”.</p>
+<p>Take special note of elements:</p>
+<ul>
+<li>2 (<span class="highlight">Executive Summary</span>)</li>
+<li>3 (<span class="highlight">Table of Contents</span>)</li>
+<li>8 (<span class="highlight">Appendices</span>)</li>
+</ul>
+<p>…as these elements are unique to tech reports and extend beyond the expected content within, for example, a traditional “<a href="https://owl.purdue.edu/owl/research_and_citation/apa_style/apa_formatting_and_style_guide/general_format.html">APA paper</a>”).</p>
 </div>
 </div>
-</div></div><p>Your goal within a technical report is the exact communication of development and investigation of psychometric properties of your focal measure. You should use the reading level necessary to convey your project with the highest level of semantic integrity.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
-<p>Although you can use style guidelines (such as may be found in the publication manual of the APA), you should not feel constrained by these. The <em>content</em> should reflect the elements within <span class="citation" data-cites="list-items">(<a href="references.html#ref-list-items" role="doc-biblioref"><strong>list-items?</strong></a>)</span>, but the format should reflect the authoring organization. Have some fun with the format – use icons, images, and even (non–obtrusive) fonts with restrained abandon. You may want to consult a friend who has experience with graphic design or other artistic ventures. The format should reflect YOU, not some stodgy arbiter of margin dimensions or running head capitalization.</p>
+</div></div><p>Your goal within the technical report is <strong><em>exacting descriptive communication of the development and investigation of psychometric properties</em></strong> of your focal measure. You should apply whatever writing level is best suited to convey your thoughts with the highest level of descriptive integrity. Any anticipated reading–level limitations of how you communicate technical report information <em>should not</em> restrain your documentation. It is okay to assume a post–baccalaureate reading level – aka individuals who have similar advanced training as yours. Additional measure–relevant documentation in the form of white papers, local validation studies, and marketing material are different and should be written for a general consumer audience (7<sup>th</sup>–grade reading level), but it is ok for your technical report to be “technical”.</p>
+<p>Regarding the structure of your report, you are free to use style guidelines (such as those offered by <a href="https://apastyle.apa.org/products/publication-manual-7th-edition">APA</a> <span class="citation" data-cites="APA7">(<a href="references.html#ref-APA7" role="doc-biblioref">American Psychological Association 2020</a>)</span> or <a href="https://www.mla.org/Publications/Bookstore/Nonseries/MLA-Handbook-Ninth-Edition">MLA</a> <span class="citation" data-cites="MLAHandbook2021">(<a href="references.html#ref-MLAHandbook2021" role="doc-biblioref">Modern Language Association of America 2021</a>)</span>), but you should not in any way feel constrained by these. The <strong><em>content</em></strong> of your technical report should reflect the elements discussed in this chapter (see also <a href="#imp-techelements" class="quarto-xref">Important&nbsp;<span>11.1</span></a>), but the <strong><em>format</em></strong> should reflect some uniqueness of the authors. Have some fun with the format – use icons, images, and even (non–wacky) fonts with restrained abandon. You may even want to consult a friend who has experience with graphic design or other artistic ventures. The look and feel should reflect YOU (or the organization you represent), not some stodgy arbiter of <a href="https://apastyle.apa.org/style-grammar-guidelines/paper-format/margins">margin dimensions</a> or <a href="https://style.mla.org/adapt-mla-running-heads/">running head structure</a>.</p>
 
 <div class="no-row-height column-margin column-container"><div class="">
-<p><img src="img/granny_pulling_ear.jpg" class="img-fluid"></p>
-</div></div><section id="sec-techtit" class="level1" data-number="12">
-<h1 data-number="12"><span class="header-section-number">12</span> Title page</h1>
-</section>
-<section id="sec-exec" class="level1" data-number="13">
-<h1 data-number="13"><span class="header-section-number">13</span> Executive Summary</h1>
-</section>
-<section id="sec-techintro" class="level1" data-number="14">
-<h1 data-number="14"><span class="header-section-number">14</span> Introduction</h1>
-</section>
-<section id="sec-techmeth" class="level1" data-number="15">
-<h1 data-number="15"><span class="header-section-number">15</span> Methods</h1>
-</section>
-<section id="sec-techres" class="level1" data-number="16">
-<h1 data-number="16"><span class="header-section-number">16</span> Results</h1>
-</section>
-<section id="sec-techdisc" class="level1" data-number="17">
-<h1 data-number="17"><span class="header-section-number">17</span> Discussion</h1>
-</section>
-<section id="sec-techref" class="level1" data-number="18">
-<h1 data-number="18"><span class="header-section-number">18</span> References</h1>
-</section>
-<section id="sec-techtoc" class="level1" data-number="19">
-<h1 data-number="19"><span class="header-section-number">19</span> Table of contents</h1>
-</section>
-<section id="sec-techappend" class="level1" data-number="20">
-<h1 data-number="20"><span class="header-section-number">20</span> Appendices</h1>
-=======
-<p>Take special note of elements 2 (Executive Summary), 3 (Table of Contents) and 8 (Appendices) as these are differentiating features (these elements are unique to tech reports and extend beyond the expected content within a traditional “<a href="https://owl.purdue.edu/owl/research_and_citation/apa_style/apa_formatting_and_style_guide/general_format.html">APA paper</a>”).</p>
-</div>
-</div>
-</div></div><p>Your goal within a technical report is the exacting descriptive communication of the development and investigation of psychometric properties of your focal measure. You should use the reading level necessary to convey your project with the highest level of descriptive integrity. Any anticipated reading–level limitations of technical report information <strong>should not</strong> restrain your documentation. It is okay to assume a post–baccalaureate reading level – individuals who have similar advanced training to you. Measure–relevant information in the form of white papers, local validation studies, and marketing material are different and should be written for a general consumer audience (7<sup>th</sup>–grade reading level).</p>
-<p>Although you should feel free to use style guidelines (such as may be found in publication manuals such as those offered by <a href="https://apastyle.apa.org/products/publication-manual-7th-edition">APA</a> or <a href="https://www.mla.org/Publications/Bookstore/Nonseries/MLA-Handbook-Ninth-Edition">MLA</a>), you should not feel constrained by these. The <em>content</em> should reflect the elements within <span class="citation" data-cites="list-items">(<a href="references.html#ref-list-items" role="doc-biblioref"><strong>list-items?</strong></a>)</span>, but the format should reflect the authoring organization. Have some fun with the format – use icons, images, and even (non–obtrusive) fonts with restrained abandon. You may want to consult a friend who has experience with graphic design or other artistic ventures. The format should reflect YOU, not some stodgy arbiter of margin dimensions or running head capitalization.</p>
-
-<div class="no-row-height column-margin column-container"><div class="">
-<p><img src="img/granny_pulling_ear.jpg" class="img-fluid"></p>
-</div></div><section id="sec-techtit" class="level2" data-number="11.1">
+<p><a href="img/granny_pulling_ear.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="img/granny_pulling_ear.jpg" class="img-fluid"></a></p>
+</div></div><p>The remainder of <a href="#sec-tech" class="quarto-xref"><span>Chapter 11</span></a> focuses on each element of your technical report separately. The entirety of your report is merely an aggregation of these individual elements, although greater weight (in terms of page space) is given to <a href="#sec-techmeth" class="quarto-xref"><span>Section 11.4</span></a> and <a href="#sec-techres" class="quarto-xref"><span>Section 11.5</span></a>.</p>
+<section id="sec-techtit" class="level2 page-columns page-full" data-number="11.1">
 <h2 data-number="11.1" class="anchored" data-anchor-id="sec-techtit"><span class="header-section-number">11.1</span> Title page</h2>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://nmfs-opensci.github.io/quarto_titlepages/images/vline.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Example Tech Report Title Page"><img src="https://nmfs-opensci.github.io/quarto_titlepages/images/vline.jpg" class="img-fluid figure-img" alt="Example Tech Report Title Page"></a></p>
+<figcaption>Example Tech Report Title Page</figcaption>
+</figure>
+</div>
+</div></div><p>The title page may also be referred to as a “cover page” – we are considering these terms synonymous for the purposes of a technical report. This represents, with traditional hard–copy reports, the first impression of your project. Branding is important here – if you are representing an organization, there may be a pre–existing preferred format or structure. If you are representing yourself, think about not just this current project, but also future projects that you may wish to conduct. Once you decide on a styling, it is best to stick with it across future projects.</p>
+<p>The title page elements to include are:</p>
+<ol type="1">
+<li>Styling</li>
+<li>Project Title</li>
+<li>Author(s)</li>
+<li>Organization(s)</li>
+</ol>
 </section>
 <section id="sec-exec" class="level2" data-number="11.2">
 <h2 data-number="11.2" class="anchored" data-anchor-id="sec-exec"><span class="header-section-number">11.2</span> Executive Summary</h2>
+<p>The executive summary is essentially an abbreviated (and bulletted) Abstract. Although this content appears <strong><em>before</em></strong> the substance of your report, it should be treated like an Abstract and written last (only written after all other tech report elements have been completed).</p>
 </section>
 <section id="sec-techintro" class="level2" data-number="11.3">
 <h2 data-number="11.3" class="anchored" data-anchor-id="sec-techintro"><span class="header-section-number">11.3</span> Introduction</h2>
+<p>Your Introduction contains background information about your project. There should, at minimum, be a literature review of your construct. This review includes an attempt to locate your construct within a broader nomological network (see <span class="quarto-unresolved-ref">?sec-nomological</span>). If you are creating a measure of a novel or nascent construct, the inclusion of a nomological network becomes more important. In addition to theoretical specification of your construct, it is generally a good idea to include a “Why” section within this section of your tech report.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
 </section>
 <section id="sec-techmeth" class="level2" data-number="11.4">
 <h2 data-number="11.4" class="anchored" data-anchor-id="sec-techmeth"><span class="header-section-number">11.4</span> Methods</h2>
+<p>The Methods section documents the steps taken to define your construct, create your measure, and validate the assessment. This is a tech report component that can justifiably be unreasonably wordy. You are not writing an easy–to–read novel within the Methods section. Instead, you are communicating all of the important considerations and procedural decisions you made along the process of creating your measure. It is ok to “write too much” here – you want full documentation of steps taken such that an individual 10 years from now would be able to exactly replicate your process.</p>
 </section>
 <section id="sec-techres" class="level2" data-number="11.5">
 <h2 data-number="11.5" class="anchored" data-anchor-id="sec-techres"><span class="header-section-number">11.5</span> Results</h2>
+<p>The analyses of your investigations go here. This includes qualitative analyses such as content validation and initial number of items generated. Like <a href="#sec-techmeth" class="quarto-xref"><span>Section 11.4</span></a>, it is okay to be overly descriptive within this section. If you feel that the amount or depth of information detracts from reader comprehension, throw it into an Appendix (<a href="#sec-techappend" class="quarto-xref"><span>Section 11.9</span></a>).</p>
 </section>
-<section id="sec-techdisc" class="level2" data-number="11.6">
+<section id="sec-techdisc" class="level2 page-columns page-full" data-number="11.6">
 <h2 data-number="11.6" class="anchored" data-anchor-id="sec-techdisc"><span class="header-section-number">11.6</span> Discussion</h2>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<div id="wrn-objectivity" class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning&nbsp;11.1: <iconify-icon role="img" inline="" icon="emojione-monotone:skull-and-crossbones" aria-label="Icon skull-and-crossbones from emojione-monotone Iconify.design set." title="Icon skull-and-crossbones from emojione-monotone Iconify.design set."></iconify-icon><iconify-icon role="img" inline="" icon="emojione-monotone:skull-and-crossbones" aria-label="Icon skull-and-crossbones from emojione-monotone Iconify.design set." title="Icon skull-and-crossbones from emojione-monotone Iconify.design set."></iconify-icon> Stay Objective!! <iconify-icon role="img" inline="" icon="emojione-monotone:skull-and-crossbones" aria-label="Icon skull-and-crossbones from emojione-monotone Iconify.design set." title="Icon skull-and-crossbones from emojione-monotone Iconify.design set."></iconify-icon><iconify-icon role="img" inline="" icon="emojione-monotone:skull-and-crossbones" aria-label="Icon skull-and-crossbones from emojione-monotone Iconify.design set." title="Icon skull-and-crossbones from emojione-monotone Iconify.design set."></iconify-icon>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Smart readers of this section will have their radar on alert for self–promoting smarm and overly–positive interpretations. Your goal should be dispassionate objectivity.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
+</div>
+</div>
+</div></div><p>This section does not need to be very long – keep your interpretation of results to an extreme bare minimum. Your presentation of analyses in <a href="#sec-techres" class="quarto-xref"><span>Section 11.5</span></a> should be sufficient for an informed reader to generate his/her own opinion regarding “how good” the results are. It does not take much interpretive summary by YOU here to raise red flags to the reader regarding your objectivity. Instead, primarily devote the page space here to limitations, implications, and future directions.</p>
 </section>
 <section id="sec-techref" class="level2" data-number="11.7">
 <h2 data-number="11.7" class="anchored" data-anchor-id="sec-techref"><span class="header-section-number">11.7</span> References</h2>
+<p>These should primarily support information presented in <a href="#sec-techintro" class="quarto-xref"><span>Section 11.3</span></a> and <a href="#sec-techres" class="quarto-xref"><span>Section 11.5</span></a>. Make sure to include information regarding your analytical platform (for example, version number) as well as any supplementary capabilities (for example, <iconify-icon role="img" inline="" icon="devicon:r" aria-label="Icon r from devicon Iconify.design set." title="Icon r from devicon Iconify.design set."></iconify-icon> packages).</p>
 </section>
 <section id="sec-techtoc" class="level2" data-number="11.8">
 <h2 data-number="11.8" class="anchored" data-anchor-id="sec-techtoc"><span class="header-section-number">11.8</span> Table of contents</h2>
 </section>
 <section id="sec-techappend" class="level2" data-number="11.9">
 <h2 data-number="11.9" class="anchored" data-anchor-id="sec-techappend"><span class="header-section-number">11.9</span> Appendices</h2>
->>>>>>> cd0723caee84617fc8a67bbab7ef0c3b4c5749e0
-<p>All of your raw (unformatted) analytical information can go in Appendices, including code used to produce the output. It’s quite likely noone will ever read it, but you did it and the odds are technically non-zero that it’ll be someday relevant, so go ahead and throw it in. It’s good practice to include your software installations as well, which can be accomplished easily with <iconify-icon role="img" inline="" icon="devicon:r" aria-label="Icon r from devicon Iconify.design set." title="Icon r from devicon Iconify.design set."></iconify-icon>. For example, running the <code>sessionInfo()</code> command on August 30, 2025 gives us:</p>
+<p>All of your raw (unformatted) analytical information can go into Appendices, including any code used to produce the output. It’s quite likely noone will ever read it, but you did it and the odds are technically non-zero that it’ll be someday relevant, so go ahead and throw it in. It’s good practice to include your software installations as well, which can be accomplished easily with <iconify-icon role="img" inline="" icon="devicon:r" aria-label="Icon r from devicon Iconify.design set." title="Icon r from devicon Iconify.design set."></iconify-icon>. For example, running the <code>sessionInfo()</code> command on August 30, 2025 gives us:</p>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
-<pre><code>R version 4.3.1 (2023-06-16 ucrt)
-Platform: x86_64-w64-mingw32/x64 (64-bit)
+<pre><code>R version 4.5.0 (2025-04-11 ucrt)
+Platform: x86_64-w64-mingw32/x64
 Running under: Windows 10 x64 (build 19045)
 
 Matrix products: default
-
+  LAPACK version 3.12.1
 
 locale:
 [1] LC_COLLATE=English_United States.utf8 
@@ -513,15 +454,29 @@ attached base packages:
 [1] stats     graphics  grDevices utils     datasets  methods   base     
 
 loaded via a namespace (and not attached):
- [1] htmlwidgets_1.6.2 compiler_4.3.1    fastmap_1.1.1     cli_3.6.1        
- [5] tools_4.3.1       htmltools_0.5.7   rstudioapi_0.15.0 yaml_2.3.7       
- [9] rmarkdown_2.25    knitr_1.45        jsonlite_1.8.8    xfun_0.49        
-[13] digest_0.6.33     rlang_1.1.1       evaluate_0.23    </code></pre>
+ [1] htmlwidgets_1.6.4 compiler_4.5.0    fastmap_1.2.0     cli_3.6.5        
+ [5] tools_4.5.0       htmltools_0.5.8.1 rstudioapi_0.17.1 yaml_2.3.10      
+ [9] rmarkdown_2.29    knitr_1.50        jsonlite_2.0.0    xfun_0.52        
+[13] digest_0.6.37     rlang_1.1.6       evaluate_1.0.4   </code></pre>
 </div>
 </div>
-<p>see <a href="#sec-techtit" class="quarto-xref"><span>Section 11.1</span></a></p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-APA7" class="csl-entry" role="listitem">
+American Psychological Association. 2020. <em>Publication Manual of the American Psychological Association</em>. 7th ed. American Psychological Association.
+</div>
+<div id="ref-MLAHandbook2021" class="csl-entry" role="listitem">
+Modern Language Association of America. 2021. <em>MLA Handbook</em>. 9th ed. <span>Modern Language Association of America</span>.
+</div>
+</div>
+</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p>These sections are sometimes labeled “Background” instead of “Introduction” – you should feel free to use whatever label is most descriptive of your presentation.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>This may be perceived as difficult given outside pressures, but keep in mind that your reputation is more important than this one silly project. You can always find a different job (or project or boss), but your reputation sticks with you for a l-l-l-o-o-o-n-n-g-g time.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
 </section>
 
 </main> <!-- /main -->
@@ -937,6 +892,38 @@ loaded via a namespace (and not attached):
   </div>
 </nav>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

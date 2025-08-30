@@ -1,4 +1,5 @@
 ---
-title: "Nomological Networks"
-editor: visual
+title: ""
 ---
+
+# Nomological Networks {#sec-nomological}

@@ -1,8 +1,10 @@
 ---
-title: "Technical Report"
+title: ""
 ---
 
-Documentation of your psychometrics project occurs within a technical report (aka "tech report"). The technical report contains, at minimum: 
+# Technical Report {#sec-tech}
+
+Documentation of your psychometrics project occurs within a technical report (aka "tech report"). The technical report contains, at a minimum: 
 
   1. [Title page](#sec-techtit)
   2. [[Executive Summary]{.highlight}](#sec-techintro)
@@ -18,43 +20,86 @@ Documentation of your psychometrics project occurs within a technical report (ak
 
 ## Technical Report Elements
 
-Take special note of elements 2 (Executive Summary), 3 (Table of Contents) and 8 (Appendices) as these are differentiating features (these elements are unique to tech reports and extend beyond the expected content within a traditional "[APA paper](https://owl.purdue.edu/owl/research_and_citation/apa_style/apa_formatting_and_style_guide/general_format.html)"). 
+Take special note of elements: 
+
++ 2 ([Executive Summary]{.highlight})
++ 3 ([Table of Contents]{.highlight})
++ 8 ([Appendices]{.highlight}) 
+
+...as these elements are unique to tech reports and extend beyond the expected content within, for example, a traditional "[APA paper](https://owl.purdue.edu/owl/research_and_citation/apa_style/apa_formatting_and_style_guide/general_format.html)"). 
 
 :::
 :::
   
-Your goal within a technical report is the exacting descriptive communication of the development and investigation of psychometric properties of your focal measure. You should use the reading level necessary to convey your project with the highest level of descriptive integrity. Any anticipated reading--level limitations of technical report information **should not** restrain your documentation. It is okay to assume a post--baccalaureate reading level -- individuals who have similar advanced training to you. Measure--relevant information in the form of white papers, local validation studies, and marketing material are different and should be written for a general consumer audience (7^th^--grade reading level). 
+Your goal within the technical report is ***exacting descriptive communication of the development and investigation of psychometric properties*** of your focal measure. You should apply whatever writing level is best suited to convey your thoughts with the highest level of descriptive integrity. Any anticipated reading--level limitations of how you communicate technical report information *should not* restrain your documentation. It is okay to assume a post--baccalaureate reading level -- aka individuals who have similar advanced training as yours. Additional measure--relevant documentation in the form of white papers, local validation studies, and marketing material are different and should be written for a general consumer audience (7^th^--grade reading level), but it is ok for your technical report to be "technical". 
 
-Although you should feel free to use style guidelines (such as may be found in publication manuals such as those offered by [APA](https://apastyle.apa.org/products/publication-manual-7th-edition) or [MLA](https://www.mla.org/Publications/Bookstore/Nonseries/MLA-Handbook-Ninth-Edition)), you should not feel constrained by these. The *content* should reflect the elements within @list-items, but the format should reflect the authoring organization. Have some fun with the format -- use icons, images, and even (non--obtrusive) fonts with restrained abandon. You may want to consult a friend who has experience with graphic design or other artistic ventures. The format should reflect YOU, not some stodgy arbiter of margin dimensions or running head capitalization.
+Regarding the structure of your report, you are free to use style guidelines (such as those offered by [APA](https://apastyle.apa.org/products/publication-manual-7th-edition) [@APA7] or [MLA](https://www.mla.org/Publications/Bookstore/Nonseries/MLA-Handbook-Ninth-Edition) [@MLAHandbook2021]), but you should not in any way feel constrained by these. The ***content*** of your technical report should reflect the elements discussed in this chapter (see also @imp-techelements), but the ***format*** should reflect some uniqueness of the authors. Have some fun with the format -- use icons, images, and even (non--wacky) fonts with restrained abandon. You may even want to consult a friend who has experience with graphic design or other artistic ventures. The look and feel should reflect YOU (or the organization you represent), not some stodgy arbiter of [margin dimensions](https://apastyle.apa.org/style-grammar-guidelines/paper-format/margins) or [running head structure](https://style.mla.org/adapt-mla-running-heads/).
 
 :::{.column-margin}
 ![](img/granny_pulling_ear.jpg)
 :::
 
+The remainder of @sec-tech focuses on each element of your technical report separately. The entirety of your report is merely an aggregation of these individual elements, although greater weight (in terms of page space) is given to @sec-techmeth and @sec-techres.
+
 ## Title page {#sec-techtit}
+
+::: {.column-margin}
+![Example Tech Report Title Page](https://nmfs-opensci.github.io/quarto_titlepages/images/vline.jpg)
+:::
+
+The title page may also be referred to as a "cover page" -- we are considering these terms synonymous for the purposes of a technical report. This represents, with traditional hard--copy reports, the first impression of your project. Branding is important here -- if you are representing an organization, there may be a pre--existing preferred format or structure. If you are representing yourself, think about not just this current project, but also future projects that you may wish to conduct. Once you decide on a styling, it is best to stick with it across future projects. 
+
+The title page elements to include are:
+
+1. Styling
+2. Project Title
+3. Author(s)
+4. Organization(s)
+
+
 
 ## Executive Summary {#sec-exec}
 
+The executive summary is essentially an abbreviated (and bulletted) Abstract. Although this content appears ***before*** the substance of your report, it should be treated like an Abstract and written last (only written after all other tech report elements have been completed). 
+
 ## Introduction {#sec-techintro}
+
+Your Introduction contains background information about your project. There should, at minimum, be a literature review of your construct. This review includes an attempt to locate your construct within a broader nomological network (see @sec-nomological). If you are creating a measure of a novel or nascent construct, the inclusion of a nomological network becomes more important. In addition to theoretical specification of your construct, it is generally a good idea to include a "Why" section within this section of your tech report.^[These sections are sometimes labeled "Background" instead of "Introduction" -- you should feel free to use whatever label is most descriptive of your presentation.]
 
 ## Methods {#sec-techmeth}
 
+The Methods section documents the steps taken to define your construct, create your measure, and validate the assessment. This is a tech report component that can justifiably be unreasonably wordy. You are not writing an easy--to--read novel within the Methods section. Instead, you are communicating all of the important considerations and procedural decisions you made along the process of creating your measure. It is ok to "write too much" here -- you want full documentation of steps taken such that an individual 10 years from now would be able to exactly replicate your process. 
+
 ## Results {#sec-techres}
+
+The analyses of your investigations go here. This includes qualitative analyses such as content validation and initial number of items generated. Like @sec-techmeth, it is okay to be overly descriptive within this section. If you feel that the amount or depth of information detracts from reader comprehension, throw it into an Appendix (@sec-techappend). 
 
 ## Discussion {#sec-techdisc}
 
+:::{.column-margin}
+::: {#wrn-objectivity .callout-warning}
+
+## {{< iconify emojione-monotone:skull-and-crossbones >}}{{< iconify emojione-monotone:skull-and-crossbones >}} Stay Objective!! {{< iconify emojione-monotone:skull-and-crossbones >}}{{< iconify emojione-monotone:skull-and-crossbones >}}
+
+Smart readers of this section will have their radar on alert for self--promoting smarm and overly--positive interpretations. Your goal should be dispassionate objectivity.^[This may be perceived as difficult given outside pressures, but keep in mind that your reputation is more important than this one silly project. You can always find a different job (or project or boss), but your reputation sticks with you for a l-l-l-o-o-o-n-n-g-g time.] 
+
+:::
+:::
+
+This section does not need to be very long -- keep your interpretation of results to an extreme bare minimum. Your presentation of analyses in @sec-techres should be sufficient for an informed reader to generate his/her own opinion regarding "how good" the results are. It does not take much interpretive summary by YOU here to raise red flags to the reader regarding your objectivity. Instead, primarily devote the page space here to limitations, implications, and future directions. 
+
 ## References {#sec-techref}
+
+These should primarily support information presented in @sec-techintro and @sec-techres. Make sure to include information regarding your analytical platform (for example, version number) as well as any supplementary capabilities (for example, {{< iconify devicon:r >}} packages).
 
 ## Table of contents {#sec-techtoc}
 
 ## Appendices {#sec-techappend}
 
-All of your raw (unformatted) analytical information can go in Appendices, including code used to produce the output. It's quite likely noone will ever read it, but you did it and the odds are technically non-zero that it'll be someday relevant, so go ahead and throw it in. It's good practice to include your software installations as well, which can be accomplished easily with {{< iconify devicon:r >}}. For example, running the `sessionInfo()` command on `r format(Sys.Date(),"%B %d, %Y")` gives us:
+All of your raw (unformatted) analytical information can go into Appendices, including any code used to produce the output. It's quite likely noone will ever read it, but you did it and the odds are technically non-zero that it'll be someday relevant, so go ahead and throw it in. It's good practice to include your software installations as well, which can be accomplished easily with {{< iconify devicon:r >}}. For example, running the `sessionInfo()` command on `r format(Sys.Date(),"%B %d, %Y")` gives us:
 
 ```{r}
 #| echo: false
 #| 
 sessionInfo()
 ```
-
-see @sec-techtit
