@@ -5,6 +5,7 @@ Why/how is this different:
 2. Elements tied to standards 
 3. WebR for interactivity right there
 4. Graphics for different components**
+5. Tests versus inventories and their suceptibility to different forms of response bias
 
 Ideas 
 creating technical reports, etc.
