@@ -1,4 +1,8 @@
 ---
-title: "Types of Assessments"
-editor: visual
+title: ""
 ---
+
+# Types of Assessment {#sec-assesstype}
+
+There exists a fundamentally important distinction between the type of assessment you develop. (True)
+tests are subject to different sources of error than are Psychological inventories.  

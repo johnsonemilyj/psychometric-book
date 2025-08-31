@@ -39,12 +39,12 @@ Regarding the structure of your report, you are free to use style guidelines (su
 ![](img/granny_pulling_ear.jpg)
 :::
 
-The remainder of @sec-tech focuses on each element of your technical report separately. The entirety of your report is merely an aggregation of these individual elements, although greater weight (in terms of page space) is given to @sec-techmeth and @sec-techres.
+The remainder of @sec-tech focuses on each element of your technical report separately. The entirety of your report is merely an aggregation of these individual elements, although you should give greater weight (in terms of page space) to information contained in @sec-techmeth and @sec-techres.
 
 ## Title page {#sec-techtit}
 
 ::: {.column-margin}
-![Example Tech Report Title Page](https://nmfs-opensci.github.io/quarto_titlepages/images/vline.jpg)
+![Example tech report title page](https://nmfs-opensci.github.io/quarto_titlepages/images/vline.jpg){#fig-titlepage}
 :::
 
 The title page may also be referred to as a "cover page" -- we are considering these terms synonymous for the purposes of a technical report. This represents, with traditional hard--copy reports, the first impression of your project. Branding is important here -- if you are representing an organization, there may be a pre--existing preferred format or structure. If you are representing yourself, think about not just this current project, but also future projects that you may wish to conduct. Once you decide on a styling, it is best to stick with it across future projects. 
@@ -56,19 +56,41 @@ The title page elements to include are:
 3. Author(s)
 4. Organization(s)
 
-
-
 ## Executive Summary {#sec-exec}
 
-The executive summary is essentially an abbreviated (and bulletted) Abstract. Although this content appears ***before*** the substance of your report, it should be treated like an Abstract and written last (only written after all other tech report elements have been completed). 
+::: {.column-margin}
+![Example executive summary from a Kulas survey](img/execsummary.JPG){#fig-execsum}
+:::
+
+The executive summary is essentially an abbreviated Abstract. Although this content appears ***before*** the substance of your report, it should be treated like an Abstract and written last (only written after all other tech report elements have been completed). We prefer bulleted statements, but you may write the summary in a more traditional paragraph format if you prefer. Aim for 3 or 4 of the most important elements:
+
++ what is the final number of items? 
++ what are your reliability and validity estimates?
++ how many individuals responded in your pilot?
++ what are the future plans?
+
+## Table of contents {#sec-techtoc}
+
+::: {.column-margin}
+![Example ***cutely formatted*** table of contents](https://marketplace.canva.com/EAGP-DWEi7E/1/0/1131w/canva-black-white-simple-table-of-contents-document-vs-hHnIhwLc.jpg){#fig-techtoc}
+:::
+
+You may choose to include the table of contents prior to your executive summary or after your executive summary. We construct our tech reports with the title page first, executive summary second, and table of contents third, but the order of presentation of these two elements can be determined by personal preference. Like the title page, you may be creative with the table of contents. If your report is generated in a format that permits, provide hyperlinks to component sections within the table of contents itself. You may choose to make the table of contents omnipresent (as we have done with this book -- look to your left!!! {{< iconify noto:eyes >}}), but even if you do so, still include a static table of contents near the "beginning" of your report. 
 
 ## Introduction {#sec-techintro}
 
-Your Introduction contains background information about your project. There should, at minimum, be a literature review of your construct. This review includes an attempt to locate your construct within a broader nomological network (see @sec-nomological). If you are creating a measure of a novel or nascent construct, the inclusion of a nomological network becomes more important. In addition to theoretical specification of your construct, it is generally a good idea to include a "Why" section within this section of your tech report.^[These sections are sometimes labeled "Background" instead of "Introduction" -- you should feel free to use whatever label is most descriptive of your presentation.]
+Your Introduction contains background information about your project. There should, at minimum, be a literature review of your construct. This review includes an attempt to locate your construct within a broader nomological network (see @sec-nomological). If you are creating a measure of a novel or nascent construct, the inclusion of a nomological network becomes more important, and your literature review should include conceptually similar constructs. In addition to conceptual specification of your construct, it is generally a good idea to include a "Why" section within this section of your tech report.^[These sections are sometimes labeled "Background" instead of "Introduction" -- you should feel free to use whatever label is most descriptive of your presentation.] What is the impetus of creating the measure (e.g., is there a commercial motive, are existing measures lacking, is there a new technology being adopted)?
 
 ## Methods {#sec-techmeth}
 
-The Methods section documents the steps taken to define your construct, create your measure, and validate the assessment. This is a tech report component that can justifiably be unreasonably wordy. You are not writing an easy--to--read novel within the Methods section. Instead, you are communicating all of the important considerations and procedural decisions you made along the process of creating your measure. It is ok to "write too much" here -- you want full documentation of steps taken such that an individual 10 years from now would be able to exactly replicate your process. 
+The Methods section documents the steps taken to define your construct, create your measure, and validate the assessment. This is a tech report component that can justifiably be unreasonably wordy. You are not writing an easy--to--read novel within the Methods section. Instead, you are communicating all of the important considerations and procedural decisions you made along the process of creating your measure. It is ok to "write too much" here -- you want full documentation of steps taken such that an individual 10 years from now would be able to exactly replicate your process. At the least, ensure that you cover:
+
++ construct identification (conceptual)
++ item generation process
++ reason(s) for response scale choice
++ sampled population description
++ sampling procedure
++ survey platform
 
 ## Results {#sec-techres}
 
@@ -81,7 +103,7 @@ The analyses of your investigations go here. This includes qualitative analyses 
 
 ## {{< iconify emojione-monotone:skull-and-crossbones >}}{{< iconify emojione-monotone:skull-and-crossbones >}} Stay Objective!! {{< iconify emojione-monotone:skull-and-crossbones >}}{{< iconify emojione-monotone:skull-and-crossbones >}}
 
-Smart readers of this section will have their radar on alert for self--promoting smarm and overly--positive interpretations. Your goal should be dispassionate objectivity.^[This may be perceived as difficult given outside pressures, but keep in mind that your reputation is more important than this one silly project. You can always find a different job (or project or boss), but your reputation sticks with you for a l-l-l-o-o-o-n-n-g-g time.] 
+Smart readers of this section will have their radar on alert for self--promoting smarm and overly--positive interpretations. Your goal should be dispassionate objectivity.^[This may be perceived as difficult given outside pressures, but keep in mind that your reputation is more important than this one silly project. You can always find a different job (or project or boss), but your reputation sticks with you for a l--l--l--o--o--o--n--n--g--g time.] 
 
 :::
 :::
@@ -90,16 +112,20 @@ This section does not need to be very long -- keep your interpretation of result
 
 ## References {#sec-techref}
 
-These should primarily support information presented in @sec-techintro and @sec-techres. Make sure to include information regarding your analytical platform (for example, version number) as well as any supplementary capabilities (for example, {{< iconify devicon:r >}} packages).
-
-## Table of contents {#sec-techtoc}
+These should primarily support information presented in @sec-techintro and @sec-techres. Make sure to include information regarding your analytical platform (for example, version number) as well as any supplementary capabilities (for example, {{< iconify devicon:r >}} packages). There are many different citation formats (both within text as well as within the bibliography). [Choose one of your liking](https://www.zotero.org/styles) and stick with it. This book uses APA 7^th^ edition because that is what Psychologists are expecting to see, although you can use whatever style fits your formatting theme. 
 
 ## Appendices {#sec-techappend}
 
-All of your raw (unformatted) analytical information can go into Appendices, including any code used to produce the output. It's quite likely noone will ever read it, but you did it and the odds are technically non-zero that it'll be someday relevant, so go ahead and throw it in. It's good practice to include your software installations as well, which can be accomplished easily with {{< iconify devicon:r >}}. For example, running the `sessionInfo()` command on `r format(Sys.Date(),"%B %d, %Y")` gives us:
+::: {.column-margin}
+![Example Appendix information (Appendix title & substantive content)](https://cdn.prod.website-files.com/5e5d43546b94f97f39c228fa/681afed4bcd731fec119f7ea_1.webp){#fig-techappend}
+:::
+
+All of your raw (unformatted) analytical information can go into Appendices, including any code used to produce the output. It's quite likely noone will ever read it, but you did it and the odds are technically non-zero that it'll be someday relevant, so go ahead and throw it in. It's good practice to include your software installations here as well, which can be accomplished easily with {{< iconify devicon:r >}}. For example, running the `sessionInfo()` command on `r format(Sys.Date(),"%B %d, %Y")` gives us:
 
 ```{r}
 #| echo: false
 #| 
 sessionInfo()
 ```
+
+You should have different appendices for qualitatively different content. These are lettered sequentially, starting with "Appendix A". You can't have more than 26 appendices because our alphabet runs out of letters at that point (and you were getting ridiculous with your Appendix recklessness anyway if you somehow created anywhere near 26 different ones -- shame on you!!!). Some individuals prefer "clean" Appendix title pages, such that only the Appendix title is presented and some people include substantive content immediately after the Appendix title (as is done in @fig-techappend). It's your design choice, but choose one structure and be consistent with it across all appendices. 
