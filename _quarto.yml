@@ -53,7 +53,7 @@ lightbox: true
 
 webr:
   show-starup-message: false
-  packages: ['ggplot2','dplyr']
+  packages: ['psych','tidyverse']
 
 filters:
   - webr
