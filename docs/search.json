@@ -14,9 +14,20 @@
     "href": "intro.html",
     "title": "Introduction",
     "section": "",
-    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\nKnuth, D. E. (1984). Literate programming. Comput. J., 27(2), 97–111. https://doi.org/10.1093/comjnl/27.2.97",
     "crumbs": [
       "Introduction"
+    ]
+  },
+  {
+    "objectID": "Types of Assessments.html",
+    "href": "Types of Assessments.html",
+    "title": "2  Types of Assessment",
+    "section": "",
+    "text": "There exists a fundamentally important distinction between the type of assessment you develop. (True) tests are subject to different sources of error than are Psychological inventories.",
+    "crumbs": [
+      "Introduction",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Types of Assessment</span>"
     ]
   },
   {
@@ -33,12 +44,12 @@
   {
     "objectID": "Legal Considerations & Additional Analyses.html",
     "href": "Legal Considerations & Additional Analyses.html",
-    "title": "10  Legal Considerations & Additional Analyses",
+    "title": "10  Legal Considerations & Fairness in Testing",
     "section": "",
-    "text": "Whether you’re creating an assessment or choosing an assessment from a vendor, you must consider legal issues. In this section, we will discuss the legal issues surrounding assessments including: x,x,x, case studies, as well as analyses that can be conducted via R.\n**Maybe less is more… define, mention protected classes, timeline of landmark cases with ruling and a link to something more in depth, section on AI in testing since it’s a hot topic,\n\nDisparate Treatment v Disparate Impact\n\n\nNumber of Employees makes a difference….\nCivil Rights Act of 1964 – Race/Color – National Origin – Religion – Sex\nAge Discrimination Employment Act (1967) Covers those over the age of 40.\nAmerican Disability Act (1990) – Disability\nQuota Systems Race Norming\n\nGoverning Bodies\n\n\nState Fair Employment Practices Commissions\nEqual Opportunity Employment Commission\nOffice of Federal Contract Compliance Programs\n\n\nCase Studies\n\nCould create a cool timeline visual to make the chapter feel less dense\nRace Griggs vs. Duke Power Co. Cracker Barrel?\nReligion E.E.O.C. v. Abercrombie & Fitch Stores, Inc. Domski v. Blue Cross Blue Shield of Michigan\nSex Price Waterhouse v. Hopkins Bostock vs. Clayton County R.G. & G.R. Harris Funeral Homes Inc. v. Equal Employment Opportunity Commission\nNational Origin\nAge Mobley vs. Workday\nDisability\n\nAnalyses in R 4/5ths Rule – Impact Ratio Differential Validity Differential Prediction\n\nPut in R code examples and then create a few examples so the student/reader can run and interpret results. I wonder if we have practice examples if we should write another QMD with practice answers???\nhttps://legal.thomsonreuters.com/en/insights/articles/what-is-title-vii-civil-rights-act",
+    "text": "Whether you’re creating an assessment or choosing an assessment from a vendor, you must consider fairness and legal issues. In this section, we will discuss fairness and legal issues surrounding assessments including: APA standards,x,x, case studies, as well as analyses that can be conducted via R.\n**Maybe less is more… define, mention protected classes, timeline of landmark cases with ruling and a link to something more in depth, section on AI in testing since it’s a hot topic,\n2014 APA Standards:\n\nStandard 3.0: Minimize construct irrelevant variance in all processes.\nStandard 3.1: Designing processes to promote valid and intended use of scores for the widest range of individuals possible.\n\nThe 2026 APA standards,\n\nDisparate Treatment v Disparate Impact\n\n\nNumber of Employees makes a difference….\nCivil Rights Act of 1964 – Race/Color – National Origin – Religion – Sex\nAge Discrimination Employment Act (1967) Covers those over the age of 40.\nAmerican Disability Act (1990) – Disability\nQuota Systems Race Norming\n\nGoverning Bodies\n\n\nState Fair Employment Practices Commissions\nEqual Opportunity Employment Commission\nOffice of Federal Contract Compliance Programs\n\n\nCase Studies\n\nCould create a cool timeline visual to make the chapter feel less dense\nRace Griggs vs. Duke Power Co. Cracker Barrel?\nReligion E.E.O.C. v. Abercrombie & Fitch Stores, Inc. Domski v. Blue Cross Blue Shield of Michigan\nSex Price Waterhouse v. Hopkins Bostock vs. Clayton County R.G. & G.R. Harris Funeral Homes Inc. v. Equal Employment Opportunity Commission\nNational Origin\nAge Mobley vs. Workday\nDisability\n\nAnalyses in R 4/5ths Rule – Impact Ratio\nDifferential Validity\nDifferential Prediction\n\nPut in R code examples and then create a few examples so the student/reader can run and interpret results. I wonder if we have practice examples if we should write another QMD with practice answers???\nhttps://legal.thomsonreuters.com/en/insights/articles/what-is-title-vii-civil-rights-act",
     "crumbs": [
       "Psychometric Philosophies",
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Legal Considerations & Additional Analyses</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Legal Considerations & Fairness in Testing</span>"
     ]
   },
   {
@@ -56,7 +67,18 @@
     "href": "techreport.html",
     "title": "11  Technical Report",
     "section": "",
-    "text": "11.1 Title page\nDocumentation of your psychometrics project occurs within a technical report (aka “tech report”). The technical report contains, at minimum:\nYour goal within a technical report is the exacting descriptive communication of the development and investigation of psychometric properties of your focal measure. You should use the reading level necessary to convey your project with the highest level of descriptive integrity. Any anticipated reading–level limitations of technical report information should not restrain your documentation. It is okay to assume a post–baccalaureate reading level – individuals who have similar advanced training to you. Measure–relevant information in the form of white papers, local validation studies, and marketing material are different and should be written for a general consumer audience (7th–grade reading level).\nAlthough you should feel free to use style guidelines (such as may be found in publication manuals such as those offered by APA or MLA), you should not feel constrained by these. The content should reflect the elements within (list-items?), but the format should reflect the authoring organization. Have some fun with the format – use icons, images, and even (non–obtrusive) fonts with restrained abandon. You may want to consult a friend who has experience with graphic design or other artistic ventures. The format should reflect YOU, not some stodgy arbiter of margin dimensions or running head capitalization.",
+    "text": "11.1 Title page\nDocumentation of your psychometrics project occurs within a technical report (aka “tech report”). The technical report contains, at a minimum:\nYour goal within the technical report is exacting descriptive communication of the development and investigation of psychometric properties of your focal measure. You should apply whatever writing level is best suited to convey your thoughts with the highest level of descriptive integrity. Any anticipated reading–level limitations of how you communicate technical report information should not restrain your documentation. It is okay to assume a post–baccalaureate reading level – aka individuals who have similar advanced training as yours. Additional measure–relevant documentation in the form of white papers, local validation studies, and marketing material are different and should be written for a general consumer audience (7th–grade reading level), but it is ok for your technical report to be “technical”.\nRegarding the structure of your report, you are free to use style guidelines (such as those offered by APA (American Psychological Association, 2020) or MLA (Modern Language Association of America, 2021)), but you should not in any way feel constrained by these. The content of your technical report should reflect the elements discussed in this chapter (see also Important 11.1), but the format should reflect some uniqueness of the authors. Have some fun with the format – use icons, images, and even (non–wacky) fonts with restrained abandon. You may even want to consult a friend who has experience with graphic design or other artistic ventures. The look and feel should reflect YOU (or the organization you represent), not some stodgy arbiter of margin dimensions or running head structure.\nThe remainder of Chapter 11 focuses on each element of your technical report separately. The entirety of your report is merely an aggregation of these individual elements, although you should give greater weight (in terms of page space) to information contained in Section 11.5 and Section 11.6.\nThe title page may also be referred to as a “cover page” – we are considering these terms synonymous for the purposes of a technical report. This represents, with traditional hard–copy reports, the first impression of your project. Branding is important here – if you are representing an organization, there may be a pre–existing preferred format or structure. If you are representing yourself, think about not just this current project, but also future projects that you may wish to conduct. Once you decide on a styling, it is best to stick with it across future projects.\nThe title page elements to include are:",
+    "crumbs": [
+      "Documentation & Guides",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Technical Report</span>"
+    ]
+  },
+  {
+    "objectID": "techreport.html#sec-techtit",
+    "href": "techreport.html#sec-techtit",
+    "title": "11  Technical Report",
+    "section": "",
+    "text": "Figure 11.1: Example tech report title page\n\n\n\n\n\n\nStyling\nProject Title\nAuthor(s)\nOrganization(s)",
     "crumbs": [
       "Documentation & Guides",
       "<span class='chapter-number'>11</span>  <span class='chapter-title'>Technical Report</span>"
@@ -67,62 +89,7 @@
     "href": "techreport.html#sec-exec",
     "title": "11  Technical Report",
     "section": "11.2 Executive Summary",
-    "text": "11.2 Executive Summary",
-    "crumbs": [
-      "Documentation & Guides",
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Technical Report</span>"
-    ]
-  },
-  {
-    "objectID": "techreport.html#sec-techintro",
-    "href": "techreport.html#sec-techintro",
-    "title": "11  Technical Report",
-    "section": "11.3 Introduction",
-    "text": "11.3 Introduction",
-    "crumbs": [
-      "Documentation & Guides",
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Technical Report</span>"
-    ]
-  },
-  {
-    "objectID": "techreport.html#sec-techmeth",
-    "href": "techreport.html#sec-techmeth",
-    "title": "11  Technical Report",
-    "section": "11.4 Methods",
-    "text": "11.4 Methods",
-    "crumbs": [
-      "Documentation & Guides",
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Technical Report</span>"
-    ]
-  },
-  {
-    "objectID": "techreport.html#sec-techres",
-    "href": "techreport.html#sec-techres",
-    "title": "11  Technical Report",
-    "section": "11.5 Results",
-    "text": "11.5 Results",
-    "crumbs": [
-      "Documentation & Guides",
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Technical Report</span>"
-    ]
-  },
-  {
-    "objectID": "techreport.html#sec-techdisc",
-    "href": "techreport.html#sec-techdisc",
-    "title": "11  Technical Report",
-    "section": "11.6 Discussion",
-    "text": "11.6 Discussion",
-    "crumbs": [
-      "Documentation & Guides",
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Technical Report</span>"
-    ]
-  },
-  {
-    "objectID": "techreport.html#sec-techref",
-    "href": "techreport.html#sec-techref",
-    "title": "11  Technical Report",
-    "section": "11.7 References",
-    "text": "11.7 References",
+    "text": "11.2 Executive Summary\n\n\n\n\n\n\n\n\nFigure 11.2: Example executive summary from a Kulas survey\n\n\n\nThe executive summary is essentially an abbreviated Abstract. Although this content appears before the substance of your report, it should be treated like an Abstract and written last (only written after all other tech report elements have been completed). We prefer bulleted statements, but you may write the summary in a more traditional paragraph format if you prefer. Aim for 3 or 4 of the most important elements:\n\nwhat is the final number of items?\nwhat are your reliability and validity estimates?\nhow many individuals responded in your pilot?\nwhat are the future plans?",
     "crumbs": [
       "Documentation & Guides",
       "<span class='chapter-number'>11</span>  <span class='chapter-title'>Technical Report</span>"
@@ -132,8 +99,63 @@
     "objectID": "techreport.html#sec-techtoc",
     "href": "techreport.html#sec-techtoc",
     "title": "11  Technical Report",
-    "section": "11.8 Table of contents",
-    "text": "11.8 Table of contents",
+    "section": "11.3 Table of contents",
+    "text": "11.3 Table of contents\n\n\n\n\n\n\n\n\nFigure 11.3: Example cutely formatted table of contents\n\n\n\nYou may choose to include the table of contents prior to your executive summary or after your executive summary. We construct our tech reports with the title page first, executive summary second, and table of contents third, but the order of presentation of these two elements can be determined by personal preference. Like the title page, you may be creative with the table of contents. If your report is generated in a format that permits, provide hyperlinks to component sections within the table of contents itself. You may choose to make the table of contents omnipresent (as we have done with this book – look to your left!!! ), but even if you do so, still include a static table of contents near the “beginning” of your report.",
+    "crumbs": [
+      "Documentation & Guides",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Technical Report</span>"
+    ]
+  },
+  {
+    "objectID": "techreport.html#sec-techintro",
+    "href": "techreport.html#sec-techintro",
+    "title": "11  Technical Report",
+    "section": "11.4 Introduction",
+    "text": "11.4 Introduction\nYour Introduction contains background information about your project. There should, at minimum, be a literature review of your construct. This review includes an attempt to locate your construct within a broader nomological network (see Chapter 3). If you are creating a measure of a novel or nascent construct, the inclusion of a nomological network becomes more important, and your literature review should include conceptually similar constructs. In addition to conceptual specification of your construct, it is generally a good idea to include a “Why” section within this section of your tech report.1 What is the impetus of creating the measure (e.g., is there a commercial motive, are existing measures lacking, is there a new technology being adopted)?",
+    "crumbs": [
+      "Documentation & Guides",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Technical Report</span>"
+    ]
+  },
+  {
+    "objectID": "techreport.html#sec-techmeth",
+    "href": "techreport.html#sec-techmeth",
+    "title": "11  Technical Report",
+    "section": "11.5 Methods",
+    "text": "11.5 Methods\nThe Methods section documents the steps taken to define your construct, create your measure, and validate the assessment. This is a tech report component that can justifiably be unreasonably wordy. You are not writing an easy–to–read novel within the Methods section. Instead, you are communicating all of the important considerations and procedural decisions you made along the process of creating your measure. It is ok to “write too much” here – you want full documentation of steps taken such that an individual 10 years from now would be able to exactly replicate your process. At the least, ensure that you cover:\n\nconstruct identification (conceptual)\nitem generation process\nreason(s) for response scale choice\nsampled population description\nsampling procedure\nsurvey platform",
+    "crumbs": [
+      "Documentation & Guides",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Technical Report</span>"
+    ]
+  },
+  {
+    "objectID": "techreport.html#sec-techres",
+    "href": "techreport.html#sec-techres",
+    "title": "11  Technical Report",
+    "section": "11.6 Results",
+    "text": "11.6 Results\nThe analyses of your investigations go here. This includes qualitative analyses such as content validation and initial number of items generated. Like Section 11.5, it is okay to be overly descriptive within this section. If you feel that the amount or depth of information detracts from reader comprehension, throw it into an Appendix (Section 11.9).",
+    "crumbs": [
+      "Documentation & Guides",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Technical Report</span>"
+    ]
+  },
+  {
+    "objectID": "techreport.html#sec-techdisc",
+    "href": "techreport.html#sec-techdisc",
+    "title": "11  Technical Report",
+    "section": "11.7 Discussion",
+    "text": "11.7 Discussion\n\n\n\n\n\n\n\n\nWarning 11.1:  Stay Objective!! \n\n\n\nSmart readers of this section will have their radar on alert for self–promoting smarm and overly–positive interpretations. Your goal should be dispassionate objectivity.2\n\n\nThis section does not need to be very long – keep your interpretation of results to an extreme bare minimum. Your presentation of analyses in Section 11.6 should be sufficient for an informed reader to generate his/her own opinion regarding “how good” the results are. It does not take much interpretive summary by YOU here to raise red flags to the reader regarding your objectivity. Instead, primarily devote the page space here to limitations, implications, and future directions.",
+    "crumbs": [
+      "Documentation & Guides",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Technical Report</span>"
+    ]
+  },
+  {
+    "objectID": "techreport.html#sec-techref",
+    "href": "techreport.html#sec-techref",
+    "title": "11  Technical Report",
+    "section": "11.8 References",
+    "text": "11.8 References\nThese should primarily support information presented in Section 11.4 and Section 11.6. Make sure to include information regarding your analytical platform (for example, version number) as well as any supplementary capabilities (for example,  packages). There are many different citation formats (both within text as well as within the bibliography). Choose one of your liking and stick with it. This book uses APA 7th edition because that is what Psychologists are expecting to see, although you can use whatever style fits your formatting theme.",
     "crumbs": [
       "Documentation & Guides",
       "<span class='chapter-number'>11</span>  <span class='chapter-title'>Technical Report</span>"
@@ -144,7 +166,18 @@
     "href": "techreport.html#sec-techappend",
     "title": "11  Technical Report",
     "section": "11.9 Appendices",
-    "text": "11.9 Appendices\nAll of your raw (unformatted) analytical information can go in Appendices, including code used to produce the output. It’s quite likely noone will ever read it, but you did it and the odds are technically non-zero that it’ll be someday relevant, so go ahead and throw it in. It’s good practice to include your software installations as well, which can be accomplished easily with . For example, running the sessionInfo() command on August 30, 2025 gives us:\n\n\nR version 4.4.1 (2024-06-14 ucrt)\nPlatform: x86_64-w64-mingw32/x64\nRunning under: Windows 10 x64 (build 19045)\n\nMatrix products: default\n\n\nlocale:\n[1] LC_COLLATE=English_United States.utf8 \n[2] LC_CTYPE=English_United States.utf8   \n[3] LC_MONETARY=English_United States.utf8\n[4] LC_NUMERIC=C                          \n[5] LC_TIME=English_United States.utf8    \n\ntime zone: America/Chicago\ntzcode source: internal\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nloaded via a namespace (and not attached):\n [1] htmlwidgets_1.6.4 compiler_4.4.1    fastmap_1.2.0     cli_3.6.5        \n [5] tools_4.4.1       htmltools_0.5.8.1 rstudioapi_0.17.1 yaml_2.3.10      \n [9] rmarkdown_2.29    knitr_1.50        jsonlite_2.0.0    xfun_0.52        \n[13] digest_0.6.37     rlang_1.1.6       evaluate_1.0.3   \n\n\nsee Section 11.1",
+    "text": "11.9 Appendices\n\n\n\n\n\n\n\n\nFigure 11.4: Example Appendix information (Appendix title & substantive content)\n\n\n\nAll of your raw (unformatted) analytical information can go into Appendices, including any code used to produce the output. It’s quite likely noone will ever read it, but you did it and the odds are technically non-zero that it’ll be someday relevant, so go ahead and throw it in. It’s good practice to include your software installations here as well, which can be accomplished easily with . For example, running the sessionInfo() command on September 06, 2025 gives us:\n\n\nR version 4.4.1 (2024-06-14 ucrt)\nPlatform: x86_64-w64-mingw32/x64\nRunning under: Windows 10 x64 (build 19045)\n\nMatrix products: default\n\n\nlocale:\n[1] LC_COLLATE=English_United States.utf8 \n[2] LC_CTYPE=English_United States.utf8   \n[3] LC_MONETARY=English_United States.utf8\n[4] LC_NUMERIC=C                          \n[5] LC_TIME=English_United States.utf8    \n\ntime zone: America/Chicago\ntzcode source: internal\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nloaded via a namespace (and not attached):\n [1] htmlwidgets_1.6.4 compiler_4.4.1    fastmap_1.2.0     cli_3.6.5        \n [5] tools_4.4.1       htmltools_0.5.8.1 rstudioapi_0.17.1 yaml_2.3.10      \n [9] rmarkdown_2.29    knitr_1.50        jsonlite_2.0.0    xfun_0.52        \n[13] digest_0.6.37     rlang_1.1.6       evaluate_1.0.3   \n\n\nYou should have different appendices for qualitatively different content. These are lettered sequentially, starting with “Appendix A”. You can’t have more than 26 appendices because our alphabet runs out of letters at that point (and you were getting ridiculous with your Appendix recklessness anyway if you somehow created anywhere near 26 different ones – shame on you!!!). Some individuals prefer “clean” Appendix title pages, such that only the Appendix title is presented and some people include substantive content immediately after the Appendix title (as is done in Figure 11.4). It’s your design choice, but choose one structure and be consistent with it across all appendices.\n\n\n\n\nAmerican Psychological Association. (2020). Publication manual of the american psychological association (7th ed.). American Psychological Association.\n\n\nModern Language Association of America. (2021). MLA handbook (9th ed.). Modern Language Association of America.",
+    "crumbs": [
+      "Documentation & Guides",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Technical Report</span>"
+    ]
+  },
+  {
+    "objectID": "techreport.html#footnotes",
+    "href": "techreport.html#footnotes",
+    "title": "11  Technical Report",
+    "section": "",
+    "text": "These sections are sometimes labeled “Background” instead of “Introduction” – you should feel free to use whatever label is most descriptive of your presentation.↩︎\nThis may be perceived as difficult given outside pressures, but keep in mind that your reputation is more important than this one silly project. You can always find a different job (or project or boss), but your reputation sticks with you for a l–l–l–o–o–o–n–n–g–g time.↩︎",
     "crumbs": [
       "Documentation & Guides",
       "<span class='chapter-number'>11</span>  <span class='chapter-title'>Technical Report</span>"
@@ -175,7 +208,7 @@
     "href": "references.html",
     "title": "References",
     "section": "",
-    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "text": "American Psychological Association. (2020). Publication manual of\nthe american psychological association (7th ed.). American\nPsychological Association.\n\n\nKnuth, D. E. (1984). Literate programming. Comput. J.,\n27(2), 97–111. https://doi.org/10.1093/comjnl/27.2.97\n\n\nModern Language Association of America. (2021). MLA handbook\n(9th ed.). Modern Language Association of America.",
     "crumbs": [
       "References"
     ]

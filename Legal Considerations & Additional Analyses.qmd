@@ -1,86 +1,63 @@
 ---
-title: "Legal Considerations & Additional Analyses"
+title: "Legal Considerations & Fairness in Testing"
 editor: visual
 ---
 
-Whether you're creating an assessment or choosing an assessment from a vendor, you must consider legal issues. In this section, we will discuss the legal issues surrounding assessments including:  x,x,x, case studies, as well as analyses that can be conducted via R. 
+Whether you're creating an assessment or choosing an assessment from a vendor, you must consider fairness and legal issues. In this section, we will discuss fairness and legal issues surrounding assessments including: APA standards,x,x, case studies, as well as analyses that can be conducted via R.
+
+\*\*Maybe less is more... define, mention protected classes, timeline of landmark cases with ruling and a link to something more in depth, section on AI in testing since it's a hot topic,
+
+2014 APA Standards:
+
+- <a href="https://www.testingstandards.net/uploads/7/6/6/4/76643089/9780935302356.pdf#page=74">Standard 3.0</a>: Minimize construct irrelevant variance in all processes.
+
+- <a href="https://www.testingstandards.net/uploads/7/6/6/4/76643089/9780935302356.pdf#page=74">Standard 3.1</a>: Designing processes to promote valid and intended use of scores for the widest range of individuals possible.
+
+The 2026 APA standards,
 
 
-**Maybe less is more... define, mention protected classes, timeline of landmark cases with ruling and a link to something more in depth, section on AI in testing since it's a hot topic,  
+1.  Disparate Treatment v Disparate Impact
 
+2.  
 
-1. 
-Disparate Treatment v Disparate Impact
+Number of Employees makes a difference....
 
+Civil Rights Act of 1964 -- Race/Color -- National Origin -- Religion -- Sex
 
-2. 
+Age Discrimination Employment Act (1967) Covers those over the age of 40.
 
-Number of Employees makes a difference.... 
+American Disability Act (1990) -- Disability
 
-Civil Rights Act of 1964
--- Race/Color
--- National Origin
--- Religion
--- Sex
+Quota Systems Race Norming
 
-Age Discrimination Employment Act (1967)
-Covers those over the age of 40. 
+3.  Governing Bodies
 
-American Disability Act (1990)
--- Disability
+-   State Fair Employment Practices Commissions
+-   Equal Opportunity Employment Commission
+-   Office of Federal Contract Compliance Programs
 
-Quota Systems
-Race Norming
-
-3. Governing Bodies
-- State Fair Employment Practices Commissions
-- Equal Opportunity Employment Commission
-- Office of Federal Contract Compliance Programs
-
-
-4. Case Studies
+4.  Case Studies
 
 **Could create a cool timeline visual to make the chapter feel less dense**
 
-Race
-Griggs vs. Duke Power Co.
-Cracker Barrel? 
+Race Griggs vs. Duke Power Co. Cracker Barrel?
 
+Religion E.E.O.C. v. Abercrombie & Fitch Stores, Inc. Domski v. Blue Cross Blue Shield of Michigan
 
-Religion
-E.E.O.C. v. Abercrombie & Fitch Stores, Inc.
-Domski v. Blue Cross Blue Shield of Michigan
-
-Sex
-Price Waterhouse v. Hopkins
-Bostock vs. Clayton County
-R.G. & G.R. Harris Funeral Homes Inc. v. Equal Employment Opportunity Commission
+Sex Price Waterhouse v. Hopkins Bostock vs. Clayton County R.G. & G.R. Harris Funeral Homes Inc. v. Equal Employment Opportunity Commission
 
 National Origin
 
-
-Age
-Mobley vs. Workday
-
+Age Mobley vs. Workday
 
 Disability
 
+4.  Analyses in R 4/5ths Rule -- Impact Ratio
 
+5. Differential Validity
 
+6. Differential Prediction
 
-4. Analyses in R
-4/5ths Rule -- Impact Ratio
-Differential Validity
-Differential Prediction
-
-Put in R code examples and then create a few examples so the student/reader can run and interpret results. I wonder if we have practice examples if we should write another QMD with practice answers??? 
-
-
+Put in R code examples and then create a few examples so the student/reader can run and interpret results. I wonder if we have practice examples if we should write another QMD with practice answers???
 
 https://legal.thomsonreuters.com/en/insights/articles/what-is-title-vii-civil-rights-act
-
-
-
-
-
-

@@ -39,6 +39,7 @@ book:
     - references.qmd
 
 bibliography: references.bib
+csl: apa7.csl
 
 format:
   html:
@@ -47,6 +48,8 @@ format:
     cover-image: cover.png
 
 engine: knitr
+
+lightbox: true
 
 webr:
   show-starup-message: false
