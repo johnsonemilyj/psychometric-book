@@ -31,7 +31,7 @@ Take special note of elements:
 :::
 :::
   
-Your goal within the technical report is ***exacting descriptive communication of the development and investigation of psychometric properties*** of your focal measure. You should apply whatever writing level is best suited to convey your thoughts with the highest level of descriptive integrity. Any anticipated reading--level limitations of how you communicate technical report information *should not* restrain your documentation. It is okay to assume a post--baccalaureate reading level -- aka individuals who have similar advanced training as yours. Additional measure--relevant documentation in the form of white papers, local validation studies, and marketing material are different and should be written for a general consumer audience (7^th^--grade reading level), but it is ok for your technical report to be "technical". 
+Your goal within the technical report is ***exacting descriptive communication of the development and investigation of psychometric properties*** of your focal measure. You should apply whatever writing level is best suited to convey your thoughts with the highest level of descriptive integrity. Any anticipated reading--level limitations of how you communicate technical report information *should not* restrain your documentation. It is okay to assume a post--baccalaureate reading level -- aka individuals who have similar advanced training as yours. Additional measure--relevant documentation in the form of white papers, local validation studies, and marketing material should be treated differently and target a general consumer audience (7^th^--grade reading level), but it is ok for your technical report to be "technical". 
 
 Regarding the structure of your report, you are free to use style guidelines (such as those offered by [APA](https://apastyle.apa.org/products/publication-manual-7th-edition) [@APA7] or [MLA](https://www.mla.org/Publications/Bookstore/Nonseries/MLA-Handbook-Ninth-Edition) [@MLAHandbook2021]), but you should not in any way feel constrained by these. The ***content*** of your technical report should reflect the elements discussed in this chapter (see also @imp-techelements), but the ***format*** should reflect some uniqueness of the authors. Have some fun with the format -- use icons, images, and even (non--wacky) fonts with restrained abandon. You may even want to consult a friend who has experience with graphic design or other artistic ventures. The look and feel should reflect YOU (or the organization you represent), not some stodgy arbiter of [margin dimensions](https://apastyle.apa.org/style-grammar-guidelines/paper-format/margins) or [running head structure](https://style.mla.org/adapt-mla-running-heads/).
 
@@ -39,7 +39,7 @@ Regarding the structure of your report, you are free to use style guidelines (su
 ![](img/granny_pulling_ear.jpg)
 :::
 
-The remainder of @sec-tech focuses on each element of your technical report separately. The entirety of your report is merely an aggregation of these individual elements, although you should give greater weight (in terms of page space) to information contained in @sec-techmeth and @sec-techres.
+The remainder of @sec-tech focuses on each element of your technical report separately. The entirety of your report is merely an aggregation of these individual elements, although you should give greatest weight (in terms of page space and descriptive detail) to information contained in @sec-techmeth and @sec-techres.
 
 ## Title page {#sec-techtit}
 
@@ -94,7 +94,11 @@ The Methods section documents the steps taken to define your construct, create y
 
 ## Results {#sec-techres}
 
-The analyses of your investigations go here. This includes qualitative analyses such as content validation and initial number of items generated. Like @sec-techmeth, it is okay to be overly descriptive within this section. If you feel that the amount or depth of information detracts from reader comprehension, throw it into an Appendix (@sec-techappend). 
+::: {.column-margin}
+![Appendix Z is coming for you!!! {{< iconify game-icons:raise-zombie >}}](https://cbx-prod.b-cdn.net/COLOURBOX18884725.jpg?width=800&height=800&quality=70){#fig-appendixz}
+:::
+
+The analyses of your investigations go here. This includes qualitative analyses such as content validation and initial number of items generated. Like @sec-techmeth, it is okay to be overly descriptive within this section. If you feel that the amount or depth of information detracts from reader comprehension, throw the content into an Appendix (@sec-techappend). Don't worry about Appendix Proliferation^{{< iconify uil:trademark-circle  >}}^ --- if you aren't sweating the pending instrusion of `Appendix Z`, you ain't trying!! 
 
 ## Discussion {#sec-techdisc}
 
@@ -110,6 +114,8 @@ Smart readers of this section will have their radar on alert for self--promoting
 
 This section does not need to be very long -- keep your interpretation of results to an extreme bare minimum. Your presentation of analyses in @sec-techres should be sufficient for an informed reader to generate his/her own opinion regarding "how good" the results are. It does not take much interpretive summary by YOU here to raise red flags to the reader regarding your objectivity. Instead, primarily devote the page space here to limitations, implications, and future directions. 
 
+Future directions can include plans for futher validation studies --- it is ok to propose specific methodologies, constructs, and measures here. Treat these as gifts to graduate students who may have advisors devoid of research ideas. These are your gifts to them {{< iconify noto-v1:wrapped-gift >}}
+
 ## References {#sec-techref}
 
 These should primarily support information presented in @sec-techintro and @sec-techres. Make sure to include information regarding your analytical platform (for example, version number) as well as any supplementary capabilities (for example, {{< iconify devicon:r >}} packages). There are many different citation formats (both within text as well as within the bibliography). [Choose one of your liking](https://www.zotero.org/styles) and stick with it. This book uses APA 7^th^ edition because that is what Psychologists are expecting to see, although you can use whatever style fits your formatting theme. 
@@ -120,7 +126,11 @@ These should primarily support information presented in @sec-techintro and @sec-
 ![Example Appendix information (Appendix title & substantive content)](https://cdn.prod.website-files.com/5e5d43546b94f97f39c228fa/681afed4bcd731fec119f7ea_1.webp){#fig-techappend}
 :::
 
-All of your raw (unformatted) analytical information can go into Appendices, including any code used to produce the output. It's quite likely noone will ever read it, but you did it and the odds are technically non-zero that it'll be someday relevant, so go ahead and throw it in. It's good practice to include your software installations here as well, which can be accomplished easily with {{< iconify devicon:r >}}. For example, running the `sessionInfo()` command on `r format(Sys.Date(),"%B %d, %Y")` gives us:
+All of your raw (unformatted) analytical information can go into Appendices, including any code used to produce the output. It's quite likely noone will ever read it, but you did it and the odds are technically non-zero that it'll be someday relevant, so go ahead and throw it in. Don't go chasing @fig-appendixz, but don't be afraid if it's looming. 
+
+You should have different appendices for qualitatively different content. These are lettered sequentially, starting with "Appendix A".^[You can't technically have more than 26 appendices because our alphabet runs out of letters at that point (and you were getting ridiculous with your Appendix recklessness anyway if you somehow created anywhere near 26 different ones -- shame on you!!!)] Some individuals prefer "clean" Appendix title pages, such that only the Appendix title is presented and some people include substantive content immediately after the Appendix title (as is done in @fig-techappend). It's your design choice, but choose one structure and be consistent with it across all appendices.
+
+It's good practice to include your software installations here as well, which can be accomplished easily with {{< iconify devicon:r >}}. For example, running the `sessionInfo()` command on `r format(Sys.Date(),"%B %d, %Y")` gives us:
 
 ```{r}
 #| echo: false
@@ -128,4 +138,4 @@ All of your raw (unformatted) analytical information can go into Appendices, inc
 sessionInfo()
 ```
 
-You should have different appendices for qualitatively different content. These are lettered sequentially, starting with "Appendix A". You can't have more than 26 appendices because our alphabet runs out of letters at that point (and you were getting ridiculous with your Appendix recklessness anyway if you somehow created anywhere near 26 different ones -- shame on you!!!). Some individuals prefer "clean" Appendix title pages, such that only the Appendix title is presented and some people include substantive content immediately after the Appendix title (as is done in @fig-techappend). It's your design choice, but choose one structure and be consistent with it across all appendices. 
+ 
