@@ -1,0 +1,103 @@
+---
+title: ""
+filters:
+  - d2
+d2:
+  layout: elk
+  theme: "GrapeSoda"
+---
+
+# Foundational Statistics {#sec-statsi}
+
+Your analytical comprehension of Psychological measurement can be (mostly) built on a single statistic: the correlation. There are several different correlation coefficients that are relevant for measurement, but your conceptual understanding is facilitated by a focus on only one coefficient: Pearson's product moment correlation (aka "correlation"). In this chapter, we will walk you through the way Psychometricians think about this correlation coefficient---conceptual understanding of this index is facilitated by first understanding its ancestral grandparent, the deviation score.
+
+## Raw scores
+
+## Deviation scores
+
+::: {.columns}
+
+::: {.column width="30%"}
+
+| X | Y | 
+|:--|:-:|
+| 1 | 3 | 
+| 2 | 4 | 
+| 3 | 5 | 
+| 4 | 6 |
+| 5 | 7 | 
+
+:::
+
+::: {.column width="70%"}
+
+Toward an index of "difference" within a set of numbers, we *could* find the difference between each number and every other number within a set of numbers. For example, $2-1=??$, $3-1=??$, $4-1=??$, etc. This process gets very unwieldy very quickly even with a relatively small number of numbers. 
+
+The typical strategy here is to NOT use every individual value, but to use a *summary* of every individual value as a comparison against which differences can be evaluated. By convention, the summary that is used is the mean (aka mathematical average): 
+
+$$\bar{X} = \frac{\sum{X_i}}{n}$$
+
+:::
+
+:::
+
+## Variance
+
+```{.d2 width="100%" echo=false}
+Sum of Squared Deviations -> Average Squared Deviation (aka Variance) 
+SS -> variance 
+SSy -> variancey 
+SS: |latex
+  \sum (X_i - \bar{X_i})(X_i - \bar{X_i})
+|
+variance: |latex
+  \frac{\sum (X_i - \bar{X_i})^2}{n - 1}
+|
+SSy: |latex
+  \sum (Y_i - \bar{Y_i})(Y_i - \bar{Y_i})
+|
+variancey: |latex
+  \frac{\sum (Y_i - \bar{Y_i})^2}{n - 1}
+|
+```
+
+## Covariance
+
+```{.d2 width="100%" echo=false}
+Sum of Cross Products -> Average Crossproduct (aka Covariance) 
+CP -> covariance 
+CP: |latex
+  \sum (X_i - \bar{X_i})(Y_i - \bar{Y_i})
+|
+covariance: |latex
+  \frac{\sum (X_i - \bar{X_i})(Y_i - \bar{Y_i})}{n - 1}
+|
+
+```
+
+## Standard scores
+
+Standard scores are also called "Z scores", and these are extremely important within Psychological measurement applications. Fundamentally, a  
+
+### Standard deviation
+
+Because the variance is reflecting an average *squared* deviation, and the squaring was applied to avoid summing raw deviation scores, this action is often "undone" so the index can more accurately reflect the original scale of measurement (before the squaring of the deviation score was calculated). This is simply a matter of "undoing" via radical application.
+
+::: {.column-margin}
+![Wrong kind of radical application](https://thumbs.dreamstime.com/b/revolution-propaganda-poster-raised-fist-vintage-constructivist-revolution-communism-promoting-poster-symbolizing-unity-solidarity-140749454.jpg)
+:::
+
+```{.d2 width="100%" echo=false}
+Variance -> Standard Deviation 
+var -> sd 
+var: |latex
+  \frac{\sum (X_i - \bar{X_i})^2}{n - 1}
+|
+sd: |latex
+  \sqrt{\frac{\sum (X_i - \bar{X_i})^2}{n - 1}}
+|
+
+```
+
+## Standardized covariance (aka correlation)
+

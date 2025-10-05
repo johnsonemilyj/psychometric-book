@@ -1,8 +1,31 @@
 ---
 title: ""
+filters:
+  - d2
+d2:
+  layout: elk
+  theme: "GrapeSoda"
 ---
 
 # Types of Assessment {#sec-assesstype}
 
-There exists a fundamentally important distinction between the type of assessment you develop. (True)
-tests are subject to different sources of error than are Psychological inventories.  
+A fundamentally important distinction exists between two qualitatively different types of assessment. If assessment responses can be reasonably categorized as [correct]{.underline} and [incorrect]{.underline}, you are dealing with a ***test*** (see also @nte-truetest). If assessment responses are not intended to be interpreted as correct and incorrect, the assessment is referred to as an ***inventory***. There are many meaningful differences between (true) tests and inventories (see @typechar), but the most consequential is that (true) tests are subject to different sources of error than are Psychological inventories.  
+
+```{.d2 width="100%" echo=false}
+Assessment -> Test: True/False
+Assessment -> Inventory
+```
+
+:::{.column-margin}
+::: {#nte-truetest .callout-note}
+
+Tests may appropriately and synonymously be alternatively referred to as ***exams*** or ***true tests***. The ***true test*** declaration is a compromise used by Psychologists that acknowledges that the broader assessment field has been inconsistent in its reservation of the use of the term, ***test***, to refer only to assessments whose responses are dichotomized as correct and incorrect. 
+
+:::
+:::
+
+The Standards, for example, use the word "test" as synonymous with "assessment". The Standards is a resource meant to be applicable across disciplines. Psychologists, however, should always disto 
+
+## Characteristics {#typechar}
+
+
