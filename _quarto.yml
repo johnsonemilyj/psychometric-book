@@ -37,6 +37,7 @@ book:
     - part: Practical Guides.qmd
     - summary.qmd
     - references.qmd
+    - glossary.qmd
 
 bibliography: references.bib
 csl: apa7.csl
@@ -44,6 +45,10 @@ csl: apa7.csl
 format:
   html:
     theme: [lux, custom.css]
+    glossary:             # debruine/quarto-glossary
+      path: glossary.yml  # Path to your definitions file
+      popup: hover        # Or 'click'/'none'
+      show: true          # Include terms in the table
   epub:
     cover-image: cover.png
 
