@@ -1,4 +1,5 @@
 ---
 title: "Scale Development"
-editor: visual
 ---
+
+Content validation -- not currently located anywhere. @colquitt2019content @anderson1991predicting @hinkin1999analysis
