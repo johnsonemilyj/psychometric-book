@@ -62,6 +62,7 @@ div.csl-indent {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-1c53e83e4fd96d857afdc4fda0ada1c4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/quarto-contrib/glossary/glossary.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -90,6 +91,35 @@ div.csl-indent {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -317,7 +347,16 @@ div.csl-indent {
 </header>
 
 
-<p>Content validation – not currently located anywhere. <span class="citation" data-cites="colquitt2019content">Colquitt et al. (<a href="references.html#ref-colquitt2019content" role="doc-biblioref">2019</a>)</span> <span class="citation" data-cites="anderson1991predicting">Anderson &amp; Gerbing (<a href="references.html#ref-anderson1991predicting" role="doc-biblioref">1991</a>)</span> <span class="citation" data-cites="hinkin1999analysis">Hinkin &amp; Tracey (<a href="references.html#ref-hinkin1999analysis" role="doc-biblioref">1999</a>)</span></p>
+<p>Content validation – not currently located anywhere. <span class="citation" data-cites="anderson1991predicting">Anderson &amp; Gerbing (<a href="references.html#ref-anderson1991predicting" role="doc-biblioref">1991</a>)</span> speak of <button class="glossary" title="Extent to which that measure is judged to be reflective of, or theoretically linked to, some construct of interest.">substantive validity</button> as a subordinate aspect of construct validity, although this term has not realized broad adoption and the <span class="citation" data-cites="anderson1991predicting">Anderson &amp; Gerbing (<a href="references.html#ref-anderson1991predicting" role="doc-biblioref">1991</a>)</span> method is more commonly conceptualized as a content validation procedure.</p>
+<p><span class="citation" data-cites="lawshe1975quantitative">Lawshe (<a href="references.html#ref-lawshe1975quantitative" role="doc-biblioref">1975</a>)</span>’s content validity ratio was, for many years, the most popular index of content validity:</p>
+<p><span class="math display">\[
+CVR = \frac{n_e - \frac{N}{2}}{\frac{N}{2}}
+\]</span></p>
+<p><span class="citation" data-cites="lawshe1975quantitative">Lawshe (<a href="references.html#ref-lawshe1975quantitative" role="doc-biblioref">1975</a>)</span> asked a <button class="glossary" title="Group of judges – individuals “knowledgeable about” the construct (aka subject matter experts)">content evaluation panel</button> to independently rate each items in terms of being, 1) Essential, 2) Useful but not essential, or 3) Not necessary. <span class="citation" data-cites="lawshe1975quantitative">Lawshe (<a href="references.html#ref-lawshe1975quantitative" role="doc-biblioref">1975</a>)</span>’s initial presentation was focused on jobs, and his process</p>
+<p>The content validity coefficient here was operationalized as a quantification of consensus (among the panel constituents). <span class="math inline">\(n_e\)</span> is the number of panelists who rated an item essential. <span class="math inline">\(N\)</span> is the total number of judges on the panel. The CVR will be negative if less than half of panelists rule an item essential and positive if more than half agree that an item is essential.</p>
+<p><span class="citation" data-cites="hinkin1999analysis">Hinkin &amp; Tracey (<a href="references.html#ref-hinkin1999analysis" role="doc-biblioref">1999</a>)</span> <span class="citation" data-cites="colquitt2019content">Colquitt et al. (<a href="references.html#ref-colquitt2019content" role="doc-biblioref">2019</a>)</span></p>
+<p>The concept is not without controversy. Shortly after <span class="citation" data-cites="lawshe1975quantitative">Lawshe (<a href="references.html#ref-lawshe1975quantitative" role="doc-biblioref">1975</a>)</span>’s contribution, <span class="citation" data-cites="guion1977content">Guion (<a href="references.html#ref-guion1977content" role="doc-biblioref">1977</a>)</span>, in the very first article of the very first issue of the very first volumn of Applied Psychological Measurement, issued a Guionian shot across the bow:</p>
+<p>Timeline diagram here: 1. <span class="citation" data-cites="hemphill1950measurement">Hemphill &amp; Westie (<a href="references.html#ref-hemphill1950measurement" role="doc-biblioref">1950</a>)</span> 2. <span class="citation" data-cites="hambleton1986assessing">Hambleton &amp; Rovinelli (<a href="references.html#ref-hambleton1986assessing" role="doc-biblioref">1986</a>)</span></p>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list" style="display: none">
@@ -327,8 +366,20 @@ Anderson, J. C., &amp; Gerbing, D. W. (1991). Predicting the performance of meas
 <div id="ref-colquitt2019content" class="csl-entry" role="listitem">
 Colquitt, J. A., Sabey, T. B., Rodell, J. B., &amp; Hill, E. T. (2019). Content validation guidelines: Evaluation criteria for definitional correspondence and definitional distinctiveness. <em>Journal of Applied Psychology</em>, <em>104</em>(10), 1243–1265.
 </div>
+<div id="ref-guion1977content" class="csl-entry" role="listitem">
+Guion, R. M. (1977). Content validity—the source of my discontent. <em>Applied Psychological Measurement</em>, <em>1</em>(1), 1–10.
+</div>
+<div id="ref-hambleton1986assessing" class="csl-entry" role="listitem">
+Hambleton, R. K., &amp; Rovinelli, R. J. (1986). Assessing the dimensionality of a set of test items. <em>Applied Psychological Measurement</em>, <em>10</em>(3), 287–302.
+</div>
+<div id="ref-hemphill1950measurement" class="csl-entry" role="listitem">
+Hemphill, J. K., &amp; Westie, C. M. (1950). The measurement of group dimensions. <em>The Journal of Psychology</em>, <em>29</em>(2), 325–342.
+</div>
 <div id="ref-hinkin1999analysis" class="csl-entry" role="listitem">
 Hinkin, T. R., &amp; Tracey, J. B. (1999). An analysis of variance approach to content validation. <em>Organizational Research Methods</em>, <em>2</em>(2), 175–186.
+</div>
+<div id="ref-lawshe1975quantitative" class="csl-entry" role="listitem">
+Lawshe, C. H. (1975). A quantitative approach to content validity. <em>Personnel Psychology</em>, <em>28</em>(4), 563–575.
 </div>
 </div>
 

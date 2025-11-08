@@ -4,3 +4,7 @@ YAML: |
   YAML Ain't Markup Language—a data serialization standard.
 test: |
   Assessment with correct or incorrect responses -- aka true test or exam.
+substantive validity: |
+  Extent to which that measure is judged to be reflective of, or theoretically linked to, some construct of interest.
+content evaluation panel: |
+  Group of judges -- individuals "knowledgeable about" the construct (aka subject matter experts)

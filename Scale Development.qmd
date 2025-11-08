@@ -2,4 +2,23 @@
 title: "Scale Development"
 ---
 
-Content validation -- not currently located anywhere. @colquitt2019content @anderson1991predicting @hinkin1999analysis
+Content validation -- not currently located anywhere.  @anderson1991predicting speak of {{< glossary "substantive validity" >}} as a subordinate aspect of construct validity, although this term has not realized broad adoption and the @anderson1991predicting method is more commonly conceptualized as a content validation procedure.
+
+@lawshe1975quantitative's content validity ratio was, for many years, the most popular index of content validity:
+
+$$
+CVR = \frac{n_e - \frac{N}{2}}{\frac{N}{2}}
+$$
+
+@lawshe1975quantitative asked a {{< glossary "content evaluation panel" >}}  to independently rate each items in terms of being, 1) Essential, 2) Useful but not essential, or 3) Not necessary. @lawshe1975quantitative's initial presentation was focused on jobs, and his process
+
+The content validity coefficient here was operationalized as a quantification of consensus (among the panel constituents). $n_e$ is the number of panelists who rated an item essential. $N$ is the total number of judges on the panel. The CVR will be negative if less than half of panelists rule an item essential and positive if more than half agree that an item is essential.   
+
+@hinkin1999analysis
+@colquitt2019content
+
+The concept is not without controversy. Shortly after @lawshe1975quantitative's contribution, @guion1977content, in the very first article of the very first issue of the very first volumn of Applied Psychological Measurement, issued a Guionian shot across the bow: 
+
+Timeline diagram here: 
+1. @hemphill1950measurement
+2. @hambleton1986assessing
