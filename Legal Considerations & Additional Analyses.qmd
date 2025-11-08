@@ -3,33 +3,27 @@ title: "Legal Considerations & Fairness in Testing"
 editor: visual
 ---
 
-This section will discuss legal issues and fairness in psychological testing.
+
+Fairness in testing is an important consideration when creating and/or administering an assessment. Fairness can be considered as two key concepts: Accessibility and bias. 
+
+In addition, staying abreast on legal issues is important. If you plan to use an assessment internationally, it is also important to consider laws in other countries. 
+
+United States of America
+Governing Bodies: 
+- Fair Employment Practice Agencies (FEPA) 
+- <a href="https://www.eeoc.gov/">Equal Employment Opportunity Commission (EEOC) </a>
+- Office of Federal Contract Compliance Programs
+
+Laws
+- ADA
+- ADEA
+- Title VII
 
 
-### APA STANDARDS
-2014 APA Standards:
-
--   <a href="https://www.testingstandards.net/uploads/7/6/6/4/76643089/9780935302356.pdf#page=74">Standards 3.0-3
-5</a>: oink.
-
--   <a href="https://www.testingstandards.net/uploads/7/6/6/4/76643089/9780935302356.pdf#page=76">Standards 3.6-3.8</a>: woof.
-
--   <a href="https://www.testingstandards.net/uploads/7/6/6/4/76643089/9780935302356.pdf#page=78">Standards 3.9-3.14</a>: ribbit.
-
--   <a href="https://www.testingstandards.net/uploads/7/6/6/4/76643089/9780935302356.pdf#page=81">Standards 3.15-3.20</a>: meowmeow.
-
-
-The 2026 APA standards:
-
-### LEGAL STUFF
-
-Governing Bodies
--   State Fair Employment Practices Commissions
--   Equal Opportunity Employment Commission
--   Office of Federal Contract Compliance Programs
-
-
+International Organizations & Testing -- what types 
+ 
 ### CASE STUDIES
+
 Civil Rights Act of 1964 -- Race/Color -- National Origin -- Religion -- Sex
 
 Age Discrimination Employment Act (1967) Covers those over the age of 40.
@@ -50,17 +44,68 @@ Age Mobley vs. Workday
 
 Disability
 
+### Developing the Assessment
+In the ___ chapter, we discussed how to create and select test items. It is imperative that during this phase, you consider the items wording and content utilized as 
+
+### Piloting the Assessment
+In the pilot phase, the assessment creators should run analyses to ensure that groups are not being treated differently. 
+
+
+### Administering the Assessment
+This section will discuss legal issues and fairness in psychological testing.
+
+Bias
+Accessibility - can take from UX Design principles and cognitve psych principles.
+
+### APA STANDARDS
+
+2014 APA Standards:
+
+-   <a href="https://www.testingstandards.net/uploads/7/6/6/4/76643089/9780935302356.pdf#page=74">Standards 3.0-3 5</a>: oink.
+
+-   <a href="https://www.testingstandards.net/uploads/7/6/6/4/76643089/9780935302356.pdf#page=76">Standards 3.6-3.8</a>: woof.
+
+-   <a href="https://www.testingstandards.net/uploads/7/6/6/4/76643089/9780935302356.pdf#page=78">Standards 3.9-3.14</a>: ribbit.
+
+-   <a href="https://www.testingstandards.net/uploads/7/6/6/4/76643089/9780935302356.pdf#page=81">Standards 3.15-3.20</a>: meowmeow.
+
+The 2026 APA standards:
+
+### Reducing Bias
+- Considering if an assessment will get at the problem you're trying to solve. 
+- Utilizing multiple assessment types (cognitive, personality, etc.)
+- Screen test items 
+
+
 ### ANALYSES & INTERPRETATION
 
-Analyses in R 4/5ths Rule -- Impact Ratio
-Differential Validity
-Differential Prediction
-Quota Systems Race Norming
+Analyses in R 4/5ths Rule -- Impact Ratio Differential Validity Differential Prediction Quota Systems Race Norming
+
+
+The 4/5th rule (i.e., impact ratio) measures the ratio between the majority and minority in employment decisions, based off Title VII protected classes. This is the easiest measurement to see if there are any favorable outcomes between groups. 
+
+Step 1. Gather the amount of employees or applicants in that group. 
+Step 2. Gather the amount of employees or applicants selected from the group. 
+Step 3. Divide Step 2 by Step 1.
+Step 4. Repeat for each group.
+Step 5. Divide the smallest number by the largest number.
+
+If after your analysis, the answer is above .80, then it is considered that one group is not favorable over another. However, if the answer is below .80, then it may be considered that one group is favored. 
+
+```{webr-r}
+women <- c("Selected","Not Selected","Not Selected","Not Selected","Selected","Not Selected","Selected","Not Selected","Selected","Not Selected","Not Selected", "Selected","Selected","Selected","Selected","Selected","Selected","Selected")
+men <- C("Not Selected","Not Selected","Not Selected","Not Selected","Not Selected","Not Selected","Selected","Not Selected","Not Selected", "Selected","Selected", "Selected", "Selected","Selected","Selected","Selected","Not Selected","Selected","Not Selected","Not Selected", "Selected","Selected","Selected","Selected","Selected","Selected","Selected")
+
+table(women$Gender, df$Smoker)
+
+
+```
+
+
+
 
 Put in R code examples and then create a few examples so the student/reader can run and interpret results. I wonder if we have practice examples if we should write another QMD with practice answers???
 
 https://legal.thomsonreuters.com/en/insights/articles/what-is-title-vii-civil-rights-act
 
-
-\*\*Maybe less is more... define, mention protected classes, timeline of landmark cases with ruling and a link to something more in depth, section on AI in testing since it's a hot topic.
-Number of Employees makes a difference....
+\*\*Maybe less is more... define, mention protected classes, timeline of landmark cases with ruling and a link to something more in depth, section on AI in testing since it's a hot topic. Number of Employees makes a difference....
