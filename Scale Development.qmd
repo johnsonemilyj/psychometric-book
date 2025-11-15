@@ -2,7 +2,7 @@
 title: "Scale Development"
 ---
 
-Scale has several meanings within measurement contexts. Scales ***of measurement*** refer to categorical strata defined by rules governing the assignment of numbers to things (e.g., @stevens1946theory). Aggregate summaries of responses across multiple indicators are most often referred to as scale scores, and these are further dissociated as either ***raw***-- or ***standard***--scale scores. "Scale development" refers to the process of operationalizing your measure. 
+The word "scale" has several meanings within measurement contexts. Scales ***of measurement*** refer to categorical strata defined by rules governing the assignment of numbers to things [e.g., @stevens1946theory]. Aggregate summaries of responses across multiple indicators are most often referred to as scale scores, and these are further dissociated as either ***raw***-- or ***standard***--scale scores. "Scale development" refers to the process of operationalizing your measure. This is the focus of the current chapter.
 
 There are four obligatory and many elective considerations for scale development:
 
@@ -23,6 +23,9 @@ There are four obligatory and many elective considerations for scale development
 :::
 :::
 
+## Construct definition (conceptual)
+
+This process is also referred to as "populating the content domain". The content domain @fitzpatrick1983meaning
 
 ## Measure adequacy (empirical){#sec-adequacy}
 

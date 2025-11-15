@@ -1,9 +1,18 @@
-# Preface {.unnumbered}
+# Introduction {.unnumbered}
 
-This is a Quarto book.
+## Organizing Principles
 
-To learn more about Quarto books visit <https://quarto.org/docs/books>.
+1. The structure of the book loosely parallels ***project sequence*** rather than fundamental concepts.
 
-```{r}
-1 + 1
-```
+2. Content is linked to corresponding Standards
+
+3. Forks to psychometric orientations where appropriate:
+
++ Item Response Theory
++ Rasch modeling
++ Classical Test Theory
++ Network psychometrics
+
+4. Applications are interactive
+
+

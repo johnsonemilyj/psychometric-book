@@ -11,18 +11,43 @@ format:
     logo: img/background-removebg-preview.png #https://cdn-icons-png.flaticon.com/512/5408/5408783.png
 ---
 
-## Software Installations^[Location should not matter]
+## Software Installations
+
+<br>
 
 ::: {.columns}
 
-::: {.column width="50%"}
+::: {.column width="33%"}
 
-[{{< iconify material-icon-theme:quarto size=10x >}}](https://quarto.org/docs/download/)
+### Language
+
+[{{< iconify devicon:r size=9x >}}](https://cran.r-project.org/)
 
 :::
 
-::: {.column width="50%"}
+::: {.column width="34%"}
+
+### Authoring
+
+[{{< iconify material-icon-theme:quarto size=9x >}}](https://quarto.org/docs/download/)
+
 :::
+
+::: {.column width="33%"}
+
+### Interface
+
+[{{< iconify devicon:rstudio size=8x >}}](https://posit.co/downloads/)
+
+:::
+
+:::
+
+::: {.notes}
+
+1. location of software installation should not matter (select PATH if given the option)
+2. other languages are permissable ([Python](https://www.python.org/downloads/) & [Julia](https://julialang.org/install/) currently popular)
+3. other IDEs are permissable ([VS Code](https://code.visualstudio.com/download), [Positron](https://positron.posit.co/), and [JupyterLab](https://jupyter.org/install) currently popular)
 
 :::
 
