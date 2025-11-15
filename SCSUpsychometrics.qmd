@@ -1,0 +1,57 @@
+---
+title: "Psychometric Reporting..."
+author: "<br><br>...with [{{< iconify devicon:r >}}]{.bigger} and Quarto"
+title-slide-attributes: 
+  data-background-image: https://cdn.prod.website-files.com/5fda9e054c8f10649883f27d/64f78ee1d49618f094e64111_vationventures_datascience.jpeg
+#  data-background-opacity: ".8"
+format:
+  revealjs: 
+    mouse-wheel: true
+    theme: prezi.scss
+    logo: img/background-removebg-preview.png #https://cdn-icons-png.flaticon.com/512/5408/5408783.png
+---
+
+## Software Installations^[Location should not matter]
+
+::: {.columns}
+
+::: {.column width="50%"}
+
+[{{< iconify material-icon-theme:quarto size=10x >}}](https://quarto.org/docs/download/)
+
+:::
+
+::: {.column width="50%"}
+:::
+
+:::
+
+## Getting Started Resources:
+
+<br>
+
+::: {.columns}
+
+::: {.column width="50%"}
+
+### Slides [{{< iconify streamline-plump:presentation-remix style="color:#CECECE;" >}}](https://jtkulas.github.io/MPPAW2023)
+
+<iframe src="https://jtkulas.github.io/MPPAW2023" width="100%"  height="380"> 
+</iframe>
+::: 
+
+::: {.column width="50%"}
+
+### Video [{{< iconify logos:youtube-icon >}}](https://youtu.be/69TrX-mTYOg?si=YDLQEQOBXsxzcxHm)
+
+<iframe src="https://www.youtube.com/embed/69TrX-mTYOg?si=p4imSXKVAxD0CA1j" width="100%" height="380"> </iframe>
+
+:::
+
+:::
+
+
+
+
+
+

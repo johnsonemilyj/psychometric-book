@@ -2,17 +2,46 @@
 title: "Scale Development"
 ---
 
-Content validation -- not currently located anywhere.  @anderson1991predicting speak of {{< glossary "substantive validity" >}} as a subordinate aspect of construct validity, although this term has not realized broad adoption and the @anderson1991predicting method is more commonly conceptualized as a content validation procedure.
+Scale has several meanings within measurement contexts. Scales ***of measurement*** refer to categorical strata defined by rules governing the assignment of numbers to things (e.g., @stevens1946theory). Aggregate summaries of responses across multiple indicators are most often referred to as scale scores, and these are further dissociated as either ***raw***-- or ***standard***--scale scores. "Scale development" refers to the process of operationalizing your measure. 
+
+There are four obligatory and many elective considerations for scale development:
+
+::: {.columns}
+::: {.column width="50%"}
+### Obligatory
+
++ Construct definition (conceptual)
++ Content domain sampling
++ Measure definition (operational)
++ Measure adequacy (empirical)
+
+:::
+::: {.column width="50%"}
+### Elective
+
++ Utility (maybe put in different section -- consequences of testing)
+:::
+:::
+
+
+## Measure adequacy (empirical){#sec-adequacy}
+
+Empirical estimates of your measure's adequacy (extent to which it is a reasonable operationalization of your conceptual construct) are only limited by your creativity, but by tradition are categorized as indices of reliability and validity -- each of which has several possible estimation procedures. 
+
+### Content validation -- not currently located anywhere. 
+
+@anderson1991predicting speak of {{< glossary "substantive validity" >}} as a subordinate aspect of construct validity, although this term has not realized broad adoption and the @anderson1991predicting method is more commonly conceptualized as a content validation procedure.
 
 @lawshe1975quantitative's content validity ratio was, for many years, the most popular index of content validity:
 
 $$
 CVR = \frac{n_e - \frac{N}{2}}{\frac{N}{2}}
-$$
+$$ {#eq-cvr}
+
 
 @lawshe1975quantitative asked a {{< glossary "content evaluation panel" >}}  to independently rate each items in terms of being, 1) Essential, 2) Useful but not essential, or 3) Not necessary. @lawshe1975quantitative's initial presentation was focused on jobs, and his process
 
-The content validity coefficient here was operationalized as a quantification of consensus (among the panel constituents). $n_e$ is the number of panelists who rated an item essential. $N$ is the total number of judges on the panel. The CVR will be negative if less than half of panelists rule an item essential and positive if more than half agree that an item is essential.   
+The content validity coefficient here was operationalized as a quantification of consensus (among the panel constituents; see @eq-cvr). $n_e$ is the number of panelists who rated an item essential. $N$ is the total number of judges on the panel. The CVR will be negative if less than half of panelists rule an item essential and positive if more than half agree that an item is essential.   
 
 @hinkin1999analysis
 @colquitt2019content
