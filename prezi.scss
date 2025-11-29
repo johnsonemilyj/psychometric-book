@@ -2,8 +2,23 @@
 
 @import url('https://fonts.googleapis.com/css?family=Dancing Script');
 @import url('https://fonts.googleapis.com/css?family=Fontdiner Swanky');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Crete Round');
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
 
 $presentation-title-slide-text-align: right;
+
+
+/* adding background to inline code elements */
+:not(pre) > code {
+  background-color:  #95b7ed !important; /* Light gray shade, adjustable */
+  padding: 0.1em 0.2em;
+  border-radius: 4px;
+  font-size: 0.6em;
+  font-family: Orbitron !important;
+  color: white !important;
+  border: 1px solid #022866;
+}
 
 // fonts
 $font-family-sans-serif: "Palatino Linotype", "Book Antiqua", Palatino,
@@ -12,7 +27,7 @@ $presentation-line-height: 1.4;
 
 .quarto-title-author-name {
   font-size: 65px;
-  color: #e9cee5;     /*-- #ccaadd white --*/
+  color: white;     /*-- #ccaadd white --*/
   font-weight: bold;
   font-family: 'Dancing Script';
   text-shadow: 
@@ -26,7 +41,7 @@ $presentation-line-height: 1.4;
 }
 
 // colors
-$body-bg: #e9cee5; 
+$body-bg: #035096; 
 $body-color: #e9cee5;  // main font
 $link-color: #c94f8e;
 $selection-bg: #2a1625;              
@@ -35,8 +50,8 @@ $selection-bg: #2a1625;
 $presentation-heading-font: "Fontdiner Swanky", "Book Antiqua", Palatino,
   FreeSerif, serif !default;             
 $presentation-heading-color: #a92777 !default;
-$presentation-h1-text-shadow: 2px 2px #e9cee5;
-$presentation-heading-text-shadow: 1px 1px #e9cee5;
+$presentation-h1-text-shadow: 2px 2px white;  //#e9cee5
+$presentation-heading-text-shadow: 1px 1px white;  //#e9cee5
 
 // code blocks 
 
@@ -44,7 +59,7 @@ $presentation-heading-text-shadow: 1px 1px #e9cee5;
 
 // Background generator
 @mixin bodyBackground() {
-  @include radial-gradient(#000000, #2a1625);
+  @include radial-gradient(#000000, #035096);
 }
 
 /*-- scss:rules --*/
@@ -86,7 +101,7 @@ $presentation-heading-text-shadow: 1px 1px #e9cee5;
 }
 
 .bigger {
-  font-size: 1.4em;
+  font-size: 1.2em;
 }
 
 .Bigger {
@@ -95,3 +110,12 @@ $presentation-heading-text-shadow: 1px 1px #e9cee5;
 
 // fonts
 
+.juplab {
+  font-family: Roboto;
+  color: #f37821;
+}
+
+.crete {
+  font-family: Crete Round;
+  color: white;
+}
