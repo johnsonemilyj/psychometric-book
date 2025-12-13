@@ -3,3 +3,42 @@ title: ""
 ---
 
 # Nomological Networks {#sec-nomological}
+
+The nomological network is a conceptual framework that demonstrates the abstract constructs in a psychological theory's components and associations. Typically this is a visualization of how different constructs interrelate - how do constructs correlate with one another? For each construct, what are the behaviors, thoughts, etc. we can actually see? How does the construct of interest relate to the bigger picture? The first principal of the nomological network is understanding how constructs  interlock (Cronbach & Meehl, 1955).
+
+Constructing your nomological network is showing construct validity. Construct validity refers to:
+
+A construct is.... 
+
+After you decipher your construct of interest, you will need to do in depth research and literature review of your construct or of related constructs.  
+
+Stop here: Conduct a literature review with your construct of interest. 
+
+
+Relationships 
+- Construct to Criteria
+- Construct to observable 
+- Construct to other construct
+-- convergent
+-- discriminate
+
+
+References:
+Cronbach and Meehl (1955)
+Brown, J. D. (1996). Testing in language programs. Upper Saddle River, NJ: Prentice Hall Regents.
+Green, D. R. (1998). Consequential aspects of the validity of achievement tests: A publisher's point of view. Educational Measurement, 17 (2),16-19.
+Linn, R. L. (1998). Partitioning responsibility for the evaluation of the consequences of assessment programs. Educational Measurement, 17 (2), 28-30
+Lune, S., Parke, C. S., & Stone, C. A. (1998). A framework for evaluating the consequences of assessment programs. Educational Measurement, 17 (2), 24-28.
+Messick, S. (1988). The once and future issues of validity: Assessing the meaning and consequences of measurement. In H. Wainer & H. I. Braun (Eds.), Test validity (pp. 33-45). Hillsdale, NJ: Lawrence Erlbaum Associates.
+Messick, S. (1989). Validity. In R. L. Linn (Ed.), Educational measurement (3rd ed.) (pp. 13-103). New York: Macmillan.
+Moss, P. A. (1998). The role of consequences in validity theory. Educational Measurement, 17(2), 6-12.
+Reckase, M. D. (1998). Consequential validity from the test developer's perspective. Educational Measurement, 17 (2), 13-16.
+Taleporos, E. (1998). Consequential validity: A practitioner's perspective. Educational Measurement, 17 (2), 20-23.
+Yen, W. M. (1998). Investigating the consequential aspects of validity: Who is responsible and what should they do? Educational Measurement, 17 (2), 5-6.
+Fink, A. (2010). Survey Research Methods. In Peterson, P. L., Baker, E., & McGaw, B. (2010). International encyclopedia of education. Elsevier Ltd.
+Lawshe, C. H. (1975). A quantitative approach to content validity. Personnel Psychology, 28(4), 563–575. https://doi.org/10.1111/j.1744-6570. 1975.tb01393.x
+Lawshe, C. H. (1985). Inferences from personnel tests and their validity. Journal of Applied Psychology, 70(1), 237.
+Lievens, F. (1998). Factors which improve the construct validity of assessment centers: A review. International Journal of Selection and Assessment, 6(3), 141-152.
+Phye, G. D., Saklofske, D. H., Andrews, J. J., & Janzen, H. L. (2001). Handbook of Psychoeducational Assessment: A Practical Handbook A Volume in the EDUCATIONAL PSYCHOLOGY Series. Elsevier.
+Smith, G. T. (2005). On construct validity: issues of method and measurement. Psychological assessment, 17(4), 396.
+
