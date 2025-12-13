@@ -2,17 +2,57 @@
 title: "Scale Development"
 ---
 
-Content validation -- not currently located anywhere.  @anderson1991predicting speak of {{< glossary "substantive validity" >}} as a subordinate aspect of construct validity, although this term has not realized broad adoption and the @anderson1991predicting method is more commonly conceptualized as a content validation procedure.
+The word "scale" has several meanings within measurement contexts. Scales ***of measurement*** refer to categorical strata defined by rules governing the assignment of numbers to things [e.g., @stevens1946theory]. Aggregate summaries of responses across multiple indicators are most often referred to as scale scores, and these are further dissociated as either ***raw***-- or ***standard***--scale scores. "Scale development" refers to the process of operationalizing your measure. This is the focus of the current chapter.
+
+There are four obligatory and many elective considerations for scale development:
+
+>NOTE. Chapter & Section organization re--worked on 11/29/25 (Dunn Bros. conversation) -- many of these "sections" will turn into chapters under the new "SCALE DEVELOPMENT" Section
+
+::: {.columns}
+::: {.column width="50%"}
+### Obligatory
+
++ Construct definition (conceptual)
++ Content domain sampling
++ Measure definition (operational)
++ Measure adequacy (empirical)
+
+:::
+::: {.column width="50%"}
+### Elective
+
++ Utility (maybe put in different section -- consequences of testing)
+:::
+:::
+
+## Construct definition (conceptual)
+
+This process is also referred to as "populating the content domain". The content domain @fitzpatrick1983meaning
+
+## Measure adequacy (empirical){#sec-adequacy}
+
+Empirical estimates of your measure's adequacy (extent to which it is a reasonable operationalization of your conceptual construct) are only limited by your creativity, but by tradition are categorized as indices of reliability and validity -- each of which has several possible estimation procedures. It should also be noted that the ***constructs*** of reliability and validity exhibit a high degree of overlap. In the context of several different discussions regarding content validity, said:
+
+>Perhaps instead of content validity we should call it content reliability, or job sample reliability. Perhaps we should, but I doubt that we will. Verbal habits are not tha teasy to change. We are no doubt fated to live henceforth with somewhat imprecise terminology, and with the confused thinking about test quality it is likely to spawn (@ebel1975, quoted in @guion1977content)
+
+### Content validation -- not currently located anywhere. 
+
+This is the "*evaluation* of operational definitions" (@guion1977content, p. 6)
+
+>people who talk about content validity are talking about how well a *small* sample of behavior observed in the measurement procedure represents the whole class of behavior that falls within the boundaries defining the content domain. This content representativeness is explicitly what people are talking about when they speak of content validity (@guion1977content, p. 3)
+
+@anderson1991predicting speak of {{< glossary "substantive validity" >}} as a subordinate aspect of construct validity, although this term has not realized broad adoption and the @anderson1991predicting method is more commonly conceptualized as a content validation procedure.
 
 @lawshe1975quantitative's content validity ratio was, for many years, the most popular index of content validity:
 
 $$
 CVR = \frac{n_e - \frac{N}{2}}{\frac{N}{2}}
-$$
+$$ {#eq-cvr}
+
 
 @lawshe1975quantitative asked a {{< glossary "content evaluation panel" >}}  to independently rate each items in terms of being, 1) Essential, 2) Useful but not essential, or 3) Not necessary. @lawshe1975quantitative's initial presentation was focused on jobs, and his process
 
-The content validity coefficient here was operationalized as a quantification of consensus (among the panel constituents). $n_e$ is the number of panelists who rated an item essential. $N$ is the total number of judges on the panel. The CVR will be negative if less than half of panelists rule an item essential and positive if more than half agree that an item is essential.   
+The content validity coefficient here was operationalized as a quantification of consensus (among the panel constituents; see @eq-cvr). $n_e$ is the number of panelists who rated an item essential. $N$ is the total number of judges on the panel. The CVR will be negative if less than half of panelists rule an item essential and positive if more than half agree that an item is essential.   
 
 @hinkin1999analysis
 @colquitt2019content
@@ -22,3 +62,9 @@ The concept is not without controversy. Shortly after @lawshe1975quantitative's 
 Timeline diagram here: 
 1. @hemphill1950measurement
 2. @hambleton1986assessing
+
+### Constructs
+
+Speaking of the debate regarding the reservation of the word "construct" for truly abstract entities versus concrete behaviors, @guion1977content concedes: 
+
+>I *do* like to speak sensibly, and I dislike further corrupting the language, but I don't know what else to call them. (p. 5)
