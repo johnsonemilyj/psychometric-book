@@ -4,9 +4,9 @@
     "href": "index.html",
     "title": "Applied Psychometrics Using R",
     "section": "",
-    "text": "Preface\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books.\n\n1 + 1\n\n[1] 2",
+    "text": "Introduction",
     "crumbs": [
-      "Preface"
+      "Introduction"
     ]
   },
   {
@@ -33,12 +33,11 @@
   {
     "objectID": "Scale Development.html",
     "href": "Scale Development.html",
-    "title": "5  Scale Development",
+    "title": "Scale Development",
     "section": "",
-    "text": "5.1 Construct definition (conceptual)\nThe word “scale” has several meanings within measurement contexts. Scales of measurement refer to categorical strata defined by rules governing the assignment of numbers to things (e.g., Stevens, 1946). Aggregate summaries of responses across multiple indicators are most often referred to as scale scores, and these are further dissociated as either raw– or standard–scale scores. “Scale development” refers to the process of operationalizing your measure. This is the focus of the current chapter.\nThere are four obligatory and many elective considerations for scale development:\nThis process is also referred to as “populating the content domain”. The content domain (fitzpatrick1983meaning?)",
+    "text": "Construct definition (conceptual)\nThe word “scale” has several meanings within measurement contexts. Scales of measurement refer to categorical strata defined by rules governing the assignment of numbers to things (e.g., Stevens, 1946). Aggregate summaries of responses across multiple indicators are most often referred to as scale scores, and these are further dissociated as either raw– or standard–scale scores. “Scale development” refers to the process of operationalizing your measure. This is the focus of the current chapter.\nThere are four obligatory and many elective considerations for scale development:\nThis process is also referred to as “populating the content domain”. The content domain (fitzpatrick1983meaning?)",
     "crumbs": [
-      "Content Domain Population",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Scale Development</span>"
+      "Scale Development"
     ]
   },
   {
@@ -76,122 +75,122 @@
   {
     "objectID": "techreport.html",
     "href": "techreport.html",
-    "title": "11  Technical Report",
+    "title": "9  Technical Report",
     "section": "",
-    "text": "11.1 Title page\nDocumentation of your psychometrics project occurs within a technical report (aka “tech report”). The technical report contains, at a minimum:\nYour goal within the technical report is exacting descriptive communication of the development and investigation of psychometric properties of your focal measure. You should apply whatever writing level is best suited to convey your thoughts with the highest level of descriptive integrity. Any anticipated reading–level limitations of how you communicate technical report information should not restrain your documentation. It is okay to assume a post–baccalaureate reading level – aka individuals who have similar advanced training as yours. Additional measure–relevant documentation in the form of white papers, local validation studies, and marketing material should be treated differently and target a general consumer audience (7th–grade reading level), but it is ok for your technical report to be “technical”.\nRegarding the structure of your report, you are free to use style guidelines (such as those offered by APA (American Psychological Association, 2020) or MLA (Modern Language Association of America, 2021)), but you should not in any way feel constrained by these. The content of your technical report should reflect the elements discussed in this chapter (see also Important 11.1), but the format should reflect some uniqueness of the authors. Have some fun with the format – use icons, images, and even (non–wacky) fonts with restrained abandon. You may even want to consult a friend who has experience with graphic design or other artistic ventures. The look and feel should reflect YOU (or the organization you represent), not some stodgy arbiter of margin dimensions or running head structure.\nThe remainder of Chapter 11 focuses on each element of your technical report separately. The entirety of your report is merely an aggregation of these individual elements, although you should give greatest weight (in terms of page space and descriptive detail) to information contained in Section 11.5 and Section 11.6.\nThe title page may also be referred to as a “cover page” – we are considering these terms synonymous for the purposes of a technical report. This represents, with traditional hard–copy reports, the first impression of your project. Branding is important here – if you are representing an organization, there may be a pre–existing preferred format or structure. If you are representing yourself, think about not just this current project, but also future projects that you may wish to conduct. Once you decide on a styling, it is best to stick with it across future projects.\nThe title page elements to include are:",
+    "text": "9.1 Title page\nDocumentation of your psychometrics project occurs within a technical report (aka “tech report”). The technical report contains, at a minimum:\nYour goal within the technical report is exacting descriptive communication of the development and investigation of psychometric properties of your focal measure. You should apply whatever writing level is best suited to convey your thoughts with the highest level of descriptive integrity. Any anticipated reading–level limitations of how you communicate technical report information should not restrain your documentation. It is okay to assume a post–baccalaureate reading level – aka individuals who have similar advanced training as yours. Additional measure–relevant documentation in the form of white papers, local validation studies, and marketing material should be treated differently and target a general consumer audience (7th–grade reading level), but it is ok for your technical report to be “technical”.\nRegarding the structure of your report, you are free to use style guidelines (such as those offered by APA (American Psychological Association, 2020) or MLA (Modern Language Association of America, 2021)), but you should not in any way feel constrained by these. The content of your technical report should reflect the elements discussed in this chapter (see also Important 9.1), but the format should reflect some uniqueness of the authors. Have some fun with the format – use icons, images, and even (non–wacky) fonts with restrained abandon. You may even want to consult a friend who has experience with graphic design or other artistic ventures. The look and feel should reflect YOU (or the organization you represent), not some stodgy arbiter of margin dimensions or running head structure.\nThe remainder of Chapter 9 focuses on each element of your technical report separately. The entirety of your report is merely an aggregation of these individual elements, although you should give greatest weight (in terms of page space and descriptive detail) to information contained in Section 9.5 and Section 9.6.\nThe title page may also be referred to as a “cover page” – we are considering these terms synonymous for the purposes of a technical report. This represents, with traditional hard–copy reports, the first impression of your project. Branding is important here – if you are representing an organization, there may be a pre–existing preferred format or structure. If you are representing yourself, think about not just this current project, but also future projects that you may wish to conduct. Once you decide on a styling, it is best to stick with it across future projects.\nThe title page elements to include are:",
     "crumbs": [
       "Documentation & Guides",
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Technical Report</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Technical Report</span>"
     ]
   },
   {
     "objectID": "techreport.html#sec-techtit",
     "href": "techreport.html#sec-techtit",
-    "title": "11  Technical Report",
+    "title": "9  Technical Report",
     "section": "",
-    "text": "Figure 11.1: Example tech report title page\n\n\n\n\n\n\nStyling\nProject Title\nAuthor(s)\nOrganization(s)",
+    "text": "Figure 9.1: Example tech report title page\n\n\n\n\n\n\nStyling\nProject Title\nAuthor(s)\nOrganization(s)",
     "crumbs": [
       "Documentation & Guides",
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Technical Report</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Technical Report</span>"
     ]
   },
   {
     "objectID": "techreport.html#sec-exec",
     "href": "techreport.html#sec-exec",
-    "title": "11  Technical Report",
-    "section": "11.2 Executive Summary",
-    "text": "11.2 Executive Summary\n\n\n\n\n\n\n\n\nFigure 11.2: Example executive summary from a Kulas survey\n\n\n\nThe executive summary is essentially an abbreviated Abstract. Although this content appears before the substance of your report, it should be treated like an Abstract and written last (only written after all other tech report elements have been completed). We prefer bulleted statements, but you may write the summary in a more traditional paragraph format if you prefer. Aim for 3 or 4 of the most important elements:\n\nwhat is the final number of items?\nwhat are your reliability and validity estimates?\nhow many individuals responded in your pilot?\nwhat are the future plans?",
+    "title": "9  Technical Report",
+    "section": "9.2 Executive Summary",
+    "text": "9.2 Executive Summary\n\n\n\n\n\n\n\n\nFigure 9.2: Example executive summary from a Kulas survey\n\n\n\nThe executive summary is essentially an abbreviated Abstract. Although this content appears before the substance of your report, it should be treated like an Abstract and written last (only written after all other tech report elements have been completed). We prefer bulleted statements, but you may write the summary in a more traditional paragraph format if you prefer. Aim for 3 or 4 of the most important elements:\n\nwhat is the final number of items?\nwhat are your reliability and validity estimates?\nhow many individuals responded in your pilot?\nwhat are the future plans?",
     "crumbs": [
       "Documentation & Guides",
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Technical Report</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Technical Report</span>"
     ]
   },
   {
     "objectID": "techreport.html#sec-techtoc",
     "href": "techreport.html#sec-techtoc",
-    "title": "11  Technical Report",
-    "section": "11.3 Table of contents",
-    "text": "11.3 Table of contents\n\n\n\n\n\n\n\n\nFigure 11.3: Example cutely formatted table of contents\n\n\n\nYou may choose to include the table of contents prior to your executive summary or after your executive summary. We construct our tech reports with the title page first, executive summary second, and table of contents third, but the order of presentation of these two elements can be determined by personal preference. Like the title page, you may be creative with the table of contents. If your report is generated in a format that permits, provide hyperlinks to component sections within the table of contents itself. You may choose to make the table of contents omnipresent (as we have done with this book – look to your left!!! ), but even if you do so, still include a static table of contents near the “beginning” of your report.",
+    "title": "9  Technical Report",
+    "section": "9.3 Table of contents",
+    "text": "9.3 Table of contents\n\n\n\n\n\n\n\n\nFigure 9.3: Example cutely formatted table of contents\n\n\n\nYou may choose to include the table of contents prior to your executive summary or after your executive summary. We construct our tech reports with the title page first, executive summary second, and table of contents third, but the order of presentation of these two elements can be determined by personal preference. Like the title page, you may be creative with the table of contents. If your report is generated in a format that permits, provide hyperlinks to component sections within the table of contents itself. You may choose to make the table of contents omnipresent (as we have done with this book – look to your left!!! ), but even if you do so, still include a static table of contents near the “beginning” of your report.",
     "crumbs": [
       "Documentation & Guides",
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Technical Report</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Technical Report</span>"
     ]
   },
   {
     "objectID": "techreport.html#sec-techintro",
     "href": "techreport.html#sec-techintro",
-    "title": "11  Technical Report",
-    "section": "11.4 Introduction",
-    "text": "11.4 Introduction\nYour Introduction contains background information about your project. There should, at minimum, be a literature review of your construct. This review includes an attempt to locate your construct within a broader nomological network (see Chapter 3). If you are creating a measure of a novel or nascent construct, the inclusion of a nomological network becomes more important, and your literature review should include conceptually similar constructs. In addition to conceptual specification of your construct, it is generally a good idea to include a “Why” section within this section of your tech report.1 What is the impetus of creating the measure (e.g., is there a commercial motive, are existing measures lacking, is there a new technology being adopted)?",
+    "title": "9  Technical Report",
+    "section": "9.4 Introduction",
+    "text": "9.4 Introduction\nYour Introduction contains background information about your project. There should, at minimum, be a literature review of your construct. This review includes an attempt to locate your construct within a broader nomological network (see Chapter 3). If you are creating a measure of a novel or nascent construct, the inclusion of a nomological network becomes more important, and your literature review should include conceptually similar constructs. In addition to conceptual specification of your construct, it is generally a good idea to include a “Why” section within this section of your tech report.1 What is the impetus of creating the measure (e.g., is there a commercial motive, are existing measures lacking, is there a new technology being adopted)?",
     "crumbs": [
       "Documentation & Guides",
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Technical Report</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Technical Report</span>"
     ]
   },
   {
     "objectID": "techreport.html#sec-techmeth",
     "href": "techreport.html#sec-techmeth",
-    "title": "11  Technical Report",
-    "section": "11.5 Methods",
-    "text": "11.5 Methods\nThe Methods section documents the steps taken to define your construct, create your measure, and validate the assessment. This is a tech report component that can justifiably be unreasonably wordy. You are not writing an easy–to–read novel within the Methods section. Instead, you are communicating all of the important considerations and procedural decisions you made along the process of creating your measure. It is ok to “write too much” here – you want full documentation of steps taken such that an individual 10 years from now would be able to exactly replicate your process. At the least, ensure that you cover:\n\nconstruct identification (conceptual)\nitem generation process\nreason(s) for response scale choice\nsampled population description\nsampling procedure\nsurvey platform",
+    "title": "9  Technical Report",
+    "section": "9.5 Methods",
+    "text": "9.5 Methods\nThe Methods section documents the steps taken to define your construct, create your measure, and validate the assessment. This is a tech report component that can justifiably be unreasonably wordy. You are not writing an easy–to–read novel within the Methods section. Instead, you are communicating all of the important considerations and procedural decisions you made along the process of creating your measure. It is ok to “write too much” here – you want full documentation of steps taken such that an individual 10 years from now would be able to exactly replicate your process. At the least, ensure that you cover:\n\nconstruct identification (conceptual)\nitem generation process\nreason(s) for response scale choice\nsampled population description\nsampling procedure\nsurvey platform",
     "crumbs": [
       "Documentation & Guides",
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Technical Report</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Technical Report</span>"
     ]
   },
   {
     "objectID": "techreport.html#sec-techres",
     "href": "techreport.html#sec-techres",
-    "title": "11  Technical Report",
-    "section": "11.6 Results",
-    "text": "11.6 Results\n\n\n\n\n\n\n\n\nFigure 11.4: Appendix Z is coming for you!!! \n\n\n\nThe analyses of your investigations go here. This includes qualitative analyses such as content validation and initial number of items generated. Like Section 11.5, it is okay to be overly descriptive within this section. If you feel that the amount or depth of information detracts from reader comprehension, throw the content into an Appendix (Section 11.9). Don’t worry about Appendix Proliferation — if you aren’t sweating the pending instrusion of Appendix Z, you ain’t trying!!",
+    "title": "9  Technical Report",
+    "section": "9.6 Results",
+    "text": "9.6 Results\n\n\n\n\n\n\n\n\nFigure 9.4: Appendix Z is coming for you!!! \n\n\n\nThe analyses of your investigations go here. This includes qualitative analyses such as content validation and initial number of items generated. Like Section 9.5, it is okay to be overly descriptive within this section. If you feel that the amount or depth of information detracts from reader comprehension, throw the content into an Appendix (Section 9.9). Don’t worry about Appendix Proliferation — if you aren’t sweating the pending instrusion of Appendix Z, you ain’t trying!!",
     "crumbs": [
       "Documentation & Guides",
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Technical Report</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Technical Report</span>"
     ]
   },
   {
     "objectID": "techreport.html#sec-techdisc",
     "href": "techreport.html#sec-techdisc",
-    "title": "11  Technical Report",
-    "section": "11.7 Discussion",
-    "text": "11.7 Discussion\n\n\n\n\n\n\n\n\nWarning 11.1:  Stay Objective!! \n\n\n\nSmart readers of this section will have their radar on alert for self–promoting smarm and overly–positive interpretations. Your goal should be dispassionate objectivity.2\n\n\nThis section does not need to be very long – keep your interpretation of results to an extreme bare minimum. Your presentation of analyses in Section 11.6 should be sufficient for an informed reader to generate his/her own opinion regarding “how good” the results are. It does not take much interpretive summary by YOU here to raise red flags to the reader regarding your objectivity. Instead, primarily devote the page space here to limitations, implications, and future directions.\nFuture directions can include plans for futher validation studies — it is ok to propose specific methodologies, constructs, and measures here. Treat these as gifts to graduate students who may have advisors devoid of research ideas. These are your gifts to them",
+    "title": "9  Technical Report",
+    "section": "9.7 Discussion",
+    "text": "9.7 Discussion\n\n\n\n\n\n\n\n\nWarning 9.1:  Stay Objective!! \n\n\n\nSmart readers of this section will have their radar on alert for self–promoting smarm and overly–positive interpretations. Your goal should be dispassionate objectivity.2\n\n\nThis section does not need to be very long – keep your interpretation of results to an extreme bare minimum. Your presentation of analyses in Section 9.6 should be sufficient for an informed reader to generate his/her own opinion regarding “how good” the results are. It does not take much interpretive summary by YOU here to raise red flags to the reader regarding your objectivity. Instead, primarily devote the page space here to limitations, implications, and future directions.\nFuture directions can include plans for futher validation studies — it is ok to propose specific methodologies, constructs, and measures here. Treat these as gifts to graduate students who may have advisors devoid of research ideas. These are your gifts to them",
     "crumbs": [
       "Documentation & Guides",
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Technical Report</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Technical Report</span>"
     ]
   },
   {
     "objectID": "techreport.html#sec-techref",
     "href": "techreport.html#sec-techref",
-    "title": "11  Technical Report",
-    "section": "11.8 References",
-    "text": "11.8 References\nThese should primarily support information presented in Section 11.4 and Section 11.6. Make sure to include information regarding your analytical platform (for example, version number) as well as any supplementary capabilities (for example,  packages). There are many different citation formats (both within text as well as within the bibliography). Choose one of your liking and stick with it. This book uses APA 7th edition because that is what Psychologists are expecting to see, although you can use whatever style fits your formatting theme.",
+    "title": "9  Technical Report",
+    "section": "9.8 References",
+    "text": "9.8 References\nThese should primarily support information presented in Section 9.4 and Section 9.6. Make sure to include information regarding your analytical platform (for example, version number) as well as any supplementary capabilities (for example,  packages). There are many different citation formats (both within text as well as within the bibliography). Choose one of your liking and stick with it. This book uses APA 7th edition because that is what Psychologists are expecting to see, although you can use whatever style fits your formatting theme.",
     "crumbs": [
       "Documentation & Guides",
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Technical Report</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Technical Report</span>"
     ]
   },
   {
     "objectID": "techreport.html#sec-techappend",
     "href": "techreport.html#sec-techappend",
-    "title": "11  Technical Report",
-    "section": "11.9 Appendices",
-    "text": "11.9 Appendices\n\n\n\n\n\n\n\n\nFigure 11.5: Example Appendix information (Appendix title & substantive content)\n\n\n\nAll of your raw (unformatted) analytical information can go into Appendices, including any code used to produce the output. It’s quite likely noone will ever read it, but you did it and the odds are technically non-zero that it’ll be someday relevant, so go ahead and throw it in. Don’t go chasing Figure 11.4, but don’t be afraid if it’s looming.\nYou should have different appendices for qualitatively different content. These are lettered sequentially, starting with “Appendix A”.3 Some individuals prefer “clean” Appendix title pages, such that only the Appendix title is presented and some people include substantive content immediately after the Appendix title (as is done in Figure 11.5). It’s your design choice, but choose one structure and be consistent with it across all appendices.\nIt’s good practice to include your software installations here as well, which can be accomplished easily with . For example, running the sessionInfo() command on November 08, 2025 gives us:\n\n\nR version 4.5.0 (2025-04-11 ucrt)\nPlatform: x86_64-w64-mingw32/x64\nRunning under: Windows 10 x64 (build 19045)\n\nMatrix products: default\n  LAPACK version 3.12.1\n\nlocale:\n[1] LC_COLLATE=English_United States.utf8 \n[2] LC_CTYPE=English_United States.utf8   \n[3] LC_MONETARY=English_United States.utf8\n[4] LC_NUMERIC=C                          \n[5] LC_TIME=English_United States.utf8    \n\ntime zone: America/Chicago\ntzcode source: internal\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nloaded via a namespace (and not attached):\n [1] htmlwidgets_1.6.4 compiler_4.5.0    fastmap_1.2.0     cli_3.6.5        \n [5] tools_4.5.0       htmltools_0.5.8.1 rstudioapi_0.17.1 yaml_2.3.10      \n [9] rmarkdown_2.29    knitr_1.50        jsonlite_2.0.0    xfun_0.52        \n[13] digest_0.6.37     rlang_1.1.6       evaluate_1.0.5   \n\n\n\n\n\n\nAmerican Psychological Association. (2020). Publication manual of the american psychological association (7th ed.). American Psychological Association.\n\n\nModern Language Association of America. (2021). MLA handbook (9th ed.). Modern Language Association of America.",
+    "title": "9  Technical Report",
+    "section": "9.9 Appendices",
+    "text": "9.9 Appendices\n\n\n\n\n\n\n\n\nFigure 9.5: Example Appendix information (Appendix title & substantive content)\n\n\n\nAll of your raw (unformatted) analytical information can go into Appendices, including any code used to produce the output. It’s quite likely noone will ever read it, but you did it and the odds are technically non-zero that it’ll be someday relevant, so go ahead and throw it in. Don’t go chasing Figure 9.4, but don’t be afraid if it’s looming.\nYou should have different appendices for qualitatively different content. These are lettered sequentially, starting with “Appendix A”.3 Some individuals prefer “clean” Appendix title pages, such that only the Appendix title is presented and some people include substantive content immediately after the Appendix title (as is done in Figure 9.5). It’s your design choice, but choose one structure and be consistent with it across all appendices.\nIt’s good practice to include your software installations here as well, which can be accomplished easily with . For example, running the sessionInfo() command on December 13, 2025 gives us:\n\n\nR version 4.4.1 (2024-06-14 ucrt)\nPlatform: x86_64-w64-mingw32/x64\nRunning under: Windows 11 x64 (build 26100)\n\nMatrix products: default\n\n\nlocale:\n[1] LC_COLLATE=English_United States.utf8 \n[2] LC_CTYPE=English_United States.utf8   \n[3] LC_MONETARY=English_United States.utf8\n[4] LC_NUMERIC=C                          \n[5] LC_TIME=English_United States.utf8    \n\ntime zone: America/Chicago\ntzcode source: internal\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nloaded via a namespace (and not attached):\n [1] htmlwidgets_1.6.4 compiler_4.4.1    fastmap_1.2.0     cli_3.6.5        \n [5] tools_4.4.1       htmltools_0.5.8.1 rstudioapi_0.17.1 yaml_2.3.10      \n [9] rmarkdown_2.29    knitr_1.50        jsonlite_2.0.0    xfun_0.52        \n[13] digest_0.6.37     rlang_1.1.6       evaluate_1.0.3   \n\n\n\n\n\n\nAmerican Psychological Association. (2020). Publication manual of the american psychological association (7th ed.). American Psychological Association.\n\n\nModern Language Association of America. (2021). MLA handbook (9th ed.). Modern Language Association of America.",
     "crumbs": [
       "Documentation & Guides",
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Technical Report</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Technical Report</span>"
     ]
   },
   {
     "objectID": "techreport.html#footnotes",
     "href": "techreport.html#footnotes",
-    "title": "11  Technical Report",
+    "title": "9  Technical Report",
     "section": "",
     "text": "These sections are sometimes labeled “Background” instead of “Introduction” – you should feel free to use whatever label is most descriptive of your presentation.↩︎\nThis may be perceived as difficult given outside pressures, but keep in mind that your reputation is more important than this one silly project. You can always find a different job (or project or boss), but your reputation sticks with you for a l–l–l–o–o–o–n–n–g–g time.↩︎\nYou can’t technically have more than 26 appendices because our alphabet runs out of letters at that point (and you were getting ridiculous with your Appendix recklessness anyway if you somehow created anywhere near 26 different ones – shame on you!!!)↩︎",
     "crumbs": [
       "Documentation & Guides",
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Technical Report</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Technical Report</span>"
     ]
   },
   {
@@ -227,22 +226,31 @@
   {
     "objectID": "glossary.html",
     "href": "glossary.html",
-    "title": "13  Glossary",
+    "title": "12  Glossary",
     "section": "",
     "text": "Term  Definition",
     "crumbs": [
-      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Glossary</span>"
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Glossary</span>"
     ]
   },
   {
     "objectID": "Scale Development.html#sec-adequacy",
     "href": "Scale Development.html#sec-adequacy",
-    "title": "5  Scale Development",
-    "section": "5.2 Measure adequacy (empirical)",
-    "text": "5.2 Measure adequacy (empirical)\nEmpirical estimates of your measure’s adequacy (extent to which it is a reasonable operationalization of your conceptual construct) are only limited by your creativity, but by tradition are categorized as indices of reliability and validity – each of which has several possible estimation procedures.\n\n5.2.1 Content validation – not currently located anywhere.\nAnderson & Gerbing (1991) speak of substantive validity as a subordinate aspect of construct validity, although this term has not realized broad adoption and the Anderson & Gerbing (1991) method is more commonly conceptualized as a content validation procedure.\nLawshe (1975)’s content validity ratio was, for many years, the most popular index of content validity:\n\\[\nCVR = \\frac{n_e - \\frac{N}{2}}{\\frac{N}{2}}\n\\tag{5.1}\\]\nLawshe (1975) asked a content evaluation panel to independently rate each items in terms of being, 1) Essential, 2) Useful but not essential, or 3) Not necessary. Lawshe (1975)’s initial presentation was focused on jobs, and his process\nThe content validity coefficient here was operationalized as a quantification of consensus (among the panel constituents; see Equation 5.1). \\(n_e\\) is the number of panelists who rated an item essential. \\(N\\) is the total number of judges on the panel. The CVR will be negative if less than half of panelists rule an item essential and positive if more than half agree that an item is essential.\nHinkin & Tracey (1999) Colquitt et al. (2019)\nThe concept is not without controversy. Shortly after Lawshe (1975)’s contribution, Guion (1977), in the very first article of the very first issue of the very first volumn of Applied Psychological Measurement, issued a Guionian shot across the bow:\nTimeline diagram here: 1. Hemphill & Westie (1950) 2. Hambleton & Rovinelli (1986)\n\n\n\n\nAnderson, J. C., & Gerbing, D. W. (1991). Predicting the performance of measures in a confirmatory factor analysis with a pretest assessment of their substantive validities. Journal of Applied Psychology, 76(5), 732–740.\n\n\nColquitt, J. A., Sabey, T. B., Rodell, J. B., & Hill, E. T. (2019). Content validation guidelines: Evaluation criteria for definitional correspondence and definitional distinctiveness. Journal of Applied Psychology, 104(10), 1243–1265.\n\n\nGuion, R. M. (1977). Content validity—the source of my discontent. Applied Psychological Measurement, 1(1), 1–10.\n\n\nHambleton, R. K., & Rovinelli, R. J. (1986). Assessing the dimensionality of a set of test items. Applied Psychological Measurement, 10(3), 287–302.\n\n\nHemphill, J. K., & Westie, C. M. (1950). The measurement of group dimensions. The Journal of Psychology, 29(2), 325–342.\n\n\nHinkin, T. R., & Tracey, J. B. (1999). An analysis of variance approach to content validation. Organizational Research Methods, 2(2), 175–186.\n\n\nLawshe, C. H. (1975). A quantitative approach to content validity. Personnel Psychology, 28(4), 563–575.\n\n\nStevens, S. S. (1946). On the theory of scales of measurement. Science, 103(2684), 677–680.",
+    "title": "Scale Development",
+    "section": "Measure adequacy (empirical)",
+    "text": "Measure adequacy (empirical)\nEmpirical estimates of your measure’s adequacy (extent to which it is a reasonable operationalization of your conceptual construct) are only limited by your creativity, but by tradition are categorized as indices of reliability and validity – each of which has several possible estimation procedures. It should also be noted that the constructs of reliability and validity exhibit a high degree of overlap. In the context of several different discussions regarding content validity, said:\n\nPerhaps instead of content validity we should call it content reliability, or job sample reliability. Perhaps we should, but I doubt that we will. Verbal habits are not tha teasy to change. We are no doubt fated to live henceforth with somewhat imprecise terminology, and with the confused thinking about test quality it is likely to spawn ((ebel1975?), quoted in Guion (1977))\n\n\nContent validation – not currently located anywhere.\nThis is the “evaluation of operational definitions” (Guion (1977), p. 6)\n\npeople who talk about content validity are talking about how well a small sample of behavior observed in the measurement procedure represents the whole class of behavior that falls within the boundaries defining the content domain. This content representativeness is explicitly what people are talking about when they speak of content validity (Guion (1977), p. 3)\n\nAnderson & Gerbing (1991) speak of substantive validity as a subordinate aspect of construct validity, although this term has not realized broad adoption and the Anderson & Gerbing (1991) method is more commonly conceptualized as a content validation procedure.\nLawshe (1975)’s content validity ratio was, for many years, the most popular index of content validity:\n\\[\nCVR = \\frac{n_e - \\frac{N}{2}}{\\frac{N}{2}}\n\\tag{1}\\]\nLawshe (1975) asked a content evaluation panel to independently rate each items in terms of being, 1) Essential, 2) Useful but not essential, or 3) Not necessary. Lawshe (1975)’s initial presentation was focused on jobs, and his process\nThe content validity coefficient here was operationalized as a quantification of consensus (among the panel constituents; see Equation 1). \\(n_e\\) is the number of panelists who rated an item essential. \\(N\\) is the total number of judges on the panel. The CVR will be negative if less than half of panelists rule an item essential and positive if more than half agree that an item is essential.\nHinkin & Tracey (1999) Colquitt et al. (2019)\nThe concept is not without controversy. Shortly after Lawshe (1975)’s contribution, Guion (1977), in the very first article of the very first issue of the very first volumn of Applied Psychological Measurement, issued a Guionian shot across the bow:\nTimeline diagram here: 1. Hemphill & Westie (1950) 2. Hambleton & Rovinelli (1986)\n\n\nConstructs\nSpeaking of the debate regarding the reservation of the word “construct” for truly abstract entities versus concrete behaviors, Guion (1977) concedes:\n\nI do like to speak sensibly, and I dislike further corrupting the language, but I don’t know what else to call them. (p. 5)\n\n\n\n\n\nAnderson, J. C., & Gerbing, D. W. (1991). Predicting the performance of measures in a confirmatory factor analysis with a pretest assessment of their substantive validities. Journal of Applied Psychology, 76(5), 732–740.\n\n\nColquitt, J. A., Sabey, T. B., Rodell, J. B., & Hill, E. T. (2019). Content validation guidelines: Evaluation criteria for definitional correspondence and definitional distinctiveness. Journal of Applied Psychology, 104(10), 1243–1265.\n\n\nGuion, R. M. (1977). Content validity—the source of my discontent. Applied Psychological Measurement, 1(1), 1–10.\n\n\nHambleton, R. K., & Rovinelli, R. J. (1986). Assessing the dimensionality of a set of test items. Applied Psychological Measurement, 10(3), 287–302.\n\n\nHemphill, J. K., & Westie, C. M. (1950). The measurement of group dimensions. The Journal of Psychology, 29(2), 325–342.\n\n\nHinkin, T. R., & Tracey, J. B. (1999). An analysis of variance approach to content validation. Organizational Research Methods, 2(2), 175–186.\n\n\nLawshe, C. H. (1975). A quantitative approach to content validity. Personnel Psychology, 28(4), 563–575.\n\n\nStevens, S. S. (1946). On the theory of scales of measurement. Science, 103(2684), 677–680.",
     "crumbs": [
-      "Content Domain Population",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Scale Development</span>"
+      "Scale Development"
+    ]
+  },
+  {
+    "objectID": "index.html#organizing-principles",
+    "href": "index.html#organizing-principles",
+    "title": "Applied Psychometrics Using R",
+    "section": "Organizing Principles",
+    "text": "Organizing Principles\n\nThe structure of the book loosely parallels project sequence rather than fundamental concepts.\nContent is linked to corresponding Standards\nForks to psychometric orientations where appropriate:\n\n\nItem Response Theory\nRasch modeling\nClassical Test Theory\nNetwork psychometrics\n\n\nApplications are interactive",
+    "crumbs": [
+      "Introduction"
     ]
   }
 ]

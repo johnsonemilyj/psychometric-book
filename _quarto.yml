@@ -33,9 +33,11 @@ book:
       chapters: 
         - techreport.qmd
         - Legal Considerations & Additional Analyses.qmd
-    - summary.qmd
-    - references.qmd
-    - glossary.qmd
+    - part: Appendix
+      chapters:
+        - summary.qmd
+        - references.qmd
+        - glossary.qmd
 
 bibliography: references.bib
 csl: apa7.csl
