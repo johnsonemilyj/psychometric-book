@@ -10,6 +10,16 @@
     ]
   },
   {
+    "objectID": "index.html#organizing-principles",
+    "href": "index.html#organizing-principles",
+    "title": "Applied Psychometrics Using R",
+    "section": "Organizing Principles",
+    "text": "Organizing Principles\n\nThe structure of the book loosely parallels project sequence rather than fundamental concepts.\nContent is linked to corresponding Standards\nForks to psychometric orientations where appropriate:\n\n\nItem Response Theory\nRasch modeling\nClassical Test Theory\nNetwork psychometrics\n\n\nApplications are interactive",
+    "crumbs": [
+      "Introduction"
+    ]
+  },
+  {
     "objectID": "intro.html",
     "href": "intro.html",
     "title": "Introduction",
@@ -22,12 +32,12 @@
   {
     "objectID": "Types of Assessments.html",
     "href": "Types of Assessments.html",
-    "title": "2  Types of Assessment",
+    "title": "3  Types of Assessment",
     "section": "",
-    "text": "2.1 Characteristics\nA fundamentally important distinction exists between two qualitatively different types of assessment. If assessment responses can be reasonably categorized as correct or incorrect, you are dealing with a test (see also Note 2.1). If assessment responses are not intended to be interpreted as correct and incorrect, the assessment should be referred to as an inventory. There are many meaningful differences between (true) tests and inventories (see (typechar?)), but the most consequential is that (true) tests are subject to different sources of error than are Psychological inventories.\nThe Standards, for example, use the word “test” as synonymous with “assessment”. The Standards is a resource meant to be applicable across disciplines. Psychologists, however, should always disto",
+    "text": "3.1 Characteristics\nA fundamentally important distinction exists between two qualitatively different types of assessment. If assessment responses can be reasonably categorized as correct or incorrect, you are dealing with a test (see also Note 3.1). If assessment responses are not intended to be interpreted as correct and incorrect, the assessment should be referred to as an inventory. There are many meaningful differences between (true) tests and inventories (see (typechar?)), but the most consequential is that (true) tests are subject to different sources of error than are Psychological inventories.\nThe Standards, for example, use the word “test” as synonymous with “assessment”. The Standards is a resource meant to be applicable across disciplines. Psychologists, however, should always disto",
     "crumbs": [
       "Introduction",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Types of Assessment</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Types of Assessment</span>"
     ]
   },
   {
@@ -35,7 +45,17 @@
     "href": "Scale Development.html",
     "title": "Scale Development",
     "section": "",
-    "text": "Construct definition (conceptual)\nThe word “scale” has several meanings within measurement contexts. Scales of measurement refer to categorical strata defined by rules governing the assignment of numbers to things (e.g., Stevens, 1946). Aggregate summaries of responses across multiple indicators are most often referred to as scale scores, and these are further dissociated as either raw– or standard–scale scores. “Scale development” refers to the process of operationalizing your measure. This is the focus of the current chapter.\nThere are four obligatory and many elective considerations for scale development:\nThis process is also referred to as “populating the content domain”. The content domain (fitzpatrick1983meaning?)",
+    "text": "Construct definition (conceptual)\nThe word “scale” has several meanings within measurement contexts. Scales of measurement refer to categorical strata defined by rules governing the assignment of numbers to things (e.g., Stevens, 1946). Aggregate summaries of responses across multiple indicators are most often referred to as scale scores, and these are further dissociated as either raw– or standard–scale scores. “Scale development” refers to the process of operationalizing your measure. This is the focus of the current chapter.\nThere are four obligatory and many elective considerations for scale development:\nThis process is also referred to as “populating the content domain”. The content domain Fitzpatrick (1983)",
+    "crumbs": [
+      "Scale Development"
+    ]
+  },
+  {
+    "objectID": "Scale Development.html#sec-adequacy",
+    "href": "Scale Development.html#sec-adequacy",
+    "title": "Scale Development",
+    "section": "Measure adequacy (empirical)",
+    "text": "Measure adequacy (empirical)\nEmpirical estimates of your measure’s adequacy (extent to which it is a reasonable operationalization of your conceptual construct) are only limited by your creativity, but by tradition are categorized as indices of reliability and validity – each of which has several possible estimation procedures. It should also be noted that the constructs of reliability and validity exhibit a high degree of overlap. In the context of several different discussions regarding content validity, said:\n\nPerhaps instead of content validity we should call it content reliability, or job sample reliability. Perhaps we should, but I doubt that we will. Verbal habits are not tha teasy to change. We are no doubt fated to live henceforth with somewhat imprecise terminology, and with the confused thinking about test quality it is likely to spawn (Ebel (1975), quoted in Guion (1977))\n\n\nContent validation – not currently located anywhere.\nThis is the “evaluation of operational definitions” (Guion (1977), p. 6)\n\npeople who talk about content validity are talking about how well a small sample of behavior observed in the measurement procedure represents the whole class of behavior that falls within the boundaries defining the content domain. This content representativeness is explicitly what people are talking about when they speak of content validity (Guion (1977), p. 3)\n\nAnderson & Gerbing (1991) speak of substantive validity as a subordinate aspect of construct validity, although this term has not realized broad adoption and the Anderson & Gerbing (1991) method is more commonly conceptualized as a content validation procedure.\nLawshe (1975)’s content validity ratio was, for many years, the most popular index of content validity:\n\\[\nCVR = \\frac{n_e - \\frac{N}{2}}{\\frac{N}{2}}\n\\tag{1}\\]\nLawshe (1975) asked a content evaluation panel to independently rate each items in terms of being, 1) Essential, 2) Useful but not essential, or 3) Not necessary. Lawshe (1975)’s initial presentation was focused on jobs, and his process\nThe content validity coefficient here was operationalized as a quantification of consensus (among the panel constituents; see Equation 1). \\(n_e\\) is the number of panelists who rated an item essential. \\(N\\) is the total number of judges on the panel. The CVR will be negative if less than half of panelists rule an item essential and positive if more than half agree that an item is essential.\nHinkin & Tracey (1999) Colquitt et al. (2019)\nThe concept is not without controversy. Shortly after Lawshe (1975)’s contribution, Guion (1977), in the very first article of the very first issue of the very first volumn of Applied Psychological Measurement, issued a Guionian shot across the bow:\nTimeline diagram here: 1. Hemphill & Westie (1950) 2. Hambleton & Rovinelli (1986)\n\n\nConstructs\nSpeaking of the debate regarding the reservation of the word “construct” for truly abstract entities versus concrete behaviors, Guion (1977) concedes:\n\nI do like to speak sensibly, and I dislike further corrupting the language, but I don’t know what else to call them. (p. 5)\n\n\n\n\n\nAnderson, J. C., & Gerbing, D. W. (1991). Predicting the performance of measures in a confirmatory factor analysis with a pretest assessment of their substantive validities. Journal of Applied Psychology, 76(5), 732–740.\n\n\nColquitt, J. A., Sabey, T. B., Rodell, J. B., & Hill, E. T. (2019). Content validation guidelines: Evaluation criteria for definitional correspondence and definitional distinctiveness. Journal of Applied Psychology, 104(10), 1243–1265.\n\n\nEbel, R. L. (1975). Prediction? Validation? Construct validity?\n\n\nFitzpatrick, A. R. (1983). The meaning of content validity. Applied Psychological Measurement, 7(1), 3–13.\n\n\nGuion, R. M. (1977). Content validity—the source of my discontent. Applied Psychological Measurement, 1(1), 1–10.\n\n\nHambleton, R. K., & Rovinelli, R. J. (1986). Assessing the dimensionality of a set of test items. Applied Psychological Measurement, 10(3), 287–302.\n\n\nHemphill, J. K., & Westie, C. M. (1950). The measurement of group dimensions. The Journal of Psychology, 29(2), 325–342.\n\n\nHinkin, T. R., & Tracey, J. B. (1999). An analysis of variance approach to content validation. Organizational Research Methods, 2(2), 175–186.\n\n\nLawshe, C. H. (1975). A quantitative approach to content validity. Personnel Psychology, 28(4), 563–575.\n\n\nStevens, S. S. (1946). On the theory of scales of measurement. Science, 103(2684), 677–680.",
     "crumbs": [
       "Scale Development"
     ]
@@ -43,23 +63,12 @@
   {
     "objectID": "Internal Empirical Associations.html",
     "href": "Internal Empirical Associations.html",
-    "title": "8  Internal Empirical Associations",
+    "title": "6  Internal Empirical Associations",
     "section": "",
     "text": "(Reliability, IRT, PCA, EFA, CFA, Exploratory Graph Analysis)\nWhen it’s an assessment vs. test do two columns side by side\nIRT FOR….\nAssessments Tests\nblah blah blah item difficulty",
     "crumbs": [
-      "Psychometric Philosophies",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Internal Empirical Associations</span>"
-    ]
-  },
-  {
-    "objectID": "Legal Considerations & Additional Analyses.html",
-    "href": "Legal Considerations & Additional Analyses.html",
-    "title": "10  Legal Considerations & Fairness in Testing",
-    "section": "",
-    "text": "Fairness in testing is an important consideration when creating and/or administering an assessment. Fairness can be considered as two key concepts: Accessibility and bias.\nIn addition, staying abreast on legal issues is important. If you plan to use an assessment internationally, it is also important to consider laws in other countries.\nUnited States of America Governing Bodies: - Fair Employment Practice Agencies (FEPA) - Equal Employment Opportunity Commission (EEOC)  - Office of Federal Contract Compliance Programs\nLaws - ADA - ADEA - Title VII\nInternational Organizations & Testing – what types\n\n10.0.1 CASE STUDIES\nCivil Rights Act of 1964 – Race/Color – National Origin – Religion – Sex\nAge Discrimination Employment Act (1967) Covers those over the age of 40.\nAmerican Disability Act (1990) – Disability\nCould create a timeline visual to make the chapter feel less dense\nRace Griggs vs. Duke Power Co. Cracker Barrel?\nReligion E.E.O.C. v. Abercrombie & Fitch Stores, Inc. Domski v. Blue Cross Blue Shield of Michigan\nSex Price Waterhouse v. Hopkins Bostock vs. Clayton County R.G. & G.R. Harris Funeral Homes Inc. v. Equal Employment Opportunity Commission\nNational Origin\nAge Mobley vs. Workday\nDisability\n\n\n10.0.2 Developing the Assessment\nIn the ___ chapter, we discussed how to create and select test items. It is imperative that during this phase, you consider the items wording and content utilized as\n\n\n10.0.3 Piloting the Assessment\nIn the pilot phase, the assessment creators should run analyses to ensure that groups are not being treated differently.\n\n\n10.0.4 Administering the Assessment\nThis section will discuss legal issues and fairness in psychological testing.\nBias Accessibility - can take from UX Design principles and cognitve psych principles.\n\n\n10.0.5 APA STANDARDS\n2014 APA Standards:\n\nStandards 3.0-3 5: oink.\nStandards 3.6-3.8: woof.\nStandards 3.9-3.14: ribbit.\nStandards 3.15-3.20: meowmeow.\n\nThe 2026 APA standards:\n\n\n10.0.6 Reducing Bias\n\nConsidering if an assessment will get at the problem you’re trying to solve.\nUtilizing multiple assessment types (cognitive, personality, etc.)\nScreen test items\n\n\n\n10.0.7 ANALYSES & INTERPRETATION\nAnalyses in R 4/5ths Rule – Impact Ratio Differential Validity Differential Prediction Quota Systems Race Norming\nThe 4/5th rule (i.e., impact ratio) measures the ratio between the majority and minority in employment decisions, based off Title VII protected classes. This is the easiest measurement to see if there are any favorable outcomes between groups.\nStep 1. Gather the amount of employees or applicants in that group. Step 2. Gather the amount of employees or applicants selected from the group. Step 3. Divide Step 2 by Step 1. Step 4. Repeat for each group. Step 5. Divide the smallest number by the largest number.\nIf after your analysis, the answer is above .80, then it is considered that one group is not favorable over another. However, if the answer is below .80, then it may be considered that one group is favored.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nPut in R code examples and then create a few examples so the student/reader can run and interpret results. I wonder if we have practice examples if we should write another QMD with practice answers???\nhttps://legal.thomsonreuters.com/en/insights/articles/what-is-title-vii-civil-rights-act\n**Maybe less is more… define, mention protected classes, timeline of landmark cases with ruling and a link to something more in depth, section on AI in testing since it’s a hot topic. Number of Employees makes a difference….",
-    "crumbs": [
-      "Psychometric Philosophies",
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Legal Considerations & Fairness in Testing</span>"
+      "Scale Evaluation",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Internal Empirical Associations</span>"
     ]
   },
   {
@@ -121,7 +130,7 @@
     "href": "techreport.html#sec-techintro",
     "title": "9  Technical Report",
     "section": "9.4 Introduction",
-    "text": "9.4 Introduction\nYour Introduction contains background information about your project. There should, at minimum, be a literature review of your construct. This review includes an attempt to locate your construct within a broader nomological network (see Chapter 3). If you are creating a measure of a novel or nascent construct, the inclusion of a nomological network becomes more important, and your literature review should include conceptually similar constructs. In addition to conceptual specification of your construct, it is generally a good idea to include a “Why” section within this section of your tech report.1 What is the impetus of creating the measure (e.g., is there a commercial motive, are existing measures lacking, is there a new technology being adopted)?",
+    "text": "9.4 Introduction\nYour Introduction contains background information about your project. There should, at minimum, be a literature review of your construct. This review includes an attempt to locate your construct within a broader nomological network (see Chapter 4). If you are creating a measure of a novel or nascent construct, the inclusion of a nomological network becomes more important, and your literature review should include conceptually similar constructs. In addition to conceptual specification of your construct, it is generally a good idea to include a “Why” section within this section of your tech report.1 What is the impetus of creating the measure (e.g., is there a commercial motive, are existing measures lacking, is there a new technology being adopted)?",
     "crumbs": [
       "Documentation & Guides",
       "<span class='chapter-number'>9</span>  <span class='chapter-title'>Technical Report</span>"
@@ -194,23 +203,25 @@
     ]
   },
   {
-    "objectID": "Practical Guides.html",
-    "href": "Practical Guides.html",
-    "title": "Practical Guides",
+    "objectID": "Legal Considerations & Additional Analyses.html",
+    "href": "Legal Considerations & Additional Analyses.html",
+    "title": "10  Legal Considerations & Fairness in Testing",
     "section": "",
-    "text": "Scale / Item level information How to find a Vendor White Papers Validation Studies",
+    "text": "Fairness in testing is an important consideration when creating and/or administering an assessment. Fairness can be considered as two key concepts: Accessibility and bias.\nIn addition, staying abreast on legal issues is important. If you plan to use an assessment internationally, it is also important to consider laws in other countries.\nUnited States of America Governing Bodies: - Fair Employment Practice Agencies (FEPA) - Equal Employment Opportunity Commission (EEOC)  - Office of Federal Contract Compliance Programs\nLaws - ADA - ADEA - Title VII\nInternational Organizations & Testing – what types\n\n10.0.1 CASE STUDIES\nCivil Rights Act of 1964 – Race/Color – National Origin – Religion – Sex\nAge Discrimination Employment Act (1967) Covers those over the age of 40.\nAmerican Disability Act (1990) – Disability\nCould create a timeline visual to make the chapter feel less dense\nRace Griggs vs. Duke Power Co. Cracker Barrel?\nReligion E.E.O.C. v. Abercrombie & Fitch Stores, Inc. Domski v. Blue Cross Blue Shield of Michigan\nSex Price Waterhouse v. Hopkins Bostock vs. Clayton County R.G. & G.R. Harris Funeral Homes Inc. v. Equal Employment Opportunity Commission\nNational Origin\nAge Mobley vs. Workday\nDisability\n\n\n10.0.2 Developing the Assessment\nIn the ___ chapter, we discussed how to create and select test items. It is imperative that during this phase, you consider the items wording and content utilized as\n\n\n10.0.3 Piloting the Assessment\nIn the pilot phase, the assessment creators should run analyses to ensure that groups are not being treated differently.\n\n\n10.0.4 Administering the Assessment\nThis section will discuss legal issues and fairness in psychological testing.\nBias Accessibility - can take from UX Design principles and cognitve psych principles.\n\n\n10.0.5 APA STANDARDS\n2014 APA Standards:\n\nStandards 3.0-3 5: oink.\nStandards 3.6-3.8: woof.\nStandards 3.9-3.14: ribbit.\nStandards 3.15-3.20: meowmeow.\n\nThe 2026 APA standards:\n\n\n10.0.6 Reducing Bias\n\nConsidering if an assessment will get at the problem you’re trying to solve.\nUtilizing multiple assessment types (cognitive, personality, etc.)\nScreen test items\n\n\n\n10.0.7 ANALYSES & INTERPRETATION\nAnalyses in R 4/5ths Rule – Impact Ratio Differential Validity Differential Prediction Quota Systems Race Norming\nThe 4/5th rule (i.e., impact ratio) measures the ratio between the majority and minority in employment decisions, based off Title VII protected classes. This is the easiest measurement to see if there are any favorable outcomes between groups.\nStep 1. Gather the amount of employees or applicants in that group. Step 2. Gather the amount of employees or applicants selected from the group. Step 3. Divide Step 2 by Step 1. Step 4. Repeat for each group. Step 5. Divide the smallest number by the largest number.\nIf after your analysis, the answer is above .80, then it is considered that one group is not favorable over another. However, if the answer is below .80, then it may be considered that one group is favored.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nPut in R code examples and then create a few examples so the student/reader can run and interpret results. I wonder if we have practice examples if we should write another QMD with practice answers???\nhttps://legal.thomsonreuters.com/en/insights/articles/what-is-title-vii-civil-rights-act\n**Maybe less is more… define, mention protected classes, timeline of landmark cases with ruling and a link to something more in depth, section on AI in testing since it’s a hot topic. Number of Employees makes a difference….",
     "crumbs": [
-      "Practical Guides"
+      "Documentation & Guides",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Legal Considerations & Fairness in Testing</span>"
     ]
   },
   {
     "objectID": "summary.html",
     "href": "summary.html",
-    "title": "12  Summary",
+    "title": "11  Summary",
     "section": "",
     "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2",
     "crumbs": [
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Summary</span>"
+      "Appendix",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Summary</span>"
     ]
   },
   {
@@ -218,8 +229,9 @@
     "href": "references.html",
     "title": "References",
     "section": "",
-    "text": "American Psychological Association. (2020). Publication manual of\nthe american psychological association (7th ed.). American\nPsychological Association.\n\n\nAnderson, J. C., & Gerbing, D. W. (1991). Predicting the performance\nof measures in a confirmatory factor analysis with a pretest assessment\nof their substantive validities. Journal of Applied Psychology,\n76(5), 732–740.\n\n\nColquitt, J. A., Sabey, T. B., Rodell, J. B., & Hill, E. T. (2019).\nContent validation guidelines: Evaluation criteria for definitional\ncorrespondence and definitional distinctiveness. Journal of Applied\nPsychology, 104(10), 1243–1265.\n\n\nGuion, R. M. (1977). Content validity—the source of my discontent.\nApplied Psychological Measurement, 1(1), 1–10.\n\n\nHambleton, R. K., & Rovinelli, R. J. (1986). Assessing the\ndimensionality of a set of test items. Applied Psychological\nMeasurement, 10(3), 287–302.\n\n\nHemphill, J. K., & Westie, C. M. (1950). The measurement of group\ndimensions. The Journal of Psychology, 29(2), 325–342.\n\n\nHinkin, T. R., & Tracey, J. B. (1999). An analysis of variance\napproach to content validation. Organizational Research\nMethods, 2(2), 175–186.\n\n\nKnuth, D. E. (1984). Literate programming. Comput. J.,\n27(2), 97–111. https://doi.org/10.1093/comjnl/27.2.97\n\n\nLawshe, C. H. (1975). A quantitative approach to content validity.\nPersonnel Psychology, 28(4), 563–575.\n\n\nModern Language Association of America. (2021). MLA handbook\n(9th ed.). Modern Language Association of America.\n\n\nStevens, S. S. (1946). On the theory of scales of measurement.\nScience, 103(2684), 677–680.",
+    "text": "American Psychological Association. (2020). Publication manual of\nthe american psychological association (7th ed.). American\nPsychological Association.\n\n\nAnderson, J. C., & Gerbing, D. W. (1991). Predicting the performance\nof measures in a confirmatory factor analysis with a pretest assessment\nof their substantive validities. Journal of Applied Psychology,\n76(5), 732–740.\n\n\nColquitt, J. A., Sabey, T. B., Rodell, J. B., & Hill, E. T. (2019).\nContent validation guidelines: Evaluation criteria for definitional\ncorrespondence and definitional distinctiveness. Journal of Applied\nPsychology, 104(10), 1243–1265.\n\n\nEbel, R. L. (1975). Prediction? Validation? Construct validity?\n\n\nFitzpatrick, A. R. (1983). The meaning of content validity. Applied\nPsychological Measurement, 7(1), 3–13.\n\n\nGuion, R. M. (1977). Content validity—the source of my discontent.\nApplied Psychological Measurement, 1(1), 1–10.\n\n\nHambleton, R. K., & Rovinelli, R. J. (1986). Assessing the\ndimensionality of a set of test items. Applied Psychological\nMeasurement, 10(3), 287–302.\n\n\nHemphill, J. K., & Westie, C. M. (1950). The measurement of group\ndimensions. The Journal of Psychology, 29(2), 325–342.\n\n\nHinkin, T. R., & Tracey, J. B. (1999). An analysis of variance\napproach to content validation. Organizational Research\nMethods, 2(2), 175–186.\n\n\nKnuth, D. E. (1984). Literate programming. Comput. J.,\n27(2), 97–111. https://doi.org/10.1093/comjnl/27.2.97\n\n\nLawshe, C. H. (1975). A quantitative approach to content validity.\nPersonnel Psychology, 28(4), 563–575.\n\n\nModern Language Association of America. (2021). MLA handbook\n(9th ed.). Modern Language Association of America.\n\n\nStevens, S. S. (1946). On the theory of scales of measurement.\nScience, 103(2684), 677–680.",
     "crumbs": [
+      "Appendix",
       "References"
     ]
   },
@@ -230,27 +242,8 @@
     "section": "",
     "text": "Term  Definition",
     "crumbs": [
+      "Appendix",
       "<span class='chapter-number'>12</span>  <span class='chapter-title'>Glossary</span>"
-    ]
-  },
-  {
-    "objectID": "Scale Development.html#sec-adequacy",
-    "href": "Scale Development.html#sec-adequacy",
-    "title": "Scale Development",
-    "section": "Measure adequacy (empirical)",
-    "text": "Measure adequacy (empirical)\nEmpirical estimates of your measure’s adequacy (extent to which it is a reasonable operationalization of your conceptual construct) are only limited by your creativity, but by tradition are categorized as indices of reliability and validity – each of which has several possible estimation procedures. It should also be noted that the constructs of reliability and validity exhibit a high degree of overlap. In the context of several different discussions regarding content validity, said:\n\nPerhaps instead of content validity we should call it content reliability, or job sample reliability. Perhaps we should, but I doubt that we will. Verbal habits are not tha teasy to change. We are no doubt fated to live henceforth with somewhat imprecise terminology, and with the confused thinking about test quality it is likely to spawn ((ebel1975?), quoted in Guion (1977))\n\n\nContent validation – not currently located anywhere.\nThis is the “evaluation of operational definitions” (Guion (1977), p. 6)\n\npeople who talk about content validity are talking about how well a small sample of behavior observed in the measurement procedure represents the whole class of behavior that falls within the boundaries defining the content domain. This content representativeness is explicitly what people are talking about when they speak of content validity (Guion (1977), p. 3)\n\nAnderson & Gerbing (1991) speak of substantive validity as a subordinate aspect of construct validity, although this term has not realized broad adoption and the Anderson & Gerbing (1991) method is more commonly conceptualized as a content validation procedure.\nLawshe (1975)’s content validity ratio was, for many years, the most popular index of content validity:\n\\[\nCVR = \\frac{n_e - \\frac{N}{2}}{\\frac{N}{2}}\n\\tag{1}\\]\nLawshe (1975) asked a content evaluation panel to independently rate each items in terms of being, 1) Essential, 2) Useful but not essential, or 3) Not necessary. Lawshe (1975)’s initial presentation was focused on jobs, and his process\nThe content validity coefficient here was operationalized as a quantification of consensus (among the panel constituents; see Equation 1). \\(n_e\\) is the number of panelists who rated an item essential. \\(N\\) is the total number of judges on the panel. The CVR will be negative if less than half of panelists rule an item essential and positive if more than half agree that an item is essential.\nHinkin & Tracey (1999) Colquitt et al. (2019)\nThe concept is not without controversy. Shortly after Lawshe (1975)’s contribution, Guion (1977), in the very first article of the very first issue of the very first volumn of Applied Psychological Measurement, issued a Guionian shot across the bow:\nTimeline diagram here: 1. Hemphill & Westie (1950) 2. Hambleton & Rovinelli (1986)\n\n\nConstructs\nSpeaking of the debate regarding the reservation of the word “construct” for truly abstract entities versus concrete behaviors, Guion (1977) concedes:\n\nI do like to speak sensibly, and I dislike further corrupting the language, but I don’t know what else to call them. (p. 5)\n\n\n\n\n\nAnderson, J. C., & Gerbing, D. W. (1991). Predicting the performance of measures in a confirmatory factor analysis with a pretest assessment of their substantive validities. Journal of Applied Psychology, 76(5), 732–740.\n\n\nColquitt, J. A., Sabey, T. B., Rodell, J. B., & Hill, E. T. (2019). Content validation guidelines: Evaluation criteria for definitional correspondence and definitional distinctiveness. Journal of Applied Psychology, 104(10), 1243–1265.\n\n\nGuion, R. M. (1977). Content validity—the source of my discontent. Applied Psychological Measurement, 1(1), 1–10.\n\n\nHambleton, R. K., & Rovinelli, R. J. (1986). Assessing the dimensionality of a set of test items. Applied Psychological Measurement, 10(3), 287–302.\n\n\nHemphill, J. K., & Westie, C. M. (1950). The measurement of group dimensions. The Journal of Psychology, 29(2), 325–342.\n\n\nHinkin, T. R., & Tracey, J. B. (1999). An analysis of variance approach to content validation. Organizational Research Methods, 2(2), 175–186.\n\n\nLawshe, C. H. (1975). A quantitative approach to content validity. Personnel Psychology, 28(4), 563–575.\n\n\nStevens, S. S. (1946). On the theory of scales of measurement. Science, 103(2684), 677–680.",
-    "crumbs": [
-      "Scale Development"
-    ]
-  },
-  {
-    "objectID": "index.html#organizing-principles",
-    "href": "index.html#organizing-principles",
-    "title": "Applied Psychometrics Using R",
-    "section": "Organizing Principles",
-    "text": "Organizing Principles\n\nThe structure of the book loosely parallels project sequence rather than fundamental concepts.\nContent is linked to corresponding Standards\nForks to psychometric orientations where appropriate:\n\n\nItem Response Theory\nRasch modeling\nClassical Test Theory\nNetwork psychometrics\n\n\nApplications are interactive",
-    "crumbs": [
-      "Introduction"
     ]
   }
 ]

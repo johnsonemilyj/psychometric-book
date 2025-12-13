@@ -39,7 +39,7 @@ book:
         - references.qmd
         - glossary.qmd
 
-bibliography: references.bib
+bibliography: [references.bib,ej.bib,kulas.bib]
 csl: apa7.csl
 
 format:
