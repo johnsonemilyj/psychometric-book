@@ -16,25 +16,23 @@ book:
     - part: intro.qmd
       chapters:
         - Using R.qmd
+        - Psychometric Philosophies.qmd
         - Types of Assessments.qmd
-    - part: Content Domain Population.qmd
+    - part: Scale Development.qmd
       chapters:
         - Nomological Networks.qmd
-        - Item Sampling.qmd
-        - Scale Development.qmd
-    - part: Data Collection.qmd
+        - Domain Sampling.qmd
+    - part: Scale Evaluation.qmd
       chapters:
-        - Population & Sampling.qmd
-    - part: Psychometric Philosophies.qmd
-      chapters:
-        - Reflective vs. Formative Measurement.qmd
         - Internal Empirical Associations.qmd
         - External Empirical Associations.qmd
-        - Legal Considerations & Additional Analyses.qmd
+    - part: Population and Sampling.qmd
+      chapters:
+        - Convenience Sampling.qmd
     - part: Documentation & Guides.qmd
       chapters: 
         - techreport.qmd
-    - part: Practical Guides.qmd
+        - Legal Considerations & Additional Analyses.qmd
     - summary.qmd
     - references.qmd
     - glossary.qmd

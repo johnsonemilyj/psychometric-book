@@ -1,4 +1,0 @@
----
-title: "Item Sampling"
-editor: visual
----
