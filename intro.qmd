@@ -1,11 +1,29 @@
 # Introduction
 
-This is a book created from markdown and executable code.
+## Organizing Principles
 
-See @knuth84 for additional discussion of literate programming.
+The structure of this book more closely parallels ***project sequence*** rather than fundamental concepts. This was a deliberate choice and intended to better serve the ***developer of psychological assessments***. 
 
-```{webr-r}
-fit = lm(mpg ~ am, data = mtcars)
+The content is informed by the current literature on Psychological measurement [e.g., @borsboom2022possible] as well as important foundational sources [e.g., @stevens1946theory] and one primary "North Star", the Standards for Educational and Psychological Testing [@aera_apa_ncme_2014]. We have made every effort to, where appropriate, link the current book material to corresponding Standards within the forthcoming edition (edition 8).
 
-summary(fit)
+By tradition, the ***development*** of a measure is aligned with one predominant philosophical orientation, although analytical explorations are often conducted via the application of multiple orientations. This is smart, as multiple investigations from multiple angles should provide the most information regarding the effectiveness of a measure. We have tried to be careful about our use of the words "tradition" and "philosophy" such that "tradition" is a categorical label whereas "philosophy" connotes more meaningful differences in thought or specification regarding the nature of measurement.
+
+Consistent with this, "diversity of traditions is good" perspective^[sorry Raschies!!!], we take an atypical route toward presentation and integration of different psychometric traditions -- we separate psychometric traditions (classical test theory, item response theory, network psychometrics) from the ***procedures*** often tied to those traditions. 
+
+This will likely be the most controversial structural decision we have made, although it is again aligned with the needs of the practitioner (test developer and analyst), who should be provided multiple options (aka *procedures*) for any one investigation (aka *analysis*). The consequential, philosophical orientations of each tradition is handled separately, in @Psychometric Philosophies.qmd 
+
+```{r}
+
+Philosophy <- c("CTT", "IRT", "Rasch")
+Analysis <- c("difficulty", "difficulty", "difficulty")
+Procedure <- c("item average", "1PL estimation", "logodds")
+
+temp <- as.data.frame(cbind(Philosophy, Analysis, Procedure))
+
+kableExtra::kable(temp)
+
 ```
+
+All applications are interactive and intended to be executed within the reader's browser -- alternatively the code can also be "copied" and "pasted" into the reader's local R session, if that is preferred. 
+
+

@@ -1,4 +1,11 @@
 ---
 title: "Using R"
-editor: visual
 ---
+
+This book utilizes [`WebR`](https://docs.r-wasm.org/webr/latest/) to teach analytical components. `WebR` enables an interactive code editor within your viewing browser, so you can write, execute, and recieve feedback on code relevant for your psychometrics project.
+
+```{webr-r}
+fit = lm(mpg ~ am, data = mtcars)
+
+summary(fit)
+```

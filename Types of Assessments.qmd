@@ -24,8 +24,9 @@ Tests may appropriately and synonymously be alternatively referred to as ***exam
 :::
 :::
 
-The Standards, for example, use the word "test" as synonymous with "assessment". The Standards is a resource meant to be applicable across disciplines. Psychologists, however, should always disto 
+The Standards use the word "test" as synonymous with "assessment". The Standards is a resource meant to be applicable across disciplines and within educational contexts, the semantic distinction is unnecessary (the assessments in education are almost universally true tests). Psychologists, however, should always be careful in their communication -- if the measure is intended to reflect correct and incorrect, it is a test. If scores are not intended to convey correct or incorrect, it is an ***inventory***. 
 
 ## Characteristics {#typechar}
 
-
+The standard item characteristics that
+>NOTE. maybe better within item analysis section
