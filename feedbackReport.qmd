@@ -47,7 +47,7 @@ In the earliest days of Psychological assessment, normative information was conv
 1. raw assessment scores, and 
 2. standard score equivalents^[...including percentile ranks -- for the current discussion we are conceptualizing percentile rank as a ***type*** of standard score, although most historic norms tables presented 3 pieces of information: raw scores, standard scores, AND percentile ranks.] 
 
-Contemporarily, your normative information is more commonly hidden within your scaled score algoritm and presented directly within the feedback report. Note that you should always carefully describe your normative sample within your technical report -- your level of normative sample description within the ***feedback*** report will primarily depend on the needs of the consumer audience.
+Contemporarily, your normative information is more commonly hidden within your scaled score algorithm and presented directly within the feedback report. Note that you should always carefully describe your normative sample within your technical report -- your level of normative sample description within the ***feedback*** report will primarily depend on the needs of the consumer audience.
 
 ## Report Styling
 
@@ -59,7 +59,7 @@ You should primarily keep your anticipated consumer in mind when designing your 
 
 ## Quarto {#sec-quarto}
 
-We are recommending [Quarto](https://quarto.org/) as your technical and feedback report engine. You do not NEED to follow this recommendation -- you can draw out a feedback report on the back of a cocktail napkin if you really want to do so -- but we believe Quarto is a powerful tool to integrate data processing with semantic content within beautiful report formats (plus, we're giving you templates to work with, so half your work is already done for you anyway)! Most assessment publishers have their own proprietary tools to create and deliver feedback to consumers, but Quarto is a great tool for independent assessment developers. 
+We are recommending [Quarto](https://quarto.org/) as your technical and feedback report engine. You do not NEED to follow this recommendation -- you can draw out a feedback report on the back of a cocktail napkin if you really want to do so -- but we believe Quarto is a powerful tool to integrate data processing with semantic content within beautiful report formats (plus, we're giving you templates to work with, so half your work is already done for you anyway)! Many assessment publishers have their own proprietary tools to create and deliver feedback to consumers, but Quarto is a great tool for independent assessment developers. 
 
 Please make sure to have [Quarto installed](https://quarto.org/docs/download/) on your computer prior to proceeding below (Quarto is an independent piece of software -- it is NOT an R package).
 

@@ -94,7 +94,20 @@ dimension <- c("Agreeableness",
 toplot <- as.data.frame(cbind(dimension, scores))
 colnames(toplot)[2] <- "Standard Score"
 
+toplot$`Standard Score` <- as.numeric(as.character(toplot$`Standard Score`))
+
 ```
+
+```{r barplot}
+
+library(ggplot2)
+
+ggplot(toplot,
+       aes(x=dimension,y=`Standard Score`)) +
+       geom_bar(stat="identity") +
+       scale_y_continuous(limits = c(0, 130))
+```
+
 
 # for `r respondent$name`
 
