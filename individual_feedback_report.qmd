@@ -1,0 +1,106 @@
+---
+title: "Individual Feedback Report Template"
+date: today
+published-title: "Report generated"
+
+format:
+  html:
+    theme: flatly
+    include-after-body:
+      text: |
+        <footer class="footer">
+          <hr> <!-- Optional horizontal line -->
+          <p>Copyright 2026© I.M. Awesome, Ltd.</p>
+        </footer> 
+
+execute: 
+  echo: true
+  warning: false
+  error: false
+---
+
+```{r exampledata}
+
+library(psych)
+data(bfi)            ## fresh load each time (no mistake RE-recodes)
+
+bfi$A1 <- 7-bfi$A1   ## Item recodes
+
+bfi$C4 <- 7-bfi$C4
+bfi$C5 <- 7-bfi$C5
+
+bfi$E1 <- 7-bfi$E1
+bfi$E2 <- 7-bfi$E2
+
+bfi$O2 <- 7-bfi$O2
+bfi$O5 <- 7-bfi$O5
+
+
+respondent <- bfi[2800,]    ## isolating 1 respondent
+norms      <- bfi[-2800,]
+
+respondent[29] <- "Nörm N. Nörmman"
+colnames(respondent)[29] <- "name"
+
+```
+
+```{r norms}
+
+agree_norm <- rowMeans(norms[1:5], na.rm=TRUE) 
+cons_norm  <- rowMeans(norms[6:10], na.rm=TRUE)
+extra_norm <- rowMeans(norms[11:15], na.rm=TRUE)
+neuro_norm <- rowMeans(norms[16:20], na.rm=TRUE)
+open_norm  <- rowMeans(norms[21:25], na.rm=TRUE)
+
+agree_mean <- mean(agree_norm, na.rm = TRUE)
+agree_sd   <- sd(agree_norm, na.rm = TRUE)
+
+cons_mean  <- mean(cons_norm, na.rm = TRUE)
+cons_sd    <- sd(cons_norm, na.rm = TRUE)
+
+extra_mean <- mean(extra_norm, na.rm = TRUE)
+extra_sd   <- sd(extra_norm, na.rm = TRUE)
+
+neuro_mean <- mean(neuro_norm, na.rm = TRUE)
+neuro_sd   <- sd(neuro_norm, na.rm = TRUE)
+
+open_mean  <- mean(open_norm, na.rm = TRUE)
+open_sd    <- sd(open_norm, na.rm = TRUE)
+
+```
+
+```{r scoring}
+
+agree <- rowMeans(respondent[1:5], na.rm=TRUE) 
+cons  <- rowMeans(respondent[6:10], na.rm=TRUE)
+extra <- rowMeans(respondent[11:15], na.rm=TRUE)
+neuro <- rowMeans(respondent[16:20], na.rm=TRUE)
+open  <- rowMeans(respondent[21:25], na.rm=TRUE)
+
+## Scale scores (μ=100, σ=15)
+
+agree_ss <- round(((((agree-agree_mean)/agree_sd)*15)+100),0)
+cons_ss  <- round(((((cons-cons_mean)/cons_sd)*15)+100),0)
+extra_ss <- round(((((extra-extra_mean)/extra_sd)*15)+100),0)
+neuro_ss <- round(((((neuro-neuro_mean)/neuro_sd)*15)+100),0)
+open_ss  <- round(((((open-open_mean)/open_sd)*15)+100),0)
+
+scores <- rbind(agree_ss, cons_ss, extra_ss, neuro_ss, open_ss)
+dimension <- c("Agreeableness", 
+               "Conscientiousness", 
+               "Extraversion",
+               "Neuroticism",
+               "Openness")
+toplot <- as.data.frame(cbind(dimension, scores))
+colnames(toplot)[2] <- "Standard Score"
+
+```
+
+# for `r respondent$name`
+
+There were `r sum(is.na(respondent[1:25]))` missing responses across 25 personality item administrations.
+
+When compared against responses of `r nrow(norms)` other individuals, `r respondent$name`'s highest relative score was on and lowest relative score was on .
+
+
+

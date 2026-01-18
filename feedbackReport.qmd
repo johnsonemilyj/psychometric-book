@@ -1,0 +1,116 @@
+# Feedback report
+
+The summarized results of administrations of your measure should be conveyed within a feedback report. These reports are intended to be delivered to assessment stakeholders, who are not expected to have any training in Psychometrics. The anticipated reading--level, by default, should be 7^th^ grade (American standard), but you'll also need to keep in mind anticipated mathematical literacy. Generally speaking, it is best to assume that your audience is borderline numerically illiterate -- if you present numbers, make sure to also provide supplementary information (such as interpretation guides or training sessions).
+
+:::{.column-margin #fig-mathgene}
+![missing math gene](https://www.sallyflint.com/wp-content/uploads/2023/07/cartoon-1.gif)
+:::
+
+## "Stakeholders"
+
+Individuals who have some level of interest in the administration and/or results of your measure are referred to as "stakeholders". Any one stakeholder may hold multiple roles regarding your assessment. For example, often with Psychological assessment, stakeholders are both respondent and consumer, and these same individuals may or may not also be the purchasing agent (if your measure has been commercialized). Depending on the context, that same individual may also be the administrator, because many low--stakes Psychological assessments are self--administered.
+
+```{r}
+#| label: tbl-stakeholders
+#| tbl-cap: Assessment stakeholders
+
+Role <- c(
+      "Respondent",
+      "Sample",
+      "Administrator",
+      "Purchaser",
+      "Consumer"
+)
+
+Definition <- c("Participant in the assessment--taking process",
+                "Collective of respondents (grouped by some meaningful association)^a^",
+                "Individual facilitating the delivery and collection of assessment responses",
+                'aka "client" -- individual(s) who requested the assessment administration',
+                "Target audience for summarized assessment results")
+
+stakeholders <- as.data.frame(cbind(Role, Definition))
+
+library(knitr)
+library(kableExtra)
+
+kable(stakeholders) %>%
+  add_footnote("frequently *dates of administration* or *demography* but can be any useful grouping", notation="alphabet")
+
+```
+
+## Norms
+
+Traditionally, the results of Psychological inventories are presented relative to a normative group (in the simplest scenario) or multiple normative groups (in a more complex scenario). Your feedback report is where your norms are most prominently significant. 
+
+In the earliest days of Psychological assessment, normative information was conveyed to the consumer in the form of static tables that contained: 
+
+1. raw assessment scores, and 
+2. standard score equivalents^[...including percentile ranks -- for the current discussion we are conceptualizing percentile rank as a ***type*** of standard score, although most historic norms tables presented 3 pieces of information: raw scores, standard scores, AND percentile ranks.] 
+
+Contemporarily, your normative information is more commonly hidden within your scaled score algoritm and presented directly within the feedback report. Note that you should always carefully describe your normative sample within your technical report -- your level of normative sample description within the ***feedback*** report will primarily depend on the needs of the consumer audience.
+
+## Report Styling
+
+You should primarily keep your anticipated consumer in mind when designing your feedback report. Font size, density of information, and color schemes are all possibly impacted. Some feedback reports are volumnious (50+ pages) and some are concise. Online delivery is increasingly expected, and many design considerations can be customized via online delivery and the assistance of engines such as @sec-quarto. Err on the side of "less is more", especially with a first draft report. 
+
+::: {.column-margin #fig-lessismore}
+![Err on the side of brevity](https://miro.medium.com/0*mmAw6El5LY-y_v7N.jpeg)
+:::
+
+## Quarto {#sec-quarto}
+
+We are recommending [Quarto](https://quarto.org/) as your technical and feedback report engine. You do not NEED to follow this recommendation -- you can draw out a feedback report on the back of a cocktail napkin if you really want to do so -- but we believe Quarto is a powerful tool to integrate data processing with semantic content within beautiful report formats (plus, we're giving you templates to work with, so half your work is already done for you anyway)! Most assessment publishers have their own proprietary tools to create and deliver feedback to consumers, but Quarto is a great tool for independent assessment developers. 
+
+Please make sure to have [Quarto installed](https://quarto.org/docs/download/) on your computer prior to proceeding below (Quarto is an independent piece of software -- it is NOT an R package).
+
+::: {.column-margin #fig-cocktail}
+
+![you really don't need to do this!!!](https://www.barplan.com/wp-content/uploads/2014/09/napkin.jpg)
+
+:::
+
+## Templates
+
+Below are starter templates for individual (@sec-indreport) and group (@sec-grpreport) reports. These are not exhaustive of all possible report foci (for example, [360° reports](https://3dgroup.net/wordpress/wp-content/uploads/2017/03/EX_360_5pt_Frequency_3D-Group_Sample-Report.pdf) could be considered hybridized derivatives but fit neither category well). Rather, these should be considered starting points from which you can deviate and personalize (moreso in terms of functionality than style).
+
+### Individual Report Template {#sec-indreport}
+
+There are two traditional media formats for feedback reports: hard--copy (typically pdf), and online (html page or dashboard). We'll build self--contained Quarto templates for these most typically--sought formats using `bfi` data from the `psych` package as an example measure. 
+
+For all reports, the [final entry]{.underline} (index #67560) within the `bfi` dataset is treated as the focal respondent, with the remaining 2,799 individuals constituting the normative sample.  
+
+::: {.panel-tabset}
+
+## `html` report
+
+```{r}
+#| echo: fenced
+#| eval: false
+
+
+
+```
+
+## `pdf` report
+
+```{r}
+#| echo: fenced
+#| eval: false
+
+
+
+```
+
+## dashboard report
+
+```{r}
+#| echo: fenced
+#| eval: false
+
+
+
+```
+
+:::
+
+### Group Report Template {#sec-grpreport}
