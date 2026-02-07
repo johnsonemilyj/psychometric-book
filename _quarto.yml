@@ -44,6 +44,8 @@ csl: apa7.csl
 
 format:
   html:
+    mermaid:
+      theme: default
     theme: [lux, custom.css]
     glossary:             # debruine/quarto-glossary
       path: glossary.yml  # Path to your definitions file
@@ -62,3 +64,8 @@ webr:
 
 filters:
   - webr
+  
+execute: 
+  echo: false
+  warning: false
+  message: false
