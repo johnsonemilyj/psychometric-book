@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.8.26">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -61,14 +61,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="feedbackReport_files/libs/clipboard/clipboard.min.js"></script>
 <script src="feedbackReport_files/libs/quarto-html/quarto.js" type="module"></script>
 <script src="feedbackReport_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="feedbackReport_files/libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="feedbackReport_files/libs/quarto-html/popper.min.js"></script>
 <script src="feedbackReport_files/libs/quarto-html/tippy.umd.min.js"></script>
 <script src="feedbackReport_files/libs/quarto-html/anchor.min.js"></script>
 <link href="feedbackReport_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="feedbackReport_files/libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="feedbackReport_files/libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="feedbackReport_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="feedbackReport_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="feedbackReport_files/libs/bootstrap/bootstrap-bb462d781dde1847d9e3ccf7736099dd.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="feedbackReport_files/libs/bootstrap/bootstrap-9e3ffae467580fdb927a41352e75a2e0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 
 
 </head>
@@ -105,7 +106,7 @@ Figure&nbsp;1
 <h2 class="anchored" data-anchor-id="stakeholders">“Stakeholders”</h2>
 <p>Individuals who have some level of interest in the administration and/or results of your measure are referred to as “stakeholders”. Any one stakeholder may hold multiple roles regarding your assessment. For example, often with Psychological assessment, stakeholders are both respondent and consumer, and these same individuals may or may not also be the purchasing agent (if your measure has been commercialized). Depending on the context, that same individual may also be the administrator, because many low–stakes Psychological assessments are self–administered.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>Role <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>Role <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>      <span class="st">"Respondent"</span>,</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>      <span class="st">"Sample"</span>,</span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>      <span class="st">"Administrator"</span>,</span>
@@ -121,16 +122,11 @@ Figure&nbsp;1
 <span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>stakeholders <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(<span class="fu">cbind</span>(Role, Definition))</span>
 <span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(knitr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning: package 'knitr' was built under R version 4.3.2</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(kableExtra)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning: package 'kableExtra' was built under R version 4.3.3</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(stakeholders) <span class="sc">%&gt;%</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">add_footnote</span>(<span class="st">"frequently *dates of administration* or *demography* but can be any useful grouping"</span>, <span class="at">notation=</span><span class="st">"alphabet"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(knitr)</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(kableExtra)</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(stakeholders) <span class="sc">%&gt;%</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">add_footnote</span>(<span class="st">"frequently *dates of administration* or *demography* but can be any useful grouping"</span>, <span class="at">notation=</span><span class="st">"alphabet"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div id="tbl-stakeholders" class="cell quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-stakeholders-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -187,7 +183,7 @@ Table&nbsp;1: Assessment stakeholders
 <li>raw assessment scores, and</li>
 <li>standard score equivalents<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></li>
 </ol>
-<p>Contemporarily, your normative information is more commonly hidden within your scaled score algoritm and presented directly within the feedback report. Note that you should always carefully describe your normative sample within your technical report – your level of normative sample description within the <strong><em>feedback</em></strong> report will primarily depend on the needs of the consumer audience.</p>
+<p>Contemporarily, your normative information is more commonly hidden within your scaled score algorithm and presented directly within the feedback report. Note that you should always carefully describe your normative sample within your technical report – your level of normative sample description within the <strong><em>feedback</em></strong> report will primarily depend on the needs of the consumer audience.</p>
 </section>
 <section id="report-styling" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="report-styling">Report Styling</h2>
@@ -210,7 +206,7 @@ Figure&nbsp;2
 </div></div></section>
 <section id="sec-quarto" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="sec-quarto">Quarto</h2>
-<p>We are recommending <a href="https://quarto.org/">Quarto</a> as your technical and feedback report engine. You do not NEED to follow this recommendation – you can draw out a feedback report on the back of a cocktail napkin if you really want to do so – but we believe Quarto is a powerful tool to integrate data processing with semantic content within beautiful report formats (plus, we’re giving you templates to work with, so half your work is already done for you anyway)! Most assessment publishers have their own proprietary tools to create and deliver feedback to consumers, but Quarto is a great tool for independent assessment developers.</p>
+<p>We are recommending <a href="https://quarto.org/">Quarto</a> as your technical and feedback report engine. You do not NEED to follow this recommendation – you can draw out a feedback report on the back of a cocktail napkin if you really want to do so – but we believe Quarto is a powerful tool to integrate data processing with semantic content within beautiful report formats (plus, we’re giving you templates to work with, so half your work is already done for you anyway)! Many assessment publishers have their own proprietary tools to create and deliver feedback to consumers, but Quarto is a great tool for independent assessment developers.</p>
 <p>Please make sure to have <a href="https://quarto.org/docs/download/">Quarto installed</a> on your computer prior to proceeding below (Quarto is an independent piece of software – it is NOT an R package).</p>
 
 <div class="no-row-height column-margin column-container"><div id="fig-cocktail" class="quarto-float quarto-figure quarto-figure-center anchored">
@@ -315,13 +311,14 @@ Figure&nbsp;3
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

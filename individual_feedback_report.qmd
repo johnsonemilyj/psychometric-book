@@ -1,20 +1,30 @@
 ---
 title: "Individual Feedback Report Template"
 date: today
+title-block-banner: "#6baed6"
 published-title: "Report generated"
 
 format:
   html:
-    theme: flatly
+    theme: 
+      light: default     
+      dark: darkly    
+    other-links:
+      - text: BFI Information
+        icon: info-circle
+        href: https://www.rdocumentation.org/packages/psych/versions/2.5.6/topics/bfi
     include-after-body:
       text: |
         <footer class="footer">
           <hr> <!-- Optional horizontal line -->
-          <p>Copyright 2026© I.M. Awesome, Ltd.</p>
+          <p>Copyright 2026© Oui R. Awesome, Ltd.</p>
         </footer> 
+    navbar:
+toc: true
+lightbox: true
 
 execute: 
-  echo: true
+  echo: false
   warning: false
   error: false
 ---
@@ -39,7 +49,7 @@ bfi$O5 <- 7-bfi$O5
 respondent <- bfi[2800,]    ## isolating 1 respondent
 norms      <- bfi[-2800,]
 
-respondent[29] <- "Nörm N. Nörmman"
+respondent[29] <- "Nörm N Nörmman"
 colnames(respondent)[29] <- "name"
 
 ```
@@ -98,22 +108,72 @@ toplot$`Standard Score` <- as.numeric(as.character(toplot$`Standard Score`))
 
 ```
 
-```{r barplot}
+## Assessment information
 
-library(ggplot2)
+The BFI consists of 25 personality items and 3 demographics (gender, education, and age). Responses to the 25 personality items determine an individuals standing along 5 personality dimensions:
 
-ggplot(toplot,
-       aes(x=dimension,y=`Standard Score`)) +
-       geom_bar(stat="identity") +
-       scale_y_continuous(limits = c(0, 130))
-```
++ **Extraversion** -- an orientation of interest and energies ranging from the outer world of people and things to the inner world of subjective experience 
++ **Conscientiousness** -- a tendency to be organized, responsible, and hardworking/industrious 
++ **Agreeableness** -- tendency to act in a cooperative, unselfish manner 
++ Openness to experience (**Openness**) -- tendency to be open to new aesthetic, cultural, or intellectual experiences
++ **Neuroticism** -- chronic levels of emotional instability and proneness to psychological distress
 
-
-# for `r respondent$name`
+## Results summary for `r respondent$name`:
 
 There were `r sum(is.na(respondent[1:25]))` missing responses across 25 personality item administrations.
 
-When compared against responses of `r nrow(norms)` other individuals, `r respondent$name`'s highest relative score was on and lowest relative score was on .
+When compared against responses of `r nrow(norms)` other individuals, `r respondent$name`'s personality profile can be extracted from @fig-radarplot and @fig-barplot.
+
+```{r}
+#| label: fig-radarplot
+#| fig-cap: "Standard score radar plot across 5 dimensions"
+#| 
+library(plotly)
+
+fig <- plot_ly(
+    type = 'scatterpolar',
+    r = toplot$`Standard Score`,
+    theta = toplot$dimension,
+    fill = 'toself'
+  ) 
+fig <- fig %>%
+  layout(
+    polar = list(
+      radialaxis = list(
+        visible = T,
+        range = c(50,120)
+      )
+    ),
+    showlegend = F
+  )
+
+fig
+
+```
+
+```{r}
+#| label: fig-barplot
+#| fig-cap: "Standard score dotplot across 5 dimensions"
+
+library(ggplot2)
+ggplot(toplot, aes(x = reorder(dimension, `Standard Score`), y=`Standard Score`)) +
+  geom_segment( aes(y=0, yend=`Standard Score`)) +
+  geom_point(size=9.5, color="#0000d1", alpha=.8) +      ## adding border
+  geom_point(size=8, color="#6baed6", alpha=.8) + 
+  geom_text(aes(label = `Standard Score`), color = "black", size = 3.5) +
+  labs(x="",y="") +
+  scale_y_continuous(breaks=c(80, 100, 120), labels = c("low", "average", "high")) +
+  theme(legend.position="none", text=element_text(family="Times")) +
+  coord_flip(ylim=c(50,120))
+```
+
+## Interpretation and Summary
+
+Scores above 100 indicate greater than average whereas scores below 100 indicate less than average. 
+
+# Appendix
+
+Reported scores have an average of 100 and standard deviation of 15.
 
 
 
