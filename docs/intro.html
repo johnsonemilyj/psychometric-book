@@ -361,14 +361,14 @@ div.csl-indent {
 
 <section id="organizing-principles" class="level2">
 <h2 class="anchored" data-anchor-id="organizing-principles">Organizing Principles</h2>
-<p>The structure of this book more closely parallels <strong><em>project sequence</em></strong> rather than fundamental concepts. This was a deliberate choice and intended to better serve the <strong><em>developer of psychological assessments</em></strong>.</p>
-<p>The content is informed by the current literature on Psychological measurement <span class="citation" data-cites="borsboom2022possible">(e.g., <a href="references.html#ref-borsboom2022possible" role="doc-biblioref">Borsboom, 2022</a>)</span> as well as important foundational sources <span class="citation" data-cites="stevens1946theory">(e.g., <a href="references.html#ref-stevens1946theory" role="doc-biblioref">Stevens, 1946</a>)</span> and one primary “North Star”, the Standards for Educational and Psychological Testing <span class="citation" data-cites="aera_apa_ncme_2014">(<a href="references.html#ref-aera_apa_ncme_2014" role="doc-biblioref">American Educational Research Association and American Psychological Association and National Council on Measurement in Education, 2014</a>)</span>. We have made every effort to, where appropriate, link the current book material to corresponding Standards within the forthcoming edition (edition 8).</p>
+<p>The structure of this book parallels <strong><em>project sequence</em></strong>. The more traditional presentation of Psychometrics is organized by fundamental concepts. This was a deliberate choice and intended to better serve the <strong><em>developer of psychological assessments</em></strong>.</p>
+<p>The content is informed by the current literature on Psychological measurement <span class="citation" data-cites="borsboom2022possible">(e.g., <a href="references.html#ref-borsboom2022possible" role="doc-biblioref">Borsboom, 2022</a>)</span> as well as important foundational sources <span class="citation" data-cites="stevens1946theory">(e.g., <a href="references.html#ref-stevens1946theory" role="doc-biblioref">Stevens, 1946</a>)</span> and one guiding “North Star”, the Standards for Educational and Psychological Testing <span class="citation" data-cites="aera_apa_ncme_2014">(<a href="references.html#ref-aera_apa_ncme_2014" role="doc-biblioref">American Educational Research Association and American Psychological Association and National Council on Measurement in Education, 2014</a>)</span>. We have made every effort to, where appropriate, link the current book material to corresponding Standards within the forthcoming edition (edition 8).</p>
 <p>By tradition, the <strong><em>development</em></strong> of a measure is aligned with one predominant philosophical orientation, although analytical explorations are often conducted via the application of multiple orientations. This is smart, as multiple investigations from multiple angles should provide the most information regarding the effectiveness of a measure. We have tried to be careful about our use of the words “tradition” and “philosophy” such that “tradition” is a categorical label whereas “philosophy” connotes more meaningful differences in thought or specification regarding the nature of measurement.</p>
 <p>Consistent with this, “diversity of traditions is good” perspective<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>, we take an atypical route toward presentation and integration of different psychometric traditions – we separate psychometric traditions (classical test theory, item response theory, network psychometrics) from the <strong><em>procedures</em></strong> often tied to those traditions.</p>
-<p>This will likely be the most controversial structural decision we have made, although it is again aligned with the needs of the practitioner (test developer and analyst), who should be provided multiple options (aka <em>procedures</em>) for any one investigation (aka <em>analysis</em>). The consequential, philosophical orientations of each tradition is handled separately, in <span class="citation" data-cites="Psychometric">(<a href="references.html#ref-Psychometric" role="doc-biblioref"><strong>Psychometric?</strong></a>)</span> Philosophies.qmd</p>
+<p>This will likely be the most controversial structural decision we have made, although it is again aligned with the needs of the practitioner (test developer and analyst), who should be provided multiple options (aka <em>procedures</em>) for any one investigation (aka <em>analysis</em>). The consequential, philosophical orientations of each tradition is handled separately, in <a href="Psychometric Philosophies.html" class="quarto-xref"><span>2&nbsp; Psychometric Philosophies</span></a>.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>Philosophy <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"CTT"</span>, <span class="st">"IRT"</span>, <span class="st">"Rasch"</span>)</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>Analysis <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"difficulty"</span>, <span class="st">"difficulty"</span>, <span class="st">"difficulty"</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>Analysis <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"item difficulty"</span>, <span class="st">"item difficulty"</span>, <span class="st">"item difficulty"</span>)</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>Procedure <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"item average"</span>, <span class="st">"1PL estimation"</span>, <span class="st">"logodds"</span>)</span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>temp <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(<span class="fu">cbind</span>(Philosophy, Analysis, Procedure))</span>
@@ -386,23 +386,37 @@ div.csl-indent {
 <tbody>
 <tr class="odd">
 <td style="text-align: left;">CTT</td>
-<td style="text-align: left;">difficulty</td>
+<td style="text-align: left;">item difficulty</td>
 <td style="text-align: left;">item average</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">IRT</td>
-<td style="text-align: left;">difficulty</td>
+<td style="text-align: left;">item difficulty</td>
 <td style="text-align: left;">1PL estimation</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Rasch</td>
-<td style="text-align: left;">difficulty</td>
+<td style="text-align: left;">item difficulty</td>
 <td style="text-align: left;">logodds</td>
 </tr>
 </tbody>
 </table>
 </div>
 </div>
+<p>We view Psychometrics as an application of Psychological methods and analyses to the domain of measurement. Our presentation, therefore, is informed by traditions and advancements within methodology and statistics.</p>
+<p>Why/how is this different:</p>
+<ol type="1">
+<li>Organized based on project sequence</li>
+<li>Elements tied to standards</li>
+<li>WebR for interactivity right there</li>
+<li>Graphics for different components**</li>
+<li>Tests versus inventories and their suceptibility to different forms of response bias</li>
+</ol>
+<blockquote class="blockquote">
+<p>NOTE. Come back and fill this in after final outline is complete and decision is made on how to incorporate <code>WebR</code> – within main resource or as an “external” supplement (instead using <code>echo: true</code> code blocks throughout this presentation)</p>
+</blockquote>
+<p>The structure of the book…</p>
+<p>To get the most out of this book…</p>
 <p>All applications are interactive and intended to be executed within the reader’s browser – alternatively the code can also be “copied” and “pasted” into the reader’s local R session, if that is preferred.</p>
 
 

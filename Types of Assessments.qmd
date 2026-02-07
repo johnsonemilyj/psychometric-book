@@ -1,19 +1,21 @@
 ---
 title: ""
-filters:
-  - d2
-d2:
-  layout: elk
-  theme: "GrapeSoda"
+format:
+  html:
+    mermaid:
+      theme: default    # remove when branch merged
 ---
 
 # Types of Assessment {#sec-assesstype}
 
-A fundamentally important distinction exists between two qualitatively different types of assessment. If assessment responses can be reasonably categorized as ***correct*** or ***incorrect***, you are dealing with a {{< glossary test >}} (see also @nte-truetest). If assessment responses are not intended to be interpreted as correct and incorrect, the assessment should be referred to as an ***inventory***. There are many meaningful differences between (true) tests and inventories (see @typechar), but the most consequential is that (true) tests are subject to different sources of error than are Psychological inventories.  
+A fundamentally important distinction exists between two qualitatively different types of assessment. If assessment responses can be reasonably categorized as ***correct*** or ***incorrect***, you are dealing with a {{< glossary test >}} (see also @nte-truetest). If assessment responses are not intended to be interpreted as correct and incorrect, the assessment should be referred to as an ***inventory***. There are many meaningful differences between (true) tests and inventories (see @sec-typechar), but the most consequential is that (true) tests are subject to different sources of error than are Psychological inventories.  
 
-```{.d2 width="100%" echo=false}
-Assessment -> Test: True/False
-Assessment -> Inventory: NOT True/False
+```{mermaid}
+%%| fig-align: center
+%%| 
+flowchart TD
+    A(Assessment) -->|True/False| B(Test)
+    A(Assessment) --> C(Inventory)
 ```
 
 :::{.column-margin}
@@ -24,9 +26,9 @@ Tests may appropriately and synonymously be alternatively referred to as ***exam
 :::
 :::
 
-The Standards use the word "test" as synonymous with "assessment". The Standards is a resource meant to be applicable across disciplines and within educational contexts, the semantic distinction is unnecessary (the assessments in education are almost universally true tests). Psychologists, however, should always be careful in their communication -- if the measure is intended to reflect correct and incorrect, it is a test. If scores are not intended to convey correct or incorrect, it is an ***inventory***. 
+The Standards treat the subordinate word "test" as being synonymous with the superordinate term "assessment". This is an unfortunate legacy concession and most likely the result of "serving multiple masters yet satisfying none". The Standards is a resource meant to be applicable across disciplines. Within educational contexts, the semantic distinction is unnecessary (the assessments in education are almost universally true tests). Psychologists, however, should always be careful in their communications -- if the measure is intended to reflect correct and incorrect, it is a test. If scores are not intended to convey correct or incorrect, it is an ***inventory***. 
 
-## Characteristics {#typechar}
+## Characteristics {#sec-typechar}
 
 The standard item characteristics that
 >NOTE. maybe better within item analysis section

@@ -2,7 +2,8 @@
 
 ## Organizing Principles
 
-1. The structure of the book loosely parallels ***project sequence*** rather than fundamental concepts.
+1. The structure of the book loosely parallels ***project sequence*** rather than fundamental concepts.  
+  + Follows example assessment creation project (discussed on 2/7/26 -- creativity or ennui thrown out as 1^st^ construct considerations)
 
 2. Content is linked to corresponding Standards
 
