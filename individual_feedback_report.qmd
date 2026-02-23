@@ -81,6 +81,8 @@ open_sd    <- sd(open_norm, na.rm = TRUE)
 
 ```{r scoring}
 
+## focal person's scores
+
 agree <- rowMeans(respondent[1:5], na.rm=TRUE) 
 cons  <- rowMeans(respondent[6:10], na.rm=TRUE)
 extra <- rowMeans(respondent[11:15], na.rm=TRUE)
@@ -171,6 +173,8 @@ fig
 #| label: fig-barplot
 #| fig-cap: "Standard score dotplot across 5 dimensions"
 
+## Redundant with radar plot - simply here as an example of another plot type
+
 library(ggplot2)
 ggplot(toplot, aes(x = reorder(dimension, `Standard Score`), y=`Standard Score`)) +
   geom_segment( aes(y=0, yend=`Standard Score`)) +
@@ -185,9 +189,46 @@ ggplot(toplot, aes(x = reorder(dimension, `Standard Score`), y=`Standard Score`)
 
 :::
 
+```{r}
+## Qualitative statements of lower, average or above
+## Can be expanded for further text specification
+agreereport <- NULL
+
+agreereport[agree_ss == 100] <- "average" 
+agreereport[agree_ss > 100] <- "above average"
+agreereport[agree_ss < 100] <- "below average"
+
+consreport <- NULL
+
+consreport[cons_ss == 100] <- "average" 
+consreport[cons_ss > 100] <- "above average"
+consreport[cons_ss < 100] <- "below average"
+
+extrareport <- NULL
+
+extrareport[extra_ss == 100] <- "average" 
+extrareport[extra_ss > 100] <- "above average"
+extrareport[extra_ss < 100] <- "below average"
+
+neuroreport <- NULL
+
+neuroreport[neuro_ss == 100] <- "average" 
+neuroreport[neuro_ss > 100] <- "above average"
+neuroreport[neuro_ss < 100] <- "below average"
+
+openreport <- NULL
+
+openreport[open_ss == 100] <- "average" 
+openreport[open_ss > 100] <- "above average"
+openreport[open_ss < 100] <- "below average"
+```
+
+
 ## Interpretation and Summary
 
 Scores above 100 indicate greater than average whereas scores below 100 indicate less than average. 
+
+`r respondent$name` scored `r agreereport` on Agreeableness, `r consreport` on Conscientiousness, `r extrareport` on Extraversion, `r neuroreport` on Neuroticism, and `r openreport` on Openness. 
 
 # Appendix
 
