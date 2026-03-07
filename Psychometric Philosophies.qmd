@@ -1,4 +1,26 @@
----
-title: "Psychometric Philosophies"
-editor: visual
----
+# Psychometric Philosophies {#sec-psychophilosophies}
+
+Philosophies, within the context of Psychometrics, refer to theoretical ***beliefs*** regarding the nature of measurement. One of these beliefs is held tight, as an orthodoxy (Rasch measurement), such that empirical associations contrary to the orthodoxy are deemed heretical and violations of measurement. ***Most*** philosophies, however, take less extreme positions regarding the nature of measurement. It is useful for you to align yourself with one of these philosophical orientations from the perspective of assessment development. You may, however, borrow procedures from each of these traditions to evaluate the quality of your measure.
+
+We will present 4 philosophical orientations, although this is not intended to be a comprehensive or exhaustive listing. There are, no doubt, useful perspectives on the nature of measurement that have not yet been explicitly articulated.
+
+```{r}
+
+Tradition <- c("CTT", "IRT", "Rasch", "Network Psychometrics")
+Philosophy <- c("observed scores a function of person 'ability' and measure error", "probability of item endorsement a function of person 'ability' & item characteristics", "deviations from empirical prediction indicate poor measurement", "manifest associations reveal substantive Psychological phenomena")
+
+phil <- as.data.frame(cbind(Tradition, Philosophy))
+
+kableExtra::kable(phil)
+
+```
+
+## Item Response Theory
+
+### Dominance models 
+
+Dominance models, such as the GRM, assume a monotonically increasing relationship between the latent trait level and the probability of selecting a higher response category on an item (e.g., on a Likert scale). This contrasts with unfolding or ideal point models, where the response function is non-monotonic and peaks at a point matching the respondent's trait level. 1--, 2--, 3--point logistic models (1PL, 2PL, 3PL), Graded Response Model, Partial Credit Model
+
+### Ideal point models
+
+Frequently estimated via the Generalized Graded Unfolding Model [GGUM; @roberts2000general]

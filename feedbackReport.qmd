@@ -1,0 +1,751 @@
+# Feedback report
+
+The summarized results of administrations of your measure should be conveyed within a feedback report. These reports are intended to be delivered to assessment stakeholders, who are not expected to have any training in Psychometrics. The anticipated reading--level, by default, should be 7^th^ grade (American standard), but you'll also need to keep in mind anticipated mathematical literacy. Generally speaking, it is best to assume that your audience is borderline numerically illiterate -- if you present numbers, make sure to also provide supplementary information (such as interpretation guides or training sessions).
+
+:::{.column-margin #fig-mathgene}
+![missing math gene](https://www.sallyflint.com/wp-content/uploads/2023/07/cartoon-1.gif)
+:::
+
+## "Stakeholders"
+
+Individuals who have some level of interest in the administration and/or results of your measure are referred to as "stakeholders". Any one stakeholder may hold multiple roles regarding your assessment. For example, often with Psychological assessment, stakeholders are both respondent and consumer, and these same individuals may or may not also be the purchasing agent (if your measure has been commercialized). Depending on the context, that same individual may also be the administrator, because many low--stakes Psychological assessments are self--administered.
+
+```{r}
+#| label: tbl-stakeholders
+#| tbl-cap: Assessment stakeholders
+
+Role <- c(
+      "Respondent",
+      "Sample",
+      "Administrator",
+      "Purchaser",
+      "Consumer"
+)
+
+Definition <- c("Participant in the assessment--taking process",
+                "Collective of respondents (grouped by some meaningful association)^a^",
+                "Individual facilitating the delivery and collection of assessment responses",
+                'aka "client" -- individual(s) who requested the assessment administration',
+                "Target audience for summarized assessment results")
+
+stakeholders <- as.data.frame(cbind(Role, Definition))
+
+library(knitr)
+library(kableExtra)
+
+kable(stakeholders) %>%
+  add_footnote("frequently *dates of administration* or *demography* but can be any useful grouping", notation="alphabet")
+
+```
+
+## Norms
+
+Traditionally, the results of Psychological inventories are presented relative to a normative group (in the simplest scenario) or multiple normative groups (in a more complex scenario). Your feedback report is where your norms are most prominently significant. 
+
+In the earliest days of Psychological assessment, normative information was conveyed to the consumer in the form of static tables that contained: 
+
+1. raw assessment scores, and 
+2. standard score equivalents^[...including percentile ranks -- for the current discussion we are conceptualizing percentile rank as a ***type*** of standard score, although most historic norms tables presented 3 pieces of information: raw scores, standard scores, AND percentile ranks.] 
+
+Contemporarily, your normative information is more commonly hidden within your scaled score algorithm and presented directly within the feedback report. Note that you should always carefully describe your normative sample within your technical report -- your level of normative sample description within the ***feedback*** report will primarily depend on the needs of the consumer audience.
+
+## Report Styling
+
+You should primarily keep your anticipated consumer in mind when designing your feedback report. Font size, density of information, and color schemes are all possibly impacted. Some feedback reports are volumnious (50+ pages) and some are concise. Online delivery is increasingly expected, and many design considerations can be customized via online delivery and the assistance of engines such as @sec-quarto. Err on the side of "less is more", especially with a first draft report. 
+
+::: {.column-margin #fig-lessismore}
+![Err on the side of brevity](https://miro.medium.com/0*mmAw6El5LY-y_v7N.jpeg)
+:::
+
+## Quarto {#sec-quarto}
+
+We are recommending [Quarto](https://quarto.org/) as your technical and feedback report engine. You do not NEED to follow this recommendation -- you can draw out a feedback report on the back of a cocktail napkin if you really want to do so -- but we believe Quarto is a powerful tool to integrate data processing with semantic content within beautiful report formats (plus, we're giving you templates to work with, so half your work is already done for you anyway)! Many assessment publishers have their own proprietary tools to create and deliver feedback to consumers, but Quarto is a great tool for independent assessment developers. 
+
+Please make sure to have [Quarto installed](https://quarto.org/docs/download/) on your computer prior to proceeding below (Quarto is an independent piece of software -- it is NOT an R package).
+
+::: {.column-margin #fig-cocktail}
+
+![you really don't need to do this!!!](https://www.barplan.com/wp-content/uploads/2014/09/napkin.jpg)
+
+:::
+
+## Templates
+
+Below are starter templates for individual (@sec-indreport) and group (@sec-grpreport) reports. These are not exhaustive of all possible report foci (for example, [360° reports](https://3dgroup.net/wordpress/wp-content/uploads/2017/03/EX_360_5pt_Frequency_3D-Group_Sample-Report.pdf) could be considered hybridized derivatives but fit neither category well). Rather, these should be considered starting points from which you can deviate and personalize. 
+
+The content is intended to be instructive regarding "***how to specify a report***" (e.g., the use of inline code, self--contained data manipulation & data visualization) and is NOT intended to represent an exhaustive report. You should use the template to build from (insert your own content but then please also EXPAND the content to fit your assessment purpose). 
+
+### Individual Report Template {#sec-indreport}
+
+There are two traditional media formats for feedback reports: hard--copy (typically pdf), and online (html page or dashboard). We'll build self--contained Quarto templates for these most typically--sought formats using `bfi` data from the `psych` package as an example measure. 
+
+For all reports, the [final entry]{.underline} (index #67560 aka the 2,800^th^ case) within the `bfi` dataset is treated as the focal respondent, with the remaining 2,799 individuals constituting the normative sample. You can amend the scripts to isolate different `bfi` cases if you'd like to see how that impacts the report (for example, within the html report, you would simply change the indexed value on line #49 within the html report code script). 
+
+::: {.panel-tabset}
+
+## `html` report
+
+::: {.columns}
+
+::: {.column width="50%"}
+
+````{r}
+#| echo: true
+#| code-line-numbers: true
+#| eval: false
+#| code-fold: true
+
+---
+title: "Individual Feedback Report Template"
+date: today
+title-block-banner: "#6baed6"
+published-title: "Report generated"
+
+format:
+  html:
+    theme: 
+      light: default     
+      dark: darkly    
+    other-links:
+      - text: BFI Information
+        icon: info-circle
+        href: https://www.rdocumentation.org/packages/psych/versions/2.5.6/topics/bfi
+    include-after-body:
+      text: |
+        <footer class="footer">
+          <hr> <!-- Optional horizontal line -->
+          <p>Copyright 2026© Oui R. Awesome, Ltd.</p>
+        </footer> 
+    navbar:
+toc: true
+lightbox: true
+
+execute: 
+  echo: false
+  warning: false
+  error: false
+---
+
+```{r exampledata}
+
+library(psych)
+data(bfi)            ## fresh load each time (no mistake RE-recodes)
+
+bfi$A1 <- 7-bfi$A1   ## Item recodes
+
+bfi$C4 <- 7-bfi$C4
+bfi$C5 <- 7-bfi$C5
+
+bfi$E1 <- 7-bfi$E1
+bfi$E2 <- 7-bfi$E2
+
+bfi$O2 <- 7-bfi$O2
+bfi$O5 <- 7-bfi$O5
+
+
+respondent <- bfi[2800,]    ## isolating 1 respondent, change to any number (1-2800) to run a report on a different individual
+norms      <- bfi[-2800,]
+
+respondent[29] <- "Nörm N Nörmman"
+colnames(respondent)[29] <- "name"
+
+```
+
+```{r norms}
+
+agree_norm <- rowMeans(norms[1:5], na.rm=TRUE) 
+cons_norm  <- rowMeans(norms[6:10], na.rm=TRUE)
+extra_norm <- rowMeans(norms[11:15], na.rm=TRUE)
+neuro_norm <- rowMeans(norms[16:20], na.rm=TRUE)
+open_norm  <- rowMeans(norms[21:25], na.rm=TRUE)
+
+agree_mean <- mean(agree_norm, na.rm = TRUE)
+agree_sd   <- sd(agree_norm, na.rm = TRUE)
+
+cons_mean  <- mean(cons_norm, na.rm = TRUE)
+cons_sd    <- sd(cons_norm, na.rm = TRUE)
+
+extra_mean <- mean(extra_norm, na.rm = TRUE)
+extra_sd   <- sd(extra_norm, na.rm = TRUE)
+
+neuro_mean <- mean(neuro_norm, na.rm = TRUE)
+neuro_sd   <- sd(neuro_norm, na.rm = TRUE)
+
+open_mean  <- mean(open_norm, na.rm = TRUE)
+open_sd    <- sd(open_norm, na.rm = TRUE)
+
+```
+
+```{r scoring}
+
+## focal person's scores
+
+agree <- rowMeans(respondent[1:5], na.rm=TRUE) 
+cons  <- rowMeans(respondent[6:10], na.rm=TRUE)
+extra <- rowMeans(respondent[11:15], na.rm=TRUE)
+neuro <- rowMeans(respondent[16:20], na.rm=TRUE)
+open  <- rowMeans(respondent[21:25], na.rm=TRUE)
+
+## Scale scores (μ=100, σ=15)
+
+agree_ss <- round(((((agree-agree_mean)/agree_sd)*15)+100),0)
+cons_ss  <- round(((((cons-cons_mean)/cons_sd)*15)+100),0)
+extra_ss <- round(((((extra-extra_mean)/extra_sd)*15)+100),0)
+neuro_ss <- round(((((neuro-neuro_mean)/neuro_sd)*15)+100),0)
+open_ss  <- round(((((open-open_mean)/open_sd)*15)+100),0)
+
+scores <- rbind(agree_ss, cons_ss, extra_ss, neuro_ss, open_ss)
+dimension <- c("Agreeableness", 
+               "Conscientiousness", 
+               "Extraversion",
+               "Neuroticism",
+               "Openness")
+toplot <- as.data.frame(cbind(dimension, scores))
+colnames(toplot)[2] <- "Standard Score"
+
+toplot$`Standard Score` <- as.numeric(as.character(toplot$`Standard Score`))
+
+```
+
+## Assessment information
+
+::: {.columns}
+
+::: {.column width="80%"}
+The BFI consists of 25 personality items and 3 demographics (gender, education, and age). Responses to the 25 personality items determine an individuals standing along 5 personality dimensions:
+:::
+
+::: {.column width="20%"}
+![](img/logo.png)
+:::
+
+:::
+
++ **Extraversion** -- an orientation of interest and energies ranging from the outer world of people and things to the inner world of subjective experience 
++ **Conscientiousness** -- a tendency to be organized, responsible, and hardworking/industrious 
++ **Agreeableness** -- tendency to act in a cooperative, unselfish manner 
++ Openness to experience (**Openness**) -- tendency to be open to new aesthetic, cultural, or intellectual experiences
++ **Neuroticism** -- chronic levels of emotional instability and proneness to psychological distress
+
+## Results summary for `r respondent$name`:
+
+There were `r sum(is.na(respondent[1:25]))` missing responses across 25 personality item administrations.
+
+When compared against responses of `r nrow(norms)` other individuals, `r respondent$name`'s personality profile can be extracted from @fig-radarplot and @fig-barplot.
+
+::: {.panel-tabset}
+
+### Radar plot
+
+```{r}
+#| label: fig-radarplot
+#| fig-cap: "Standard score radar plot across 5 dimensions"
+#| 
+library(plotly)
+
+fig <- plot_ly(
+    type = 'scatterpolar',
+    r = toplot$`Standard Score`,
+    theta = toplot$dimension,
+    fill = 'toself'
+  ) 
+fig <- fig %>%
+  layout(
+    polar = list(
+      radialaxis = list(
+        visible = T,
+        range = c(60,140)
+      )
+    ),
+    showlegend = F
+  )
+
+fig
+
+```
+
+### Dot plot
+
+```{r}
+#| label: fig-barplot
+#| fig-cap: "Standard score dotplot across 5 dimensions"
+
+## Redundant with radar plot - simply here as an example of another plot type
+
+library(ggplot2)
+ggplot(toplot, aes(x = reorder(dimension, `Standard Score`), y=`Standard Score`)) +
+  geom_segment( aes(y=0, yend=`Standard Score`)) +
+  geom_point(size=9.5, color="#0000d1", alpha=.8) +      ## adding border
+  geom_point(size=8, color="#6baed6", alpha=.8) + 
+  geom_text(aes(label = `Standard Score`), color = "black", size = 3.5) +
+  labs(x="",y="") +
+  scale_y_continuous(breaks=c(80, 100, 120), labels = c("low", "average", "high")) +
+  theme(legend.position="none", text=element_text(family="Times")) +
+  coord_flip(ylim=c(60,140))
+```
+
+:::
+
+```{r}
+## Qualitative statements of lower, average or above
+## Can be expanded for further text specification
+agreereport <- NULL
+
+agreereport[agree_ss == 100] <- "average" 
+agreereport[agree_ss > 100] <- "above average"
+agreereport[agree_ss < 100] <- "below average"
+
+consreport <- NULL
+
+consreport[cons_ss == 100] <- "average" 
+consreport[cons_ss > 100] <- "above average"
+consreport[cons_ss < 100] <- "below average"
+
+extrareport <- NULL
+
+extrareport[extra_ss == 100] <- "average" 
+extrareport[extra_ss > 100] <- "above average"
+extrareport[extra_ss < 100] <- "below average"
+
+neuroreport <- NULL
+
+neuroreport[neuro_ss == 100] <- "average" 
+neuroreport[neuro_ss > 100] <- "above average"
+neuroreport[neuro_ss < 100] <- "below average"
+
+openreport <- NULL
+
+openreport[open_ss == 100] <- "average" 
+openreport[open_ss > 100] <- "above average"
+openreport[open_ss < 100] <- "below average"
+```
+
+
+## Interpretation and Summary
+
+Scores above 100 indicate greater than average whereas scores below 100 indicate less than average. 
+
+`r respondent$name` scored `r agreereport` on Agreeableness, `r consreport` on Conscientiousness, `r extrareport` on Extraversion, `r neuroreport` on Neuroticism, and `r openreport` on Openness. 
+
+# Appendix
+
+Reported scores should be interpreted relative to an average of 100 and standard deviation of 15. These values are extracted from a normative comparison group of `r nrow(norms)` men and women between the ages of `r min(norms$age)` and `r max(norms$age)` (average age = `r round(mean(norms$age),2)`, standard deviation = `r round(sd(norms$age),2)`, see @fig-norms).
+
+```{r}
+#| label: fig-norms
+#| fig-cap: "Normative group age and gender distributions"
+
+library(dplyr)
+
+norms$gender <- ifelse(norms$gender < 1.2, "Male", "Female")
+
+means <- norms %>%
+  group_by(gender) %>%
+  summarise(mean_age = mean(age, na.rm = TRUE))
+
+ggplot(norms, aes(x = age, fill = gender)) +
+  geom_histogram(position = "dodge",  ## or "identity"
+    alpha = 0.7, 
+    color = "#333333",   ## border
+    bins = 30                
+  ) +
+  geom_vline(
+    data = means,
+    aes(xintercept = mean_age, color = gender),
+    linetype = "dashed",
+    linewidth = 1
+  )
+
+```
+
+The raw score values for the `r nrow(norms)` individuals can be found in @tbl-norms.
+
+```{r}
+#| label: tbl-norms
+#| fig-cap: "Normative group raw scores on personality dimensions"
+
+library(kableExtra)
+
+rawscores <- data.frame(t(
+  data.frame(
+    c(round(agree_mean,2), round(agree_sd,2)),
+    c(round(cons_mean,2), round(cons_sd,2)),
+    c(round(extra_mean,2), round(extra_sd,2)),
+    c(round(neuro_mean,2), round(neuro_sd,2)),
+    c(round(open_mean,2), round(open_sd,2))
+  )
+))
+
+row.names(rawscores) <- c("Agreeableness", "Conscientiousness", "Extraversion", "Neuroticism", "Openness")
+colnames(rawscores) <- c("mean", "sd")
+
+rawscores |>
+  kbl() |>
+  kable_styling(
+    bootstrap_options = c("striped", "hover", "condensed"),
+    full_width=TRUE,
+    position="center")
+
+```
+
+
+````
+
+:::
+
+::: {.column width="50%"}
+<iframe 
+  src="https://johnsonemilyj.github.io/psychometric-book/intro/individual_feedback_report.html" 
+  width="100%" 
+  height="800" 
+  frameborder="0" 
+  style="border: 1px solid #ddd; border-radius: 8px;"
+  allowfullscreen>
+</iframe>
+:::
+
+:::
+
+## `pdf` report
+
+::: {.columns}
+
+::: {.column width="50%"}
+
+````{r}
+#| echo: true
+#| code-line-numbers: true
+#| eval: false
+#| code-fold: true
+
+---
+title: "Individual Feedback Report Template"
+author: "Report generated"
+date: today
+date-format: long
+
+format:
+  pdf:
+    include-in-header: 
+      text: |
+        \usepackage{scrlayer-scrpage}
+        \lofoot{Copyright 2026© Oui R. Awesome, Ltd.}
+toc: true
+
+execute: 
+  echo: false
+  warning: false
+  error: false
+
+---
+
+![](img/logo.png){fig-align="center" width="50%"}
+
+```{r exampledata}
+
+library(psych)
+data(bfi)            ## fresh load each time (no mistake RE-recodes)
+
+bfi$A1 <- 7-bfi$A1   ## Item recodes
+
+bfi$C4 <- 7-bfi$C4
+bfi$C5 <- 7-bfi$C5
+
+bfi$E1 <- 7-bfi$E1
+bfi$E2 <- 7-bfi$E2
+
+bfi$O2 <- 7-bfi$O2
+bfi$O5 <- 7-bfi$O5
+
+
+respondent <- bfi[2800,]    ## isolating 1 respondent, change to any number (1-2800) to run a report on a different individual
+norms      <- bfi[-2800,]
+
+respondent[29] <- "Nörm N Nörmman"
+colnames(respondent)[29] <- "name"
+
+```
+
+```{r norms}
+
+agree_norm <- rowMeans(norms[1:5], na.rm=TRUE) 
+cons_norm  <- rowMeans(norms[6:10], na.rm=TRUE)
+extra_norm <- rowMeans(norms[11:15], na.rm=TRUE)
+neuro_norm <- rowMeans(norms[16:20], na.rm=TRUE)
+open_norm  <- rowMeans(norms[21:25], na.rm=TRUE)
+
+agree_mean <- mean(agree_norm, na.rm = TRUE)
+agree_sd   <- sd(agree_norm, na.rm = TRUE)
+
+cons_mean  <- mean(cons_norm, na.rm = TRUE)
+cons_sd    <- sd(cons_norm, na.rm = TRUE)
+
+extra_mean <- mean(extra_norm, na.rm = TRUE)
+extra_sd   <- sd(extra_norm, na.rm = TRUE)
+
+neuro_mean <- mean(neuro_norm, na.rm = TRUE)
+neuro_sd   <- sd(neuro_norm, na.rm = TRUE)
+
+open_mean  <- mean(open_norm, na.rm = TRUE)
+open_sd    <- sd(open_norm, na.rm = TRUE)
+
+```
+
+```{r scoring}
+
+## focal person's scores
+
+agree <- rowMeans(respondent[1:5], na.rm=TRUE) 
+cons  <- rowMeans(respondent[6:10], na.rm=TRUE)
+extra <- rowMeans(respondent[11:15], na.rm=TRUE)
+neuro <- rowMeans(respondent[16:20], na.rm=TRUE)
+open  <- rowMeans(respondent[21:25], na.rm=TRUE)
+
+## Scale scores (μ=100, σ=15)
+
+agree_ss <- round(((((agree-agree_mean)/agree_sd)*15)+100),0)
+cons_ss  <- round(((((cons-cons_mean)/cons_sd)*15)+100),0)
+extra_ss <- round(((((extra-extra_mean)/extra_sd)*15)+100),0)
+neuro_ss <- round(((((neuro-neuro_mean)/neuro_sd)*15)+100),0)
+open_ss  <- round(((((open-open_mean)/open_sd)*15)+100),0)
+
+scores <- rbind(agree_ss, cons_ss, extra_ss, neuro_ss, open_ss)
+dimension <- c("Agreeableness", 
+               "Conscientiousness", 
+               "Extraversion",
+               "Neuroticism",
+               "Openness")
+toplot <- as.data.frame(cbind(dimension, scores))
+colnames(toplot)[2] <- "Standard Score"
+
+toplot$`Standard Score` <- as.numeric(as.character(toplot$`Standard Score`))
+
+```
+
+\newpage
+
+## Assessment information
+
+The BFI consists of 25 personality items and 3 demographics (gender, education, and age). Responses to the 25 personality items determine an individuals standing along 5 personality dimensions:
+
++ **Extraversion** -- an orientation of interest and energies ranging from the outer world of people and things to the inner world of subjective experience 
++ **Conscientiousness** -- a tendency to be organized, responsible, and hardworking/industrious 
++ **Agreeableness** -- tendency to act in a cooperative, unselfish manner 
++ Openness to experience (**Openness**) -- tendency to be open to new aesthetic, cultural, or intellectual experiences
++ **Neuroticism** -- chronic levels of emotional instability and proneness to psychological distress
+
+## Results summary for `r respondent$name`:
+
+There were `r sum(is.na(respondent[1:25]))` missing responses across 25 personality item administrations.
+
+When compared against responses of `r nrow(norms)` other individuals, `r respondent$name`'s personality profile can be extracted from @fig-radarplot and @fig-barplot.
+
+```{r}
+#| label: fig-radarplot
+#| fig-cap: "Standard score radar plot across 5 dimensions"
+#| fig-width: 6
+#| fig-height: 6
+
+library(fmsb)
+
+data_for_radar <- data.frame(
+  row.names = c("Max", "Min", "Your Profile"),   # row names important!
+  Agreeableness     = c(140, 60, toplot$`Standard Score`[toplot$dimension == "Agreeableness"]),
+  Conscientiousness = c(140, 60, toplot$`Standard Score`[toplot$dimension == "Conscientiousness"]),
+  Extraversion      = c(140, 60, toplot$`Standard Score`[toplot$dimension == "Extraversion"]),
+  Neuroticism       = c(140, 60, toplot$`Standard Score`[toplot$dimension == "Neuroticism"]),
+  Openness          = c(140, 60, toplot$`Standard Score`[toplot$dimension == "Openness"])
+)
+
+# Plot – solid fill, customizable
+radarchart(
+  data_for_radar,
+  axistype           = 1,                # 1 = show axis values
+  pcol               = "steelblue",      # line color
+  pfcol              = scales::alpha("steelblue", 0.4),  # fill color + alpha
+  plwd               = 2,                # line width
+  cglcol             = "grey80",         # grid color
+  cglty              = 1,                # grid line type
+  axislabcol         = "grey50",         # axis label color
+  caxislabels        = seq(60, 140, 20), # radial labels (customize breaks)
+  vlcex              = 0.9              # label size
+)
+```
+
+
+```{r}
+#| eval: false
+
+
+library(plotly)
+
+fig <- plot_ly(
+    type = 'scatterpolar',
+    r = toplot$`Standard Score`,
+    theta = toplot$dimension,
+    fill = 'toself'
+  ) 
+fig <- fig %>%
+  layout(
+    polar = list(
+      radialaxis = list(
+        visible = T,
+        range = c(60,140)
+      )
+    ),
+    showlegend = F
+  )
+
+#plotly::save_image(fig, "radarplot.png")
+
+```
+
+```{r}
+#| label: fig-barplot
+#| fig-cap: "Standard score dotplot across 5 dimensions"
+
+## Redundant with radar plot - simply here as an example of another plot type
+
+library(ggplot2)
+ggplot(toplot, aes(x = reorder(dimension, `Standard Score`), y=`Standard Score`)) +
+  geom_segment( aes(y=0, yend=`Standard Score`)) +
+  geom_point(size=9.5, color="#0000d1", alpha=.8) +      ## adding border
+  geom_point(size=8, color="#6baed6", alpha=.8) + 
+  geom_text(aes(label = `Standard Score`), color = "black", size = 3.5) +
+  labs(x="",y="") +
+  scale_y_continuous(breaks=c(80, 100, 120), labels = c("low", "average", "high")) +
+  theme(legend.position="none", text=element_text(family="Times")) +
+  coord_flip(ylim=c(60,140))
+```
+
+```{r}
+## Qualitative statements of lower, average or above
+## Can be expanded for further text specification
+agreereport <- NULL
+
+agreereport[agree_ss == 100] <- "average" 
+agreereport[agree_ss > 100] <- "above average"
+agreereport[agree_ss < 100] <- "below average"
+
+consreport <- NULL
+
+consreport[cons_ss == 100] <- "average" 
+consreport[cons_ss > 100] <- "above average"
+consreport[cons_ss < 100] <- "below average"
+
+extrareport <- NULL
+
+extrareport[extra_ss == 100] <- "average" 
+extrareport[extra_ss > 100] <- "above average"
+extrareport[extra_ss < 100] <- "below average"
+
+neuroreport <- NULL
+
+neuroreport[neuro_ss == 100] <- "average" 
+neuroreport[neuro_ss > 100] <- "above average"
+neuroreport[neuro_ss < 100] <- "below average"
+
+openreport <- NULL
+
+openreport[open_ss == 100] <- "average" 
+openreport[open_ss > 100] <- "above average"
+openreport[open_ss < 100] <- "below average"
+```
+
+
+## Interpretation and Summary
+
+Scores above 100 indicate greater than average whereas scores below 100 indicate less than average. 
+
+`r respondent$name` scored `r agreereport` on Agreeableness, `r consreport` on Conscientiousness, `r extrareport` on Extraversion, `r neuroreport` on Neuroticism, and `r openreport` on Openness. 
+
+\newpage
+
+# Appendix
+
+Reported scores should be interpreted relative to an average of 100 and standard deviation of 15. These values are extracted from a normative comparison group of `r nrow(norms)` men and women between the ages of `r min(norms$age)` and `r max(norms$age)` (average age = `r round(mean(norms$age),2)`, standard deviation = `r round(sd(norms$age),2)`, see @fig-norms).
+
+```{r}
+#| label: fig-norms
+#| fig-cap: "Normative group age and gender distributions"
+
+library(dplyr)
+
+norms$gender <- ifelse(norms$gender < 1.2, "Male", "Female")
+
+means <- norms %>%
+  group_by(gender) %>%
+  summarise(mean_age = mean(age, na.rm = TRUE))
+
+ggplot(norms, aes(x = age, fill = gender)) +
+  geom_histogram(position = "dodge",  ## or "identity"
+    alpha = 0.7, 
+    color = "#333333",   ## border
+    bins = 30                
+  ) +
+  geom_vline(
+    data = means,
+    aes(xintercept = mean_age, color = gender),
+    linetype = "dashed",
+    linewidth = 1
+  )
+
+```
+
+The raw score values for the `r nrow(norms)` individuals can be found in @tbl-norms.
+
+```{r}
+#| label: tbl-norms
+#| fig-cap: "Normative group raw scores on personality dimensions"
+
+library(kableExtra)
+
+rawscores <- data.frame(t(
+  data.frame(
+    c(round(agree_mean,2), round(agree_sd,2)),
+    c(round(cons_mean,2), round(cons_sd,2)),
+    c(round(extra_mean,2), round(extra_sd,2)),
+    c(round(neuro_mean,2), round(neuro_sd,2)),
+    c(round(open_mean,2), round(open_sd,2))
+  )
+))
+
+row.names(rawscores) <- c("Agreeableness", "Conscientiousness", "Extraversion", "Neuroticism", "Openness")
+colnames(rawscores) <- c("mean", "sd")
+
+rawscores |>
+  kbl(format="latex", booktabs=TRUE) |>
+  kable_styling(latex_options = "striped")
+
+```
+
+````
+
+:::
+
+::: {.column width="50%"}
+<iframe 
+  src="https://johnsonemilyj.github.io/psychometric-book/intro/individual_feedback_report_pdf.pdf" 
+  width="100%" 
+  height="800" 
+  frameborder="0" 
+  style="border: 1px solid #ddd; border-radius: 8px;"
+  allowfullscreen>
+</iframe>
+:::
+
+:::
+
+## dashboard report
+
+```{r}
+#| echo: fenced
+#| eval: false
+
+
+
+```
+
+:::
+
+### Group Report Template {#sec-grpreport}
