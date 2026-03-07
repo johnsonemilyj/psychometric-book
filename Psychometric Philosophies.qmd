@@ -14,3 +14,13 @@ phil <- as.data.frame(cbind(Tradition, Philosophy))
 kableExtra::kable(phil)
 
 ```
+
+## Item Response Theory
+
+### Dominance models 
+
+Dominance models, such as the GRM, assume a monotonically increasing relationship between the latent trait level and the probability of selecting a higher response category on an item (e.g., on a Likert scale). This contrasts with unfolding or ideal point models, where the response function is non-monotonic and peaks at a point matching the respondent's trait level. 1--, 2--, 3--point logistic models (1PL, 2PL, 3PL), Graded Response Model, Partial Credit Model
+
+### Ideal point models
+
+Frequently estimated via the Generalized Graded Unfolding Model [GGUM; @roberts2000general]
