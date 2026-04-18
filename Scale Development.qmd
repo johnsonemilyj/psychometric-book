@@ -64,3 +64,7 @@ Timeline diagram here: 1. @hemphill1950measurement 2. @hambleton1986assessing
 Speaking of the debate regarding the reservation of the word "construct" for truly abstract entities versus concrete behaviors, @guion1977content concedes:
 
 > I *do* like to speak sensibly, and I dislike further corrupting the language, but I don't know what else to call them. (p. 5)
+
+# Attitude scaling
+
+Two predominent approaches have dominated Psychological inventory assessment: the ***method of equal--appearing intervals*** [@thurstone1929j], and the ***method of summated ratings*** [@likert1932technique]. Comparison reviews have also occured [@drasgow201075]

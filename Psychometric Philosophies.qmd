@@ -1,5 +1,9 @@
 # Psychometric Philosophies {#sec-psychophilosophies}
 
+>Measurement starts with the idea that *anything that exists, exists to some degree, and therefore can be measured* [@guion2011assessment, p. 157] 
+
+The belief that we have the capability to measure the unseen and theoretical most likely started (at least widely acknowledged as starting) with Francis Galton, who predated "Psychology" but had an interest in individual differences [@galton1883inquiries]. Later contributors to early Psychology held similar opinions (Edward Lee Thorndike, James Cattell), although some expressed skepticism (Alfred Binet).
+
 Philosophies, within the context of Psychometrics, refer to theoretical ***beliefs*** regarding the nature of measurement. One of these beliefs is held tight, as an orthodoxy, such that empirical associations contrary to the orthodoxy are deemed heretical and violations of measurement (Rasch measurement -- covered in @sec-rasch). ***Most*** philosophies, however, take less extreme positions regarding the nature of measurement. It is useful for you to align yourself with one of these philosophical orientations from the perspective of [***assessment development***]{.underline}. You may, however, borrow procedures from each of these traditions to evaluate the quality of your measure.
 
 We will present four philosophical orientations, although these are not intended to represent a comprehensive or exhaustive listing. There are, no doubt, useful perspectives on the nature of measurement that have not yet been explicitly articulated or widely disseminated and the field is yet in need of perspectives that might help explain some persistently vexing mysteries:
@@ -46,7 +50,7 @@ $$X = T + e_{r}$${#eq-ctter}
 
 $$X = s + e$${#eq-guion}
 
-The third CTT component, $T$, is a concept that only exists in the theoretical realm. $T$ represents a person's ***true score*** -- their actual state of being with respect to the focal construct of interest. For example, a student's ACTUAL, REAL, TRUE [knowledge of math]{.underline}. 
+The third CTT component, $T$, is a concept that only exists in the theoretical realm. $T$ represents a person's ***true score*** -- their actual state of being with respect to the focal construct of interest^[here, we deviate from the technical definition provided by @thurstone1931reliability focused on repeated administrations of a measure. We consider the @thurstone1931reliability definition to be important procedurally but retain the "score that exists in theoretical reality" definition for conceptual purpose.]. For example, a student's ACTUAL, REAL, TRUE [knowledge of math]{.underline}. 
 
 $T$ assumes that every person has a true location of construct standing along whatever construct is the focus of Psychometric attention. $T$ is independent of any administered exam. We (mere mortal Psychometricians) have no special access to $T$, we can only infer an individual's $T$ through behavioral indicators -- one very germane indicator (we hope) is that individual's score, $X$, on a Psychological assessment. 
 
