@@ -1,0 +1,19 @@
+---
+title: "Reliability"
+---
+
+There are many empirical estimates of reliability, but there is only one shared conceptual definition that informs all procedures: 
+
+>...the consistency of scores across replications of a testing procedure [@aera_apa_ncme_2014]
+
+::: {.column-margin}
+
+![](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExMGVjODNvbmRka2pkczlsZXQxbHh6NHgyZTR4aXN0MWVtMTZheHNrbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/HaEwnie3RrbzcoHY5J/giphy.gif)
+
+:::
+
+The focal element of this definition, [scores]{.underline}, is commonly and erroneously attributed to "tests" by plebes.^[...you have now made it to a point in the book where we trust you as an informed insider. We are dropping all pretenses and from now on will refer to the ignorant masses as plebes. Here we retain the Merriam--Webster 2b definition of [plebe](https://www.merriam-webster.com/dictionary/plebe) and congratulate you on your metamorphesis from wriggly Psychometric worm to beautiful and knowledgeable Psychometric butterfly {{< iconify twemoji:butterfly >}}. Welcome to the club -- fair warning it's somewhat lonely in here.] Deep Psychometric thinkers are very consistent in their discussions of reliability (ha -- how appropriate!!). Unfortunately, deep Psychometric thinkers (such as you) are outnumbered by plebes at a ratio of 10,542:1. Therefore [YOU]{.underline}, the deep Psychometric thinker, should steel yourself for the oncoming onslaught of cocktail--party blank stares and accusations of incompetence that you will inevitably elicit from the ignoramuses out there. This is not a casual acknowledgement -- it is an unfortunate reality and you should be prepared for the majority of (otherwise competent) co--workers, classmates, and cronies to harbor the false belief that reliability is a property of tests. It isn't. They are wrong and you are right [@aera_apa_ncme_2014]. 
+
+## Error
+
+Reliability, at its core, is fundamentally concerned with errors. These errors are really no different in occurrance than errors that occur in other aspects of life. For example, if you are at a pub and order a pint of beer, it is reasonable to expect a bit more or less than exactly 16 fl oz by the time it arrives at your table. Taps are notoriously imprecise machines. Bartenders are even more notorious for being generous, stingy, inattentive, or otherwise distracted. Any of these factors are reasonable factors that could result in your "pint" being an actual 15.87, 16.01, etc fl oz. Souses have a tolerance for this inexactitude with beer pours. Psychologists also need to acknowledge inexactitude with scores that arise from Psychological assessment responses. 

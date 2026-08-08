@@ -2,10 +2,49 @@
 title: "Using R"
 ---
 
-This book utilizes [`WebR`](https://docs.r-wasm.org/webr/latest/) to teach analytical components. `WebR` enables an interactive code editor within your viewing browser, so you can write, execute, and recieve feedback on code relevant for your psychometrics project.
+This book utilizes [`WebR`](https://docs.r-wasm.org/webr/latest/) to teach analytical components. `WebR` enables an interactive code editor within your viewing browser, so you can write, execute, and receive feedback on code relevant for your psychometrics project. Because everyone will (eventually) have their own unique measure and data, we will demonstrate Psychometric principles and practices utilizing the `bfi` dataset from within the [`psych` package](https://personality-project.org/r/psych/). @sec-example highlights important information about this dataset, primarily:  
+
+1. What are the items?
+2. What are the scales?
+3. What are the scale definitions?^[what items are associated with what scales, and are any recodes or differential weighting algorithms necessary]
+4. What demographics were collected?
+
+Throughout this book, we will provide code that you can execute as example analyses -- you can run the code within your browser (and tweak/play with the code to better your own personal understanding of "what is happening").
+
+## Example Measure {#sec-example}
+
+The [BFI dataset](https://www.rdocumentation.org/packages/psych/versions/2.2.3/topics/bfi) (from the `psych` R package) contains 2,800 responses to 28 variables. The 28 variables are presented in @tbl-bfidefs. The 2,800 responses are contained within the `bfi` object and will be used to demonstrate Psychometric analyses.
+
+```{r}
+#| label: tbl-bfidefs
+#| tbl-cap: "Variables of focal interest within the `bfi` data object"
+#| echo: false
+#| eval: true
+
+bfivars <- psych::bfi.dictionary[,c(2,4,6)]
+
+DT::datatable(bfivars, options = list(pageLength = 5))
+      
+```
+
+## Using `WebR`
+
+For each topic that involves analytical exploration, we will provide template R script that you can both a) execute within your browser, and b) copy--paste into your local R session^[sometimes the script will require "pre--processing" such that previous scripts must first be executed prior to the desired code operating as expected.]. See @lst-tutor1 for an example that:  
+
+1. loads the `psych` package
+2. accesses the `bfi` dataset
+3. asks for a histogram of age
+4. asks for the mean and standard deviation for the age variable
 
 ```{webr-r}
-fit = lm(mpg ~ am, data = mtcars)
+#| lst-label: lst-tutor1
+#| lst-cap: "WebR code example"
+library(psych)
 
-summary(fit)
+data(bfi)
+
+hist(bfi$age)
+
+mean(bfi$age)
+sd(bfi$age)
 ```

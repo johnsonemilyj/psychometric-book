@@ -2,18 +2,22 @@
 
 >Measurement starts with the idea that *anything that exists, exists to some degree, and therefore can be measured* [@guion2011assessment, p. 157] 
 
-The belief that we have the capability to measure the unseen and theoretical most likely started (at least widely acknowledged as starting) with Francis Galton, who predated "Psychology" but had an interest in individual differences [@galton1883inquiries]. Later contributors to early Psychology held similar opinions (Edward Lee Thorndike, James Cattell), although some expressed skepticism (Alfred Binet).
+The belief that we have the capability to measure the abstract and theoretical similarly to the concrete and physical most likely started (or at least is widely acknowledged as starting) with Francis Galton, who predated "Psychology" but had an interest in individual differences [@galton1883inquiries]. Later esteemed contributors to early Psychology such as Edward Lee Thorndike and James McKeen Cattell held similar opinions [@thorndike1918nature; @thorndike1904theory; @cattell1948mental], although others, such as Alfred Binet, expressed more skepticism regarding the capabilities of Psychological measurement [@binet1898mesure].
 
-Philosophies, within the context of Psychometrics, refer to theoretical ***beliefs*** regarding the nature of measurement. One of these beliefs is held tight, as an orthodoxy, such that empirical associations contrary to the orthodoxy are deemed heretical and violations of measurement (Rasch measurement -- covered in @sec-rasch). ***Most*** philosophies, however, take less extreme positions regarding the nature of measurement. It is useful for you to align yourself with one of these philosophical orientations from the perspective of [***assessment development***]{.underline}. You may, however, borrow procedures from each of these traditions to evaluate the quality of your measure.
+Philosophies, within the context of Psychometrics, reflect ***theoretical beliefs regarding the nature of measurement***. One of these beliefs is held tight, as an orthodoxy, such that empirical associations contrary to the orthodoxy are deemed heretical and violations of measurement (Rasch measurement -- covered in @sec-rasch). ***Most*** philosophies, however, take less extreme positions regarding the nature of measurement. All share a dependence on individual differences.
 
-We will present four philosophical orientations, although these are not intended to represent a comprehensive or exhaustive listing. There are, no doubt, useful perspectives on the nature of measurement that have not yet been explicitly articulated or widely disseminated and the field is yet in need of perspectives that might help explain some persistently vexing mysteries:
+It is useful for you to align yourself with one of these philosophical orientations from the perspective of ***assessment development***. You should, however, borrow investigative procedures from each of these traditions to evaluate the quality of your measure (after all, each isolated philosophy has its own unique strengths and weaknesses).
+
+We will present four philosophical orientations (see @tbl-phil), although these are not intended to represent a comprehensive or exhaustive listing. Again, being cautious with terminology, we refer to the theoretical perspective on measurement as a ***philosophical orientation*** whereas the holder of that orientation is referred to as a ***tradition***.^[You should beware that these terms are not universally applied within the field of Psychometrics, and you will find considerable meaningful deviations with how (even very knowledgeable) individuals speak of these concepts -- the meta--lesson here, within Psychometric applications, is that you need to develop a tolerance for ambiguity with respect to terminology (although within this current book we aim to be internally consistent with our use of terms, once you leave the bounds of this book you will encounter considerable liberality with terminology)] There are, no doubt, useful perspectives on the nature of measurement that have not yet been explicitly articulated or widely disseminated and the field is yet in need of perspectives that might help explain some persistently vexing mysteries...
 
 > There is nothing so practical as a good theory [@Lewin1951]
 
 ```{r}
-
-Tradition <- c("CTT", "IRT", "Rasch", "Network Psychometrics")
-Philosophy <- c("observed scores are attributable to person 'ability' and measure error", "probability of item endorsement is a function of person 'ability' & item characteristics", "deviations from empirical prediction indicate poor measurement", "manifest associations reveal substantive Psychological phenomena")
+#| label: tbl-phil
+#| tbl-cap: "Psychometric traditions covered in this book"
+#| 
+Tradition <- c("CTT", "Generalizability Theory", "IRT", "Rasch", "Network Psychometrics")
+Philosophy <- c("observed scores are attributable to person 'ability' and measure error", "measure error can be further parsed into explicit sources", "probability of item endorsement is a function of person 'ability' & item characteristics", "deviations from empirical prediction indicate poor measurement", "manifest associations reveal substantive Psychological phenomena")
 
 phil <- as.data.frame(cbind(Tradition, Philosophy))
 
@@ -23,9 +27,11 @@ kableExtra::kbl(phil)
 
 ```
 
+CTT came first [@Spearman1904a; @Edgeworth1888] -- there was a flurry of activity in the 1950's and 1960's that challenged and/or augmented CTT with Generalizability Theory, IRT, and Rasch measurement [@Rasch1960; @Lord1952; @LordNovick1968; @Cronbach1963]. Then the deep thinking about measurement laid largely dormant until Network Psychometrics [@BorsboomCramer2013].
+
 ## Classical Test Theory
 
-Although the same philosophical orientation is referred to in educational contexts as True Score Theory (TST), the Standards (as well as the broader social and behavioral sciences) have preferred to refer to this perspective on measurement as Classical Test Theory (CTT) [@aera_apa_ncme_2014]. This orientation has the longest history of specification and application and unquestionably remains dominant in layperson (e.g., non--Psychometrician) conceptualization of Psychological measurement.
+Although the same philosophical orientation within educational contexts is referred to as True Score Theory (TST), the Standards (as well as the broader social and behavioral sciences) have preferred to refer to this perspective on measurement as Classical Test Theory (CTT)^[We treat CTT and TST as synonymous with regard to the underlying philosophy -- throughout this book, the label "CTT" could justifiably be replaced with "TST".] [@aera_apa_ncme_2014]. This orientation has the longest history of specification and application [@Gulliksen1950] and unquestionably remains dominant in casual academic (e.g., non--Psychometrician) conceptualization of Psychological measurement.
 
 The framework of CTT is built on three fundamental concepts:
 
@@ -33,11 +39,11 @@ The framework of CTT is built on three fundamental concepts:
 + X = observed score
 + e = error
 
-and the most concise specification of CTT simply ***specifies the algebraic form of relationship*** between these three concepts:
+and the most concise articulation of CTT simply specifies the ***algebraic form of relationship*** between the three concepts:
 
 $$X = T + e$${#eq-ctt}
 
-The observed score, $X$, is the traditional focus of practical attention for any measurement practitioner. $X$ is also referred to (synonymously) as a ***raw*** score. To best comprehend $X$, you should also consider it to be synonymous with an aggregate ***scale*** score^[CTT itself does not limit its definition of $X$ to summary (scale) scores, but your comprehension of $X$ will be greatly facilitated if you limit your mental conceptualization to aggregate (scale) scores.]. $X$ is tangible. It is directly observable and quantifiable. When a student completes a 10--item mathematics exam and correctly answers 7 items, this student's $X$ is 7^[or, equivalently, 70% or 3 or 30% depending on the quirks, whims, & wishes of the (always somewhat arbitrary) scoring protocol]. 
+The observed score, $X$, is the traditional focus of practical attention for any measurement practitioner. The observed score is also referred to (synonymously) as a ***raw*** score. To best comprehend $X$, you should also consider it to be synonymous with an aggregate ***scale*** score^[CTT itself does not limit its definition of $X$ to summary (scale) scores, but your comprehension of $X$ will be greatly facilitated if you limit your mental conceptualization to aggregate (scale) scores.]. $X$ is tangible. It is directly observable and quantifiable. When a student completes a 10--item mathematics exam and correctly answers 7 items, this student's $X$ is 7^[or, equivalently, 70% or 3 or 30% depending on the quirks, whims, & wishes of the (always somewhat arbitrary) scoring protocol]. 
 
 Of course the instructor interprets the student's score, $X$=7, as an indication of the student's knowledge of math. The student, however, may quibble with the interpretation and claim that their knowledge is greater^[students never seem to quibble that observed scores represent *over*estimates of ability, although our restrictive usage of $e$ in this context ($e_{r}$) DOES assume a roughly equivalent proportion of over-- and under--estimated observed scores] -- this brings us to a second CTT component, $e$. 
 
@@ -46,19 +52,85 @@ $e$ represents the concept of ***error***. There are two conceptually distinct *
 The minimal CTT equation, $X=T+e$, is most centrally concerned with ***random error***, so we could rewrite the equation thusly:
 $$X = T + e_{r}$${#eq-ctter}
 
-@eq-ctt and @eq-ctter are considered equivalent canonical^[by this we mean historically accurate and accepted representation of the core tenets of CTT] specifications of CTT/TST. @guion2011assessment has proposed a third alternative (@eq-guion) that more explicitly accomodates $e_{s}$, although this is NOT generally accepted as a canonical articulation of CTT. The (important) distinctions and similarities between $e_{s}$ and $e_{r}$, including the @guion2011assessment reformulation of the CTT formula, will be discussed in XXXXX.  
+@eq-ctt and @eq-ctter are considered equivalent canonical^[by this we mean historically accurate and accepted representation of the core tenets of CTT] specifications of CTT. @guion2011assessment has proposed a third alternative (@eq-guion) that more explicitly accomodates $e_{s}$, although this is NOT generally accepted as a canonical articulation of CTT. The (important) distinctions and similarities between $e_{s}$ and $e_{r}$, including the @guion2011assessment reformulation of the CTT formula, will be discussed in XXXXX. 
+
+>NOTE. Missing chapter to put this in -- need something either reliability or validity or both
 
 $$X = s + e$${#eq-guion}
 
-The third CTT component, $T$, is a concept that only exists in the theoretical realm. $T$ represents a person's ***true score*** -- their actual state of being with respect to the focal construct of interest^[here, we deviate from the technical definition provided by @thurstone1931reliability focused on repeated administrations of a measure. We consider the @thurstone1931reliability definition to be important procedurally but retain the "score that exists in theoretical reality" definition for conceptual purpose.]. For example, a student's ACTUAL, REAL, TRUE [knowledge of math]{.underline}. 
+The third CTT component, $T$, is a concept that only exists in the theoretical realm. $T$ represents a person's ***true score*** -- their actual state of being with respect to the focal construct of interest^[here, we deviate from the technical definition provided by @thurstone1931reliability focused on repeated administrations of a measure. We consider the @thurstone1931reliability definition to be theoretically important but retain the "score that exists in theoretical reality" definition for conceptual purpose.]. For example, a student's ACTUAL, REAL, TRUE [knowledge of math]{.underline}. 
 
 $T$ assumes that every person has a true location of construct standing along whatever construct is the focus of Psychometric attention. $T$ is independent of any administered exam. We (mere mortal Psychometricians) have no special access to $T$, we can only infer an individual's $T$ through behavioral indicators -- one very germane indicator (we hope) is that individual's score, $X$, on a Psychological assessment. 
 
 To the extent that error, $e$, is minimal, $X$ will provide a good approximation of $T$. If error grows, our inference that $X$ is an adequate representation of $T$ becomes more dubious. Of course as Psychometricians, we don't often apply a word such as "dubious" (even though it is entirely appropriate and descriptive) -- rather, we prefer, by tradition, more specific terms such as reliability and validity (these topics are covered in XXXXX and XXXXX).  
 
+## Generalizability Theory
+
+An extension/liberalization of Classical Test Theory developed by Cronbach and colleagues in the 1960's [@Cronbach1972; @Rajaratnam1965; @Cronbach1963; @Gleser1965]. Uses analysis of variance (ANOVA) to partition multiple sources of error variance (“facets” such as items, raters, occasions, forms) rather than a single error term. Distinguishes universe scores, generalizability coefficients (for relative decisions), and dependability coefficients (for absolute decisions). Supports G-studies (estimating variance components) and D-studies (optimizing designs). Better handles complex measurement situations than basic CTT. 
+
 ## Item Response Theory
 
-A popular alternative to CTT focuses relatively greater philosophical attention to the ***item*** rather than the scale. Item Response Theory (IRT) 
+A popular alternative to CTT focuses relatively greater philosophical attention on the ***item*** and underlying latent trait. Early contributions were from @Lord1952 and @LordNovick1968. The interaction of each item with the respondent is central here and specified via a probablistic model^[within IRT you choose the model you think will "best fit" the assessment data -- this is perhaps the biggest difference between IRT and Rasch philosophies. Within Rasch, there is no Psychometrician choice -- there is one probablistic model. IRT is far more lenient and encourages the Psychometrician to find a model that represents empirical patterns.]. 
+
+### Grok (5/16/26)
+
+**Framing IRT as a measurement philosophy** in a psychometrics text is an excellent opportunity to elevate the discussion beyond technical models and position IRT as a fundamental shift in how we think about psychological measurement. Here are targeted suggestions for structuring and writing that section.
+
+### Suggested Section Title Options
+- “Item Response Theory as a Measurement Philosophy”
+- “IRT: From Test Scores to Latent Trait Measurement”
+- “The IRT Paradigm: A Probabilistic Approach to Psychological Measurement”
+- “Beyond Classical Test Theory: IRT’s Philosophy of Invariant, Individual-Focused Measurement”
+
+### Recommended Structure
+1. **Opening Hook / Historical-Conceptual Bridge** (1–2 pages)  
+   Start by contrasting IRT with the approaches your readers already know (e.g., the Thurstone and Likert methods you asked about earlier).  
+   - Classical Test Theory (CTT) and early scaling methods treat the **test** (or total score) as the primary unit of analysis.  
+   - IRT treats the **item–person interaction** as the fundamental unit and views observed responses as probabilistic manifestations of an underlying latent trait (θ).  
+   Example framing:  
+   > “While Thurstone’s attitude scales and Likert’s summative scoring advanced attitude measurement, they remained rooted in a test-centric, linear, and sample-dependent logic. Item Response Theory offers a different philosophy: measurement should be grounded in explicit, falsifiable models of how individuals interact with individual items along a latent continuum.”
+
+2. **Core Philosophical Principles** (the heart of the section)  
+   Explicitly articulate IRT’s worldview. Key pillars to cover:  
+   - **Latent trait ontology**: Psychological constructs (ability, attitude, personality traits, etc.) are continuous, unobservable variables. Responses are observable indicators whose probability is a mathematical function of person location (θ) and item parameters.  
+   - **Probabilistic rather than deterministic measurement**: Responses are not fixed; they are governed by an item response function (IRF / ICC). This acknowledges uncertainty and error at the item level.  
+   - **Invariance as a core goal**: Item parameters should be (largely) independent of the sample of persons, and person parameters independent of the specific items (when the model fits). This is a stronger form of measurement objectivity than CTT typically provides.  
+   - **Item-level focus and information**: Every item contributes differently depending on where a person stands on the trait. Measurement precision can vary across the trait continuum and can be engineered.  
+   - **Conjoint measurement / parameter separation**: The ideal (especially in Rasch models) is to separate person and item influences in a way that supports fundamental measurement properties (e.g., specific objectivity).  
+   - **Unidimensionality and local independence assumptions** as theoretical commitments rather than mere statistical checks.
+
+3. **IRT as a Paradigm Shift**  
+   Use a clean comparison table (highly recommended for textbooks):
+
+   | Aspect                  | Classical Test Theory (CTT)          | Item Response Theory (IRT)                          |
+   |-------------------------|--------------------------------------|-----------------------------------------------------|
+   | Unit of analysis        | Total test score                     | Individual item responses                           |
+   | Model type              | Linear, additive                     | Nonlinear, probabilistic                            |
+   | Sample dependence       | High (item statistics vary by group) | Low (invariant parameters when model holds)         |
+   | Precision of measurement| Single SEM for the whole test        | Varies by trait level (test information function)   |
+   | Score interpretation    | Norm-referenced, relative            | Trait-referenced, absolute on latent scale          |
+   | Adaptive testing        | Difficult                            | Natural fit                                         |
+   | Philosophy              | Test as a random sample of items     | Explicit model of response process                  |
+
+4. **Implications for Practice and Theory**  
+   - Test construction becomes item-bank oriented rather than fixed-form.  
+   - Scoring can be individual and adaptive.  
+   - Validity evidence is strengthened through item fit, differential item functioning (DIF), and scale information.  
+   - Links to broader measurement theory (e.g., representational vs. operationalist philosophies, or Rasch’s specific objectivity).  
+   - Limitations and ongoing debates: model–data fit requirements, choice between dominance vs. ideal-point models (especially for personality/attitudes), philosophical critiques of latent variables.
+
+5. **Closing Transition**  
+   End by foreshadowing technical chapters: “This philosophical foundation sets the stage for the specific IRT models (Rasch/1PL, 2PL, 3PL, graded response, etc.) that operationalize these principles.”
+
+### Writing Style and Pedagogical Tips
+- Use accessible language first, then formalize. Start with an everyday analogy (e.g., “measuring height with a ruler whose markings change depending on who is using it” vs. a stable metric scale).  
+- Include a simple visual of an Item Characteristic Curve early — it embodies the philosophy.  
+- Reference foundational works: Lord & Novick (1968), Rasch (1960), Embretson & Reise (2000), Hambleton et al., and key papers on measurement philosophy (e.g., discussions of conjoint measurement, invariance).  
+- Pose rhetorical questions: “What does it mean to truly ‘measure’ an attitude or ability?”  
+- Keep the tone reflective rather than purely technical — this is the “why” chapter.
+
+This framing positions IRT not as “just another set of models” but as a coherent measurement philosophy that aspires to stronger scientific properties than its predecessors. It flows naturally from your earlier coverage of Thurstone and Likert while preparing readers for the mathematical details to come.
+
 
 ### Dominance models 
 
@@ -69,6 +141,8 @@ Dominance models, such as the GRM, assume a monotonically increasing relationshi
 Frequently estimated via the Generalized Graded Unfolding Model [GGUM; @roberts2000general]
 
 ## Rasch measurement {#sec-rasch}
+
+@Rasch1960
 
 ## Network Psychometrics
 

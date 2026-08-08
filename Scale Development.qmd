@@ -6,7 +6,7 @@ The word "scale" has several meanings within measurement contexts. Scales ***of 
 
 There are four obligatory and many elective considerations for scale development:
 
-> NOTE. Chapter & Section organization re--worked on 11/29/25 (Dunn Bros. conversation) -- many of these "sections" will turn into chapters under the new "SCALE DEVELOPMENT" Section
+> NOTE. Chapter & Section organization re--worked on 11/29/25 (Dunn Bros. conversation) -- many of these "sections" will turn into chapters under the new "SCALE DEVELOPMENT" Section. Also need space for method of equal--appearing intervals [@thurstone1929measurement] and method of summated ratings [@likert1932technique]
 
 ::::: columns
 ::: {.column width="50%"}

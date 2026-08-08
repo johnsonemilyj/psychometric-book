@@ -16,4 +16,4 @@
 
 4. Applications are interactive
 
-
+There is no dedicated chapter on the history of testing or important theoretical moments. Instead, we reference historical contributors throughout our presentation. For an enjoyable and informative presentation of important historical markers, we recommend @guion2011assessment's chapter on "Basic Concepts in Measurement". 
