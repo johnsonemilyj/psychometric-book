@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -298,8 +318,34 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p>There is a difference between dominance <span class="citation" data-cites="likert1932technique">(e.g., <a href="references.html#ref-likert1932technique" role="doc-biblioref">Likert, 1932</a>)</span> and ideal point <span class="citation" data-cites="thurstone1928attitudes">(e.g., <a href="references.html#ref-thurstone1928attitudes" role="doc-biblioref">Thurstone, 1928</a>)</span> methods of scale construction, and this difference must be acknowledged when crafting indicators<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. The dominance model assumes that “more” of a trait within the respondent drives more extreme responses to trait indicators. The ideal point requires indicators to be sampled from representative locations all along the trait continuum. There has been some debate regarding which approach is less problematic <span class="citation" data-cites="oswald2010developing drasgow201075">(<a href="references.html#ref-drasgow201075" role="doc-biblioref">Drasgow et al., 2010</a>; e.g., <a href="references.html#ref-oswald2010developing" role="doc-biblioref">Oswald &amp; Schell, 2010</a>)</span>. The ideal point approach is most closely aligned with IRT and Rasch philosophies, although it also “works” with CTT.</p>
+<p>Our suggestion is:</p>
+<blockquote class="blockquote">
+<p>representative content domain sampling with forethought to the projected distribution of trait values within your population of interest.</p>
+</blockquote>
+<p>We borrow from both perspectives and recommend… If you intend to evaluate your measure from the perspective of IRT or Rasch, then items targeted at different trait levels become more practically important (e.g., you should endeavor to oversample items at many different plausible trait points).</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list" style="display: none">
+<div id="ref-drasgow201075" class="csl-entry" role="listitem">
+Drasgow, F., Chernyshenko, O. S., &amp; Stark, S. (2010). 75 years after likert: Thurstone was right! <em>Industrial and Organizational Psychology</em>, <em>3</em>(4), 465–476.
+</div>
+<div id="ref-likert1932technique" class="csl-entry" role="listitem">
+Likert, R. (1932). A technique for the measurement of attitudes. <em>Archives of Psychology</em>.
+</div>
+<div id="ref-oswald2010developing" class="csl-entry" role="listitem">
+Oswald, F. L., &amp; Schell, K. L. (2010). Developing and scaling personality measures: Thurstone was right—but so far, likert was not wrong. <em>Industrial and Organizational Psychology</em>, <em>3</em>(4), 481–484.
+</div>
+<div id="ref-thurstone1928attitudes" class="csl-entry" role="listitem">
+Thurstone, L. L. (1928). Attitudes can be measured. <em>American Journal of Sociology</em>, <em>33</em>(4), 529–554.
+</div>
+</div>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p>most commonly “items”<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
