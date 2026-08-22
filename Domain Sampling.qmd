@@ -1,12 +1,13 @@
 ---
 title: "Domain Sampling"
-editor: visual
 ---
 
-There is a difference between dominance [e.g., @likert1932technique] and ideal point [e.g., @thurstone1928attitudes] methods of scale construction, and this difference must be acknowledged when crafting indicators^[most commonly "items"]. The dominance model assumes that "more" of a trait within the respondent drives more extreme responses to trait indicators. The ideal point requires indicators to be sampled from representative locations all along the trait continuum. There has been some debate regarding which approach is less problematic [e.g., @oswald2010developing; @drasgow201075]. The ideal point approach is most closely aligned with IRT and Rasch philosophies, although it also "works" with CTT. 
+There is a difference between ***dominance*** [e.g., @likert1932technique] and ***ideal point*** [e.g., @thurstone1928attitudes] methods of scale construction, and this difference must be acknowledged when crafting indicators[^domain-sampling-1]. The dominance model assumes that "more" of a trait within the respondent drives more extreme responses to trait indicators. The ideal point requires indicators to be sampled from representative locations all along the trait continuum. There has been some debate regarding which approach is less problematic [e.g., @oswald2010developing; @drasgow201075]. The ideal point approach is most closely aligned with IRT and Rasch philosophies, although it also "works" with CTT.
 
-Our suggestion is: 
+[^domain-sampling-1]: most commonly "items"
 
->representative content domain sampling with forethought to the projected distribution of trait values within your population of interest. 
+If you are developing a true test, you need to follow the "ideal point" model. Inventories are different. With inventories, we [borrow from both perspectives](https://www.youtube.com/watch?v=wsbgwNe4Rv4) and recommend...
 
-We borrow from both perspectives and recommend... If you intend to evaluate your measure from the perspective of IRT or Rasch, then items targeted at different trait levels become more practically important (e.g., you should endeavor to oversample items at many different plausible trait points).
+> representative content domain sampling with forethought to the projected distribution of trait values within your population of interest
+
+If you intend to evaluate your measure from the perspective of IRT or Rasch, then items targeted at different trait levels become more practically important (e.g., you should endeavor to oversample items at many different plausible trait points). 
