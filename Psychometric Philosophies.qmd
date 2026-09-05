@@ -4,11 +4,11 @@
 
 The belief that we have the capability to measure the abstract and theoretical similarly to the concrete and physical most likely started (or at least is widely acknowledged as starting) with Francis Galton, who predated "Psychology" but had an interest in individual differences [@galton1883inquiries]. Later esteemed contributors to early Psychology such as Edward Lee Thorndike and James McKeen Cattell held similar opinions [@thorndike1918nature; @thorndike1904theory; @cattell1948mental], although others, such as Alfred Binet, expressed more skepticism regarding the capabilities of Psychological measurement [@binet1898mesure].
 
-Philosophies, within the context of Psychometrics, reflect ***theoretical beliefs regarding the nature of measurement***. One of these beliefs is held tight, as an orthodoxy, such that empirical associations contrary to the orthodoxy are deemed heretical and violations of measurement (Rasch measurement -- covered in @sec-rasch). ***Most*** philosophies, however, take less extreme positions regarding the nature of measurement. All share a dependence on individual differences.
+Philosophies, within the context of Psychometrics, reflect ***theoretical beliefs regarding the nature of measurement***. One of these beliefs is held tight, as an orthodoxy, such that empirical associations contrary to the orthodoxy are deemed heretical and violations of measurement (Rasch measurement -- covered in @sec-rasch). ***Most*** philosophies, however, take less extreme positions regarding the nature of measurement. All share a dependence on individual differences -- these differences can be intra-- or inter--individual, but they are a foundational requirement for measurement from any philosophical orientation.
 
-It is useful for you to align yourself with one of these philosophical orientations from the perspective of ***assessment development***. You should, however, borrow investigative procedures from each of these traditions to evaluate the quality of your measure (after all, each isolated philosophy has its own unique strengths and weaknesses).
+from the perspective of ***assessment development***, it is useful for you to align yourself with one of these philosophical orientations. You should, however, borrow investigative procedures from each of these traditions to evaluate the quality of your measure and provide psychometric insight (after all, each isolated philosophy has its own unique strengths and weaknesses).
 
-We will present four philosophical orientations (see @tbl-phil), although these are not intended to represent a comprehensive or exhaustive listing. Again, being cautious with terminology, we refer to the theoretical perspective on measurement as a ***philosophical orientation*** whereas the holder of that orientation is referred to as a ***tradition***.^[You should beware that these terms are not universally applied within the field of Psychometrics, and you will find considerable meaningful deviations with how (even very knowledgeable) individuals speak of these concepts -- the meta--lesson here, within Psychometric applications, is that you need to develop a tolerance for ambiguity with respect to terminology (although within this current book we aim to be internally consistent with our use of terms, once you leave the bounds of this book you will encounter considerable liberality with terminology)] There are, no doubt, useful perspectives on the nature of measurement that have not yet been explicitly articulated or widely disseminated and the field is yet in need of perspectives that might help explain some persistently vexing mysteries...
+We will present five philosophical orientations (see @tbl-phil), although these are not intended to represent a comprehensive or exhaustive listing. Again, being cautious with terminology, we refer to the theoretical perspective on measurement as a ***philosophical orientation*** whereas the proponent of that orientation is referred to as a ***tradition***.^[You should beware that these terms are not universally applied within the field of Psychometrics, and you will find considerable meaningful deviations with how (even very knowledgeable) individuals speak of these concepts -- the meta--lesson here, within Psychometric applications, is that you need to develop a tolerance for ambiguity with respect to terminology (although within this current book we aim to be internally consistent with our use of terms, once you leave the bounds of this book you will encounter considerable liberality with terminology)] There are, no doubt, useful perspectives on the nature of measurement that have not yet been explicitly articulated or widely disseminated and the field is yet in need of perspectives that might help explain some persistently vexing mysteries...
 
 > There is nothing so practical as a good theory [@Lewin1951]
 
@@ -27,7 +27,29 @@ kableExtra::kbl(phil)
 
 ```
 
-CTT came first [@Spearman1904a; @Edgeworth1888] -- there was a flurry of activity in the 1950's and 1960's that challenged and/or augmented CTT with Generalizability Theory, IRT, and Rasch measurement [@Rasch1960; @Lord1952; @LordNovick1968; @Cronbach1963]. Then the deep thinking about measurement laid largely dormant until Network Psychometrics [@BorsboomCramer2013].
+CTT came first [@Spearman1904a; @Edgeworth1888] -- there was a flurry of activity in the 1950's and 1960's that challenged and/or augmented CTT with IRT [@Lord1952; @LordNovick1968], Rasch measurement [@Rasch1960], and Generalizability Theory [@Cronbach1963]. Then the widely communicated challenges to existing philosophies of measurement laid largely dormant until Network Psychometrics [@BorsboomCramer2013; @borsboom2008psychometric] -- see @fig-tradition.
+
+```{mermaid}
+%%| echo: false
+%%| label: fig-tradition
+%%| fig-cap: "Approximate timeline of Psychometric tradition origins"
+
+gantt
+    dateFormat YYYY
+    axisFormat %Y
+    section CTT
+        X=T+e             :1888, 2026
+    section IRT
+        p(1|θ)            :1952, 2026
+    section Rasch
+        θ−δ               :1960, 2026        
+    section Generalizability
+        e=e1+e2...        :1963, 2026
+    section Network Psych
+        Xi↔Xj             :2008, 2026
+
+```
+
 
 ## Classical Test Theory
 

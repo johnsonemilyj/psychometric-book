@@ -89,6 +89,10 @@ div.csl-indent {
     "search-label": "Search"
   }
 }</script>
+<meta name="mermaid-theme" content="default">
+<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 <script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
 
 <link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
@@ -373,9 +377,9 @@ window.Quarto = {
 <p>Measurement starts with the idea that <em>anything that exists, exists to some degree, and therefore can be measured</em> <span class="citation" data-cites="guion2011assessment">(<a href="references.html#ref-guion2011assessment" role="doc-biblioref">Guion, 2011, p. 157</a>)</span></p>
 </blockquote>
 <p>The belief that we have the capability to measure the abstract and theoretical similarly to the concrete and physical most likely started (or at least is widely acknowledged as starting) with Francis Galton, who predated “Psychology” but had an interest in individual differences <span class="citation" data-cites="galton1883inquiries">(<a href="references.html#ref-galton1883inquiries" role="doc-biblioref">Galton, 1883</a>)</span>. Later esteemed contributors to early Psychology such as Edward Lee Thorndike and James McKeen Cattell held similar opinions <span class="citation" data-cites="thorndike1918nature thorndike1904theory cattell1948mental">(<a href="references.html#ref-cattell1948mental" role="doc-biblioref">Cattell, 1890</a>; <a href="references.html#ref-thorndike1904theory" role="doc-biblioref">Thorndike, 1904</a>, <a href="references.html#ref-thorndike1918nature" role="doc-biblioref">1918</a>)</span>, although others, such as Alfred Binet, expressed more skepticism regarding the capabilities of Psychological measurement <span class="citation" data-cites="binet1898mesure">(<a href="references.html#ref-binet1898mesure" role="doc-biblioref">Binet, 1898</a>)</span>.</p>
-<p>Philosophies, within the context of Psychometrics, reflect <strong><em>theoretical beliefs regarding the nature of measurement</em></strong>. One of these beliefs is held tight, as an orthodoxy, such that empirical associations contrary to the orthodoxy are deemed heretical and violations of measurement (Rasch measurement – covered in <a href="#sec-rasch" class="quarto-xref"><span>Section 2.4</span></a>). <strong><em>Most</em></strong> philosophies, however, take less extreme positions regarding the nature of measurement. All share a dependence on individual differences.</p>
-<p>It is useful for you to align yourself with one of these philosophical orientations from the perspective of <strong><em>assessment development</em></strong>. You should, however, borrow investigative procedures from each of these traditions to evaluate the quality of your measure (after all, each isolated philosophy has its own unique strengths and weaknesses).</p>
-<p>We will present four philosophical orientations (see <a href="#tbl-phil" class="quarto-xref">Table&nbsp;<span>2.1</span></a>), although these are not intended to represent a comprehensive or exhaustive listing. Again, being cautious with terminology, we refer to the theoretical perspective on measurement as a <strong><em>philosophical orientation</em></strong> whereas the holder of that orientation is referred to as a <strong><em>tradition</em></strong>.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> There are, no doubt, useful perspectives on the nature of measurement that have not yet been explicitly articulated or widely disseminated and the field is yet in need of perspectives that might help explain some persistently vexing mysteries…</p>
+<p>Philosophies, within the context of Psychometrics, reflect <strong><em>theoretical beliefs regarding the nature of measurement</em></strong>. One of these beliefs is held tight, as an orthodoxy, such that empirical associations contrary to the orthodoxy are deemed heretical and violations of measurement (Rasch measurement – covered in <a href="#sec-rasch" class="quarto-xref"><span>Section 2.4</span></a>). <strong><em>Most</em></strong> philosophies, however, take less extreme positions regarding the nature of measurement. All share a dependence on individual differences – these differences can be intra– or inter–individual, but they are a foundational requirement for measurement from any philosophical orientation.</p>
+<p>from the perspective of <strong><em>assessment development</em></strong>, it is useful for you to align yourself with one of these philosophical orientations. You should, however, borrow investigative procedures from each of these traditions to evaluate the quality of your measure and provide psychometric insight (after all, each isolated philosophy has its own unique strengths and weaknesses).</p>
+<p>We will present five philosophical orientations (see <a href="#tbl-phil" class="quarto-xref">Table&nbsp;<span>2.1</span></a>), although these are not intended to represent a comprehensive or exhaustive listing. Again, being cautious with terminology, we refer to the theoretical perspective on measurement as a <strong><em>philosophical orientation</em></strong> whereas the proponent of that orientation is referred to as a <strong><em>tradition</em></strong>.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> There are, no doubt, useful perspectives on the nature of measurement that have not yet been explicitly articulated or widely disseminated and the field is yet in need of perspectives that might help explain some persistently vexing mysteries…</p>
 <blockquote class="blockquote">
 <p>There is nothing so practical as a good theory <span class="citation" data-cites="Lewin1951">(<a href="references.html#ref-Lewin1951" role="doc-biblioref">Lewin, 1951</a>)</span></p>
 </blockquote>
@@ -422,7 +426,37 @@ Table&nbsp;2.1: Psychometric traditions covered in this book
 </figure>
 </div>
 </div>
-<p>CTT came first <span class="citation" data-cites="Spearman1904a Edgeworth1888">(<a href="references.html#ref-Edgeworth1888" role="doc-biblioref">Edgeworth, 1888</a>; <a href="references.html#ref-Spearman1904a" role="doc-biblioref">Spearman, 1904</a>)</span> – there was a flurry of activity in the 1950’s and 1960’s that challenged and/or augmented CTT with Generalizability Theory, IRT, and Rasch measurement <span class="citation" data-cites="Rasch1960 Lord1952 LordNovick1968 Cronbach1963">(<a href="references.html#ref-Cronbach1963" role="doc-biblioref">Cronbach et al., 1963</a>; <a href="references.html#ref-Lord1952" role="doc-biblioref">Lord, 1952</a>; <a href="references.html#ref-LordNovick1968" role="doc-biblioref">Lord &amp; Novick, 1968</a>; <a href="references.html#ref-Rasch1960" role="doc-biblioref">Rasch, 1960</a>)</span>. Then the deep thinking about measurement laid largely dormant until Network Psychometrics <span class="citation" data-cites="BorsboomCramer2013">(<a href="references.html#ref-BorsboomCramer2013" role="doc-biblioref">Borsboom &amp; Cramer, 2013</a>)</span>.</p>
+<p>CTT came first <span class="citation" data-cites="Spearman1904a Edgeworth1888">(<a href="references.html#ref-Edgeworth1888" role="doc-biblioref">Edgeworth, 1888</a>; <a href="references.html#ref-Spearman1904a" role="doc-biblioref">Spearman, 1904</a>)</span> – there was a flurry of activity in the 1950’s and 1960’s that challenged and/or augmented CTT with IRT <span class="citation" data-cites="Lord1952 LordNovick1968">(<a href="references.html#ref-Lord1952" role="doc-biblioref">Lord, 1952</a>; <a href="references.html#ref-LordNovick1968" role="doc-biblioref">Lord &amp; Novick, 1968</a>)</span>, Rasch measurement <span class="citation" data-cites="Rasch1960">(<a href="references.html#ref-Rasch1960" role="doc-biblioref">Rasch, 1960</a>)</span>, and Generalizability Theory <span class="citation" data-cites="Cronbach1963">(<a href="references.html#ref-Cronbach1963" role="doc-biblioref">Cronbach et al., 1963</a>)</span>. Then the widely communicated challenges to existing philosophies of measurement laid largely dormant until Network Psychometrics <span class="citation" data-cites="BorsboomCramer2013 borsboom2008psychometric">(<a href="references.html#ref-borsboom2008psychometric" role="doc-biblioref">Borsboom, 2008</a>; <a href="references.html#ref-BorsboomCramer2013" role="doc-biblioref">Borsboom &amp; Cramer, 2013</a>)</span> – see <a href="#fig-tradition" class="quarto-xref">Figure&nbsp;<span>2.1</span></a>.</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div id="fig-tradition" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-tradition-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div>
+<pre class="mermaid mermaid-js" data-label="fig-tradition">gantt
+    dateFormat YYYY
+    axisFormat %Y
+    section CTT
+        X=T+e             :1888, 2026
+    section IRT
+        p(1|θ)            :1952, 2026
+    section Rasch
+        θ−δ               :1960, 2026        
+    section Generalizability
+        e=e1+e2...        :1963, 2026
+    section Network Psych
+        Xi↔Xj             :2008, 2026
+
+</pre>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-tradition-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.1: Approximate timeline of Psychometric tradition origins
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
 <section id="classical-test-theory" class="level2" data-number="2.1">
 <h2 data-number="2.1" class="anchored" data-anchor-id="classical-test-theory"><span class="header-section-number">2.1</span> Classical Test Theory</h2>
 <p>Although the same philosophical orientation within educational contexts is referred to as True Score Theory (TST), the Standards (as well as the broader social and behavioral sciences) have preferred to refer to this perspective on measurement as Classical Test Theory (CTT)<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> <span class="citation" data-cites="aera_apa_ncme_2014">(<a href="references.html#ref-aera_apa_ncme_2014" role="doc-biblioref">American Educational Research Association and American Psychological Association and National Council on Measurement in Education, 2014</a>)</span>. This orientation has the longest history of specification and application <span class="citation" data-cites="Gulliksen1950">(<a href="references.html#ref-Gulliksen1950" role="doc-biblioref">Gulliksen, 1950</a>)</span> and unquestionably remains dominant in casual academic (e.g., non–Psychometrician) conceptualization of Psychological measurement.</p>
@@ -601,6 +635,9 @@ American Educational Research Association and American Psychological Association
 </div>
 <div id="ref-binet1898mesure" class="csl-entry" role="listitem">
 Binet, A. (1898). La mesure en psychologie individuelle. <em>Revue Philosophique de La France Et de l’<span>É</span>tranger</em>, <em>46</em>, 113–123.
+</div>
+<div id="ref-borsboom2008psychometric" class="csl-entry" role="listitem">
+Borsboom, D. (2008). Psychometric perspectives on diagnostic systems. <em>Journal of Clinical Psychology</em>, <em>64</em>(9), 1089–1108.
 </div>
 <div id="ref-BorsboomCramer2013" class="csl-entry" role="listitem">
 Borsboom, D., &amp; Cramer, A. O. J. (2013). Network analysis: An integrative approach to the structure of psychopathology. <em>Annual Review of Clinical Psychology</em>, <em>9</em>, 91–121. <a href="https://doi.org/10.1146/annurev-clinpsy-050212-185608">https://doi.org/10.1146/annurev-clinpsy-050212-185608</a>
