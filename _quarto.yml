@@ -58,12 +58,12 @@ engine: knitr
 
 lightbox: true
 
-webr:
-  show-starup-message: false
-  packages: ['psych','tidyverse']
+#webr:
+#  show-starup-message: false
+#  packages: ['psych','tidyverse']
 
-filters:
-  - webr
+#filters:
+#  - webr
   
 execute: 
   echo: false

@@ -2,16 +2,46 @@
 title: "Using R"
 ---
 
-This book utilizes [`WebR`](https://docs.r-wasm.org/webr/latest/) to teach analytical components. `WebR` enables an interactive code editor within your viewing browser, so you can write, execute, and receive feedback on code relevant for your psychometrics project. Because everyone will (eventually) have their own unique measure and data, we will demonstrate Psychometric principles and practices utilizing the `bfi` dataset from within the [`psych` package](https://personality-project.org/r/psych/). @sec-example highlights important information about this dataset, primarily:  
+This book relies on the reader using R for both analyses and reporting. You can learn more about R and stay on top of recent developments by following <https://www.r-project.org/>. There are many introductory resources available for using R as an analytical tool. This book will take care of the "reporting" component with R. 
+
+The expectation is that you are familiar with three important R "components": 
+
+1. an interactive console
+2. a scripting environment
+3. helper packages
+
+@fig-renviron presents two components, the console and a script file. The script file has two elementary elements within it: 1) a comment line (identified by at least one octothorpe^[Kulas prefers two octothorpes as a commenting convention -- this is merely personal preference, but it will be repeatedly encountered throughout this book]), and 2) a command (`2 + 2`). The manner in which you access R is "up to you". Many Psychology students like the R Studio interface (referred to as an "IDE" -- Integrated Development Environment), but many options exist. 
+
+![Screenshot of R console and scripting environment](/img/renviron.JPG){#fig-renviron}
+
+Any additional experience you may have with R is great, but if you understand the 3 critical components (as well as the specification of comments), have a positive attitude about R^[This is not trivial!!! Students who "fail" at R do so because of attitude, not a lack of ability], and follow the copy--paste format of this book, you should be fine.
+
+Throughout this book, we will provide code that you can execute as example analyses -- you can copy code that we provide and paste it into your local R session (and tweak/play with the code to better your own personal understanding of "what is happening").
+
+For example, if you engage the clipboard ({{< iconify bi:clipboard >}}) in @lst-example and paste into your R session (either within a script file or the console), you should return the output `[1] 4`:
+
+```{r}
+#| lst-label: lst-example
+#| lst-cap: Example bit of code to copy/paste
+#| echo: true
+#| eval: false
+
+2 + 2
+
+```
+
+The code we share later in the book is a bit more elaborate, but the copy/paste process is the same regardless of how sophisticated the analytical content is (or isn't). 
+
+## Example Measure {#sec-example}
+
+If you follow the recommendations of this book, you will (eventually) produce your own unique measure and administer it to a sample of your choosing. However, before you do that, we will demonstrate Psychometric ***principles and practices*** utilizing a [shared]{.underline} measure and dataset: the `bfi` from within the [`psych` package](https://personality-project.org/r/psych/). 
+
+@sec-example highlights important information about this dataset, primarily:  
 
 1. What are the items?
 2. What are the scales?
 3. What are the scale definitions?^[what items are associated with what scales, and are any recodes or differential weighting algorithms necessary]
 4. What demographics were collected?
-
-Throughout this book, we will provide code that you can execute as example analyses -- you can run the code within your browser (and tweak/play with the code to better your own personal understanding of "what is happening").
-
-## Example Measure {#sec-example}
 
 The [BFI dataset](https://www.rdocumentation.org/packages/psych/versions/2.2.3/topics/bfi) (from the `psych` R package) contains 2,800 responses to 28 variables. The 28 variables are presented in @tbl-bfidefs. The 2,800 responses are contained within the `bfi` object and will be used to demonstrate Psychometric analyses.
 
@@ -27,18 +57,19 @@ DT::datatable(bfivars, options = list(pageLength = 5))
       
 ```
 
-## Using `WebR`
+## Using R
 
-For each topic that involves analytical exploration, we will provide template R script that you can both a) execute within your browser, and b) copy--paste into your local R session^[sometimes the script will require "pre--processing" such that previous scripts must first be executed prior to the desired code operating as expected.]. See @lst-tutor1 for an example that:  
+For each topic that involves analytical exploration, we will provide template R script that you can  copy--paste into your local R session^[sometimes the script will require "pre--processing" such that previous scripts must first be executed prior to the desired code operating as expected.]. See @lst-tutor1 for an example that:  
 
 1. loads the `psych` package
 2. accesses the `bfi` dataset
 3. asks for a histogram of age
 4. asks for the mean and standard deviation for the age variable
 
-```{webr-r}
+```{r}
 #| lst-label: lst-tutor1
 #| lst-cap: "WebR code example"
+#| echo: true
 library(psych)
 
 data(bfi)
