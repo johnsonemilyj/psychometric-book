@@ -9,9 +9,75 @@ d2:
 
 # Foundational Statistics {#sec-statsi}
 
-Your analytical comprehension of Psychological measurement can be (mostly) built on a single statistic: the correlation. There are several different correlation coefficients that are relevant for measurement, but your conceptual understanding is facilitated by a focus on only one coefficient: Pearson's product moment correlation (aka "correlation"). In this chapter, we will walk you through the way Psychometricians think about this correlation coefficient---conceptual understanding of this index is facilitated by first understanding its ancestral grandparent, the deviation score.
+Your analytical comprehension of Psychological measurement can be (mostly) built on deep understanding of a single statistic: the correlation. Your deep understanding of the correlation can be accomplished through focused attention placed on it's most crucial component: the deviation score. This chapter therefore is centered on the deviation score.
+
+
+The comprehension goals of this chaper are:  
+1. understanding how deviations inform correlation and standardization
+2. understanding of the relationship between a correlation and a covariance
+
+Conceptual understanding of the correlation is facilitated by first understanding its ancestral grandparent, the deviation score.
 
 ## Raw scores
+
+A raw score refers to a value yielded from an assessment and is typically expressed in units. Average score, total score, and percent score are common units. A raw score is (almost always) different than an individual response. To demonstrate the difference, consider a 4--item classroom mathematical (true) test that was administered to 5 individuals, as is represented in @tbl-math4item.
+
+```{r}
+#| label: tbl-math4item
+#| tbl-cap: "Four (math) items with five respondents -- raw scores"
+
+library(gt)
+
+data.frame(
+           name = c("Lucy", "Linus", "Chuck", "Persephone", "Snoopy"),
+           a = c(2, 2, 0, 1, -4), 
+           b = c(2, 3, 2, 9, 0), 
+           c = c(8, 8, 8, 8, 8), 
+           d = c(3, 2, 5, 1, "elephant")) |>
+  gt() |>
+  cols_label(
+    name= "Student",
+    a = md("$1+1=$"),
+    b = md("$5-3=$"),
+    c = md("$2\\cdot4=$"),
+    d = md("$8\\div2=$") 
+) |> 
+  tab_options(table.width = pct(100)) |>
+  cols_align(
+    align = "left")
+
+```
+
+## [NOT]{.underline} raw scores (aka "transformed" scores)
+
+There are many different types of transformation that are frequently applied to raw scores. A very general label that can be applied is, "transformed scores", but the important characteristic to convey here is that the raw scores have been altered. @tbl-math4itemscored presents one example of transformed scores -- here responses have been altered from raw to "scored". Scoring is typically informed by a code sheet, and it is common practice (although not exclusive practice), to grossly categorize into correct (1) and incorrect (0). Notice that Snoopy's division answer would possibly benefit from greater (e.g., the simple correct/incorrect transformation algorithm here may be hiding important information). Notice that Chuck's response to the addition problem looks the same in both raw and transformed states. The score label is important to understand the meaning of the value (was a value of "0" provided or was the answer incorrect?).
+
+```{r}
+#| label: tbl-math4itemscored
+#| tbl-cap: "Four (math) items with five respondents -- transformed scores"
+
+library(gt)
+
+data.frame(
+           name = c("Lucy", "Linus", "Chuck", "Persephone", "Snoopy"),
+           a = c(1, 1, 0, 0, 0), 
+           b = c(1, 0, 1, 0, 0), 
+           c = c(1, 1, 1, 1, 1), 
+           d = c(0, 0, 0, 0, 0)) |>
+  gt() |>
+  cols_label(
+    name= "Student",
+    a = md("$1+1=$"),
+    b = md("$5-3=$"),
+    c = md("$2\\cdot4=$"),
+    d = md("$8\\div2=$") 
+) |> 
+  tab_options(table.width = pct(100)) |>
+  cols_align(
+    align = "left")
+
+```
+
 
 ## Deviation scores
 
@@ -101,3 +167,4 @@ sd: |latex
 
 ## Standardized covariance (aka correlation)
 
+There are several different correlation coefficients that are relevant for measurement, but your conceptual understanding is facilitated by a focus on one foundational index: Pearson's product moment correlation (aka "correlation"). In this chapter, we will walk you through the way Psychometricians think about this correlation coefficient. If you understand the logic and data transformations that inform the statistic, you will be must better prepared to 

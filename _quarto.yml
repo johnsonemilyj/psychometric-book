@@ -16,6 +16,7 @@ book:
     - part: intro.qmd
       chapters:
         - Using R.qmd
+        - statsi.qmd
         - Psychometric Philosophies.qmd
         - Types of Assessments.qmd
     - part: Scale Development.qmd
