@@ -2,17 +2,23 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.10.19">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>1&nbsp; Using R – Applied Psychometrics Using R</title>
 <style>
-code{white-space: pre-wrap;}
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -73,10 +79,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-1c53e83e4fd96d857afdc4fda0ada1c4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-19cbf4cfd867b78f8c4d412a65ab4e72.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="site_libs/quarto-contrib/iconify-3.0.0/iconify-icon.min.js"></script>
 <script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
@@ -381,7 +387,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="fig-renviron" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-renviron-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href=".\img/renviron.JPG" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Figure&nbsp;1.1: Screenshot of R console and scripting environment"><img src=".\img/renviron.JPG" class="img-fluid figure-img"></a>
+<a href="./img/renviron.JPG" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Figure&nbsp;1.1: Screenshot of R console and scripting environment"><img src="./img/renviron.JPG" class="img-fluid figure-img"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-renviron-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;1.1: Screenshot of R console and scripting environment
@@ -398,7 +404,7 @@ Figure&nbsp;1.1: Screenshot of R console and scripting environment
 Listing&nbsp;1.1: Example bit of code to copy/paste
 </figcaption>
 <div aria-describedby="lst-example-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span> <span class="sc">+</span> <span class="dv">2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span> <span class="sc">+</span> <span class="dv">2</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </figure>
 </div>
@@ -423,8 +429,8 @@ Table&nbsp;1.1: Variables of focal interest within the <code>bfi</code> data obj
 </figcaption>
 <div aria-describedby="tbl-bfidefs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
-<div class="datatables html-widget html-fill-item" id="htmlwidget-eed565a8ea086e53727f" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-eed565a8ea086e53727f">{"x":{"filter":"none","vertical":false,"data":[["A1","A2","A3","A4","A5","C1","C2","C3","C4","C5","E1","E2","E3","E4","E5","N1","N2","N3","N4","N5","O1","O2","O3","O4","O5","gender","education","age"],["Am indifferent to the feelings of others.","Inquire about others' well-being.","Know how to comfort others.","Love children.","Make people feel at ease.","Am exacting in my work.","Continue until everything is perfect.","Do things according to a plan.","Do things in a half-way manner.","Waste my time.","Don't talk a lot.","Find it difficult to approach others.","Know how to captivate people.","Make friends easily.","Take charge.","Get angry easily.","Get irritated easily.","Have frequent mood swings.","Often feel blue.","Panic easily.","Am full of ideas.","Avoid difficult reading material.","Carry the conversation to a higher level.","Spend time reflecting on things.","Will not probe deeply into a subject.","males=1, females=2","in HS, fin HS, coll,  coll grad , grad deg","age in years"],["Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Emotional Stability","Emotional Stability","Emotional Stability","Emotional Stability","Emotional Stability","Openness","Openness","Openness","Openness","Openness",null,null,null],[-1,1,1,1,1,1,1,1,-1,-1,-1,-1,1,1,1,-1,-1,-1,-1,-1,1,-1,1,1,-1,null,null,null]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Item<\/th>\n      <th>Big6<\/th>\n      <th>Keying<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":5,"columnDefs":[{"className":"dt-right","targets":3},{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Item","targets":1},{"name":"Big6","targets":2},{"name":"Keying","targets":3}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[5,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-7139bdd5b8df172485d2" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-7139bdd5b8df172485d2">{"x":{"filter":"none","vertical":false,"data":[["A1","A2","A3","A4","A5","C1","C2","C3","C4","C5","E1","E2","E3","E4","E5","N1","N2","N3","N4","N5","O1","O2","O3","O4","O5","gender","education","age"],["Am indifferent to the feelings of others.","Inquire about others' well-being.","Know how to comfort others.","Love children.","Make people feel at ease.","Am exacting in my work.","Continue until everything is perfect.","Do things according to a plan.","Do things in a half-way manner.","Waste my time.","Don't talk a lot.","Find it difficult to approach others.","Know how to captivate people.","Make friends easily.","Take charge.","Get angry easily.","Get irritated easily.","Have frequent mood swings.","Often feel blue.","Panic easily.","Am full of ideas.","Avoid difficult reading material.","Carry the conversation to a higher level.","Spend time reflecting on things.","Will not probe deeply into a subject.","males=1, females=2","in HS, fin HS, coll,  coll grad , grad deg","age in years"],["Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Emotional Stability","Emotional Stability","Emotional Stability","Emotional Stability","Emotional Stability","Openness","Openness","Openness","Openness","Openness",null,null,null],[-1,1,1,1,1,1,1,1,-1,-1,-1,-1,1,1,1,-1,-1,-1,-1,-1,1,-1,1,1,-1,null,null,null]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Item<\/th>\n      <th>Big6<\/th>\n      <th>Keying<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":5,"columnDefs":[{"className":"dt-right","targets":3},{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Item","targets":1},{"name":"Big6","targets":2},{"name":"Keying","targets":3}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[5,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </figure>
@@ -447,11 +453,11 @@ Table&nbsp;1.1: Variables of focal interest within the <code>bfi</code> data obj
 Listing&nbsp;1.2: WebR code example
 </figcaption>
 <div aria-describedby="lst-tutor1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(psych)</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(psych)</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(bfi)</span>
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(bfi<span class="sc">$</span>age)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(bfi<span class="sc">$</span>age)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </figure>
 </div>
@@ -468,7 +474,7 @@ Listing&nbsp;1.2: WebR code example
 Listing&nbsp;1.3: WebR code example
 </figcaption>
 <div aria-describedby="lst-tutor1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(bfi<span class="sc">$</span>age)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(bfi<span class="sc">$</span>age)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </figure>
 </div>
@@ -481,7 +487,7 @@ Listing&nbsp;1.3: WebR code example
 Listing&nbsp;1.4: WebR code example
 </figcaption>
 <div aria-describedby="lst-tutor1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sd</span>(bfi<span class="sc">$</span>age)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sd</span>(bfi<span class="sc">$</span>age)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </figure>
 </div>
@@ -554,13 +560,14 @@ Listing&nbsp;1.4: WebR code example
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

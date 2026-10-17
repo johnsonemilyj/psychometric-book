@@ -2,17 +2,23 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.10.19">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>6&nbsp; Domain Sampling – Applied Psychometrics Using R</title>
 <style>
-code{white-space: pre-wrap;}
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -58,10 +64,10 @@ div.csl-indent {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-1c53e83e4fd96d857afdc4fda0ada1c4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-19cbf4cfd867b78f8c4d412a65ab4e72.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -324,7 +330,7 @@ div.csl-indent {
 </header>
 
 
-<p>There is a difference between <strong><em>dominance</em></strong> <span class="citation" data-cites="likert1932technique">(e.g., <a href="references.html#ref-likert1932technique" role="doc-biblioref">Likert, 1932</a>)</span> and <strong><em>ideal point</em></strong> <span class="citation" data-cites="thurstone1928attitudes">(e.g., <a href="references.html#ref-thurstone1928attitudes" role="doc-biblioref">Thurstone, 1928</a>)</span> methods of scale construction, and this difference must be acknowledged when crafting indicators<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. The dominance model assumes that “more” of a trait within the respondent drives more extreme responses to trait indicators. The ideal point requires indicators to be sampled from representative locations all along the trait continuum. There has been some debate regarding which approach is less problematic <span class="citation" data-cites="oswald2010developing drasgow201075">(<a href="references.html#ref-drasgow201075" role="doc-biblioref">Drasgow et al., 2010</a>; e.g., <a href="references.html#ref-oswald2010developing" role="doc-biblioref">Oswald &amp; Schell, 2010</a>)</span>. The ideal point approach is most closely aligned with IRT and Rasch philosophies, although it also “works” with CTT.</p>
+<p>There is a difference between <strong><em>dominance</em></strong> <span class="citation" data-cites="likert1932technique">(e.g., <a href="references.html#ref-likert1932technique" role="doc-biblioref">Likert, 1932</a>)</span> and <strong><em>ideal point</em></strong> <span class="citation" data-cites="thurstone1928attitudes">(e.g., <a href="references.html#ref-thurstone1928attitudes" role="doc-biblioref">Thurstone, 1928</a>)</span> methods of scale construction, and this difference must be acknowledged when crafting indicators<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. The dominance model assumes that “more” of a trait within the respondent drives more extreme responses to trait indicators. The ideal point requires indicators to be sampled from representative locations all along the trait continuum. There has been some debate regarding which approach is less problematic <span class="citation" data-cites="oswald2010developing drasgow201075">(e.g., <a href="references.html#ref-oswald2010developing" role="doc-biblioref">Oswald &amp; Schell, 2010</a>; <a href="references.html#ref-drasgow201075" role="doc-biblioref">Drasgow et al., 2010</a>)</span>. The ideal point approach is most closely aligned with IRT and Rasch philosophies, although it also “works” with CTT.</p>
 <p>If you are developing a true test, you need to follow the “ideal point” model. Inventories are different. With inventories, we <a href="https://www.youtube.com/watch?v=wsbgwNe4Rv4">borrow from both perspectives</a> and recommend…</p>
 <blockquote class="blockquote">
 <p>representative content domain sampling with forethought to the projected distribution of trait values within your population of interest</p>
@@ -405,13 +411,14 @@ Thurstone, L. L. (1928). Attitudes can be measured. <em>American Journal of Soci
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

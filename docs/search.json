@@ -98,7 +98,18 @@
     "href": "statsi.html",
     "title": "2  Foundational Statistics",
     "section": "",
-    "text": "2.1 Raw scores\nYour analytical comprehension of Psychological measurement can be (mostly) built on deep understanding of a single statistic: the correlation. Your deep understanding of the correlation can be accomplished through focused attention placed on it’s most crucial component: the deviation score. This chapter therefore is centered on the deviation score.\nThe comprehension goals of this chaper are:\n1. understanding how deviations inform correlation and standardization 2. understanding of the relationship between a correlation and a covariance\nConceptual understanding of the correlation is facilitated by first understanding its ancestral grandparent, the deviation score.\nA raw score refers to a value yielded from an assessment and is typically expressed in units. Average score, total score, and percent score are common units. A raw score is (almost always) different than an individual response. To demonstrate the difference, consider a 4–item classroom mathematical (true) test that was administered to 5 individuals, as is represented in Table 2.1.\nTable 2.1: Four (math) items with five respondents – raw scores\n\n\n\n\n\n\n\n\n\nStudent\n\\(1+1=\\)\n\\(5-3=\\)\n\\(2\\cdot4=\\)\n\\(8\\div2=\\)\n\n\n\n\nLucy\n2\n2\n8\n3\n\n\nLinus\n2\n3\n8\n2\n\n\nChuck\n0\n2\n8\n5\n\n\nPersephone\n1\n9\n8\n1\n\n\nSnoopy\n-4\n0\n8\nelephant",
+    "text": "2.1 Response data\nYour analytical comprehension of Psychological measurement can be (mostly) built from deep conceptual understanding of a single statistic: the correlation. Your deep understanding of the correlation can be accomplished through focused attention placed on it’s most crucial component: the deviation score. This chapter therefore is centered on the deviation score.1\nThe comprehension goals of this chapter are:\nThe convention within assessment applications is to represent respondent data digitally (aka within a data file) with different people representing rows and different items representing columns. Mathematically, the notation for row location is the italicized, lowercase Latin letter “i” (i), and the notation for column is the italicized, lowercase Latin letter “j” (j; see Table 2.1).\nTable 2.1: Example data file\n\n\n\n\n\n\n\n\n\n\n\\(j_{1}\\)\n\\(j_{2}\\)\n\\(j_{3}\\)\n\\(j_{4}\\)\n\n\n\n\n\\(i_{1}\\)\n\n\n\n\n\n\n\\(i_{2}\\)\n\n\n\n\n\n\n\\(i_{3}\\)\n\n\n\n\n\n\n\\(i_{4}\\)\n\n\n\n\n\n\n\\(i_{5}\\)\nData files are, technically speaking, matrices. There are notational conventions used in matrices that we will adhere to when referencing data files. The first row and first column are typically reserved for item labels and respondent identifiers. In Table 2.1, we have highlighted i = 2 and j = 4. The intersection of row 2 and column 4 is denoted as Cell_2,4_. In Table 2.1 those common values are replaced with mathematical notation. You will more typically see assessment data files similar to the small file represented in Table 2.2.",
+    "crumbs": [
+      "Introduction",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Foundational Statistics</span>"
+    ]
+  },
+  {
+    "objectID": "statsi.html#raw-scores",
+    "href": "statsi.html#raw-scores",
+    "title": "2  Foundational Statistics",
+    "section": "2.2 Raw scores",
+    "text": "2.2 Raw scores\nA raw score refers to a value yielded from an assessment and is typically expressed in units. Average score, total score, and percent score are common units. A raw score is (almost always) different than an individual response. To demonstrate the difference, consider a 4–item classroom mathematical (true) test that was administered to 5 individuals, as is represented in Table 2.2.\n\n\n\n\nTable 2.2: Four (math) items with five respondents: Raw scores\n\n\n\n\n\n\n\n\n\nStudent\n\\(1+1=\\)\n\\(5-3=\\)\n\\(2\\cdot4=\\)\n\\(8\\div2=\\)\n\n\n\n\nLucy\n2\n2\n8\n2\n\n\nLinus\n2\n3\n8\n2\n\n\nChuck\n0\n2\n8\n5\n\n\nPersephone\n1\n9\n8\n1\n\n\nSnoopy\n-4\n0\n🐾\noliphant",
     "crumbs": [
       "Introduction",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Foundational Statistics</span>"
@@ -108,8 +119,8 @@
     "objectID": "statsi.html#not-raw-scores-aka-transformed-scores",
     "href": "statsi.html#not-raw-scores-aka-transformed-scores",
     "title": "2  Foundational Statistics",
-    "section": "2.2 NOT raw scores (aka “transformed” scores)",
-    "text": "2.2 NOT raw scores (aka “transformed” scores)\nThere are many different types of transformation that are frequently applied to raw scores. A very general label that can be applied is, “transformed scores”, but the important characteristic to convey here is that the raw scores have been altered. Table 2.2 presents one example of transformed scores – here responses have been altered from raw to “scored”. Scoring is typically informed by a code sheet, and it is common practice (although not exclusive practice), to grossly categorize into correct (1) and incorrect (0). Notice that Snoopy’s division answer would possibly benefit from greater (e.g., the simple correct/incorrect transformation algorithm here may be hiding important information). Notice that Chuck’s response to the addition problem looks the same in both raw and transformed states. The score label is important to understand the meaning of the value (was a value of “0” provided or was the answer incorrect?).\n\n\n\n\nTable 2.2: Four (math) items with five respondents – transformed scores\n\n\n\n\n\n\n\n\n\nStudent\n\\(1+1=\\)\n\\(5-3=\\)\n\\(2\\cdot4=\\)\n\\(8\\div2=\\)\n\n\n\n\nLucy\n1\n1\n1\n0\n\n\nLinus\n1\n0\n1\n0\n\n\nChuck\n0\n1\n1\n0\n\n\nPersephone\n0\n0\n1\n0\n\n\nSnoopy\n0\n0\n1\n0",
+    "section": "2.3 NOT raw scores (aka “transformed” scores)",
+    "text": "2.3 NOT raw scores (aka “transformed” scores)\nThere are many different types of transformation that are frequently applied to raw scores. A very general label that can be applied is, “transformed scores”, but the important characteristic to convey here is that the raw scores have been altered. Table 2.3 presents one example of transformed scores – here responses have been altered from raw to “scored”. Scoring is typically informed by a code sheet, and it is common practice (although not exclusive practice), to grossly categorize into correct (1) and incorrect (0). Notice that Snoopy’s division answer would possibly benefit from greater (e.g., the simple correct/incorrect transformation algorithm here may be hiding important information). Notice that Chuck’s response to the addition problem looks the same in both raw and transformed states. The score label is important to understand the meaning of the value (was a value of “0” provided or was the answer incorrect?).\n\n\n\n\nTable 2.3: Four (math) items with five respondents: Transformed scores\n\n\n\n\n\n\n\n\n\nStudent\n\\(1+1=\\)\n\\(5-3=\\)\n\\(2\\cdot4=\\)\n\\(8\\div2=\\)\n\n\n\n\nLucy\n1\n1\n1\n0\n\n\nLinus\n1\n0\n1\n0\n\n\nChuck\n0\n1\n1\n0\n\n\nPersephone\n0\n0\n1\n0\n\n\nSnoopy\n0\n0\n1\n0",
     "crumbs": [
       "Introduction",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Foundational Statistics</span>"
@@ -119,8 +130,8 @@
     "objectID": "statsi.html#deviation-scores",
     "href": "statsi.html#deviation-scores",
     "title": "2  Foundational Statistics",
-    "section": "2.3 Deviation scores",
-    "text": "2.3 Deviation scores\n\n\n\n\n\nX\nY\n\n\n\n\n1\n3\n\n\n2\n4\n\n\n3\n5\n\n\n4\n6\n\n\n5\n7\n\n\n\n\nToward an index of “difference” within a set of numbers, we could find the difference between each number and every other number within a set of numbers. For example, \\(2-1=??\\), \\(3-1=??\\), \\(4-1=??\\), etc. This process gets very unwieldy very quickly even with a relatively small number of numbers.\nThe typical strategy here is to NOT use every individual value, but to use a summary of every individual value as a comparison against which differences can be evaluated. By convention, the summary that is used is the mean (aka mathematical average):\n\\[\\bar{X} = \\frac{\\sum{X_i}}{n}\\]",
+    "section": "2.4 Deviation scores",
+    "text": "2.4 Deviation scores\n\n\n\n\n\nX\nY\n\n\n\n\n1\n3\n\n\n2\n4\n\n\n3\n5\n\n\n4\n6\n\n\n5\n7\n\n\n\n\nToward an index of “difference” within a set of numbers, we could find the difference between each number and every other number within a set of numbers. For example, \\(2-1=??\\), \\(3-1=??\\), \\(4-1=??\\), etc. This process gets very unwieldy very quickly even with a relatively small number of numbers.\nThe typical strategy here is to NOT use every individual value, but to use a summary of every individual value as a comparison against which differences can be evaluated. By convention, the summary that is used is the mean (aka mathematical average):\n\\[\\bar{X} = \\frac{\\sum{X_i}}{n}\\]",
     "crumbs": [
       "Introduction",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Foundational Statistics</span>"
@@ -130,8 +141,8 @@
     "objectID": "statsi.html#variance",
     "href": "statsi.html#variance",
     "title": "2  Foundational Statistics",
-    "section": "2.4 Variance",
-    "text": "2.4 Variance",
+    "section": "2.5 Variance",
+    "text": "2.5 Variance",
     "crumbs": [
       "Introduction",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Foundational Statistics</span>"
@@ -141,19 +152,30 @@
     "objectID": "statsi.html#covariance",
     "href": "statsi.html#covariance",
     "title": "2  Foundational Statistics",
-    "section": "2.5 Covariance",
-    "text": "2.5 Covariance",
+    "section": "2.6 Covariance",
+    "text": "2.6 Covariance",
     "crumbs": [
       "Introduction",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Foundational Statistics</span>"
     ]
   },
   {
-    "objectID": "statsi.html#standard-scores",
-    "href": "statsi.html#standard-scores",
+    "objectID": "statsi.html#standard-deviation-scores-zscores",
+    "href": "statsi.html#standard-deviation-scores-zscores",
     "title": "2  Foundational Statistics",
-    "section": "2.6 Standard scores",
-    "text": "2.6 Standard scores\nStandard scores are also called “Z scores”, and these are extremely important within Psychological measurement applications. Fundamentally, a\n\n2.6.1 Standard deviation\nBecause the variance is reflecting an average squared deviation, and the squaring was applied to avoid summing raw deviation scores, this action is often “undone” so the index can more accurately reflect the original scale of measurement (before the squaring of the deviation score was calculated). This is simply a matter of “undoing” via radical application.\n\n\n\n\n\nWrong kind of radical application",
+    "section": "2.7 Standard deviation scores (z–scores)",
+    "text": "2.7 Standard deviation scores (z–scores)\nStandard scores are also called “Z scores”, and these are extremely important within Psychological measurement applications. Fundamentally, a\n\n2.7.1 Standard scores\nStandard scores are",
+    "crumbs": [
+      "Introduction",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Foundational Statistics</span>"
+    ]
+  },
+  {
+    "objectID": "statsi.html#standard-deviation",
+    "href": "statsi.html#standard-deviation",
+    "title": "2  Foundational Statistics",
+    "section": "2.8 Standard deviation",
+    "text": "2.8 Standard deviation\nBecause the variance is reflecting an average squared deviation, and the squaring was applied to avoid summing raw deviation scores, this action is often “undone” so the index can more accurately reflect the original scale of measurement (before the squaring of the deviation score was calculated). This is simply a matter of “undoing” via radical application.\n\n\n\n\n\nWrong kind of radical application",
     "crumbs": [
       "Introduction",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Foundational Statistics</span>"
@@ -163,8 +185,19 @@
     "objectID": "statsi.html#standardized-covariance-aka-correlation",
     "href": "statsi.html#standardized-covariance-aka-correlation",
     "title": "2  Foundational Statistics",
-    "section": "2.7 Standardized covariance (aka correlation)",
-    "text": "2.7 Standardized covariance (aka correlation)\nThere are several different correlation coefficients that are relevant for measurement, but your conceptual understanding is facilitated by a focus on one foundational index: Pearson’s product moment correlation (aka “correlation”). In this chapter, we will walk you through the way Psychometricians think about this correlation coefficient. If you understand the logic and data transformations that inform the statistic, you will be must better prepared to",
+    "section": "2.9 Standardized covariance (aka correlation)",
+    "text": "2.9 Standardized covariance (aka correlation)\nThere are several different correlation coefficients that are relevant for measurement, but your conceptual understanding is facilitated by a focus on one foundational index: Pearson’s product moment correlation (aka “correlation”). In this chapter, we will walk you through the way Psychometricians think about this correlation coefficient. If you understand the logic and data transformations that inform the statistic, you will be must better prepared to",
+    "crumbs": [
+      "Introduction",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Foundational Statistics</span>"
+    ]
+  },
+  {
+    "objectID": "statsi.html#footnotes",
+    "href": "statsi.html#footnotes",
+    "title": "2  Foundational Statistics",
+    "section": "",
+    "text": "and its manifestations: the standard deviation, variance, z–score, covariance, and correlation.↩︎",
     "crumbs": [
       "Introduction",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Foundational Statistics</span>"
@@ -283,7 +316,7 @@
     "href": "Domain Sampling.html",
     "title": "6  Domain Sampling",
     "section": "",
-    "text": "There is a difference between dominance (e.g., Likert, 1932) and ideal point (e.g., Thurstone, 1928) methods of scale construction, and this difference must be acknowledged when crafting indicators1. The dominance model assumes that “more” of a trait within the respondent drives more extreme responses to trait indicators. The ideal point requires indicators to be sampled from representative locations all along the trait continuum. There has been some debate regarding which approach is less problematic (Drasgow et al., 2010; e.g., Oswald & Schell, 2010). The ideal point approach is most closely aligned with IRT and Rasch philosophies, although it also “works” with CTT.\nIf you are developing a true test, you need to follow the “ideal point” model. Inventories are different. With inventories, we borrow from both perspectives and recommend…\nIf you intend to evaluate your measure from the perspective of IRT or Rasch, then items targeted at different trait levels become more practically important (e.g., you should endeavor to oversample items at many different plausible trait points).",
+    "text": "There is a difference between dominance (e.g., Likert, 1932) and ideal point (e.g., Thurstone, 1928) methods of scale construction, and this difference must be acknowledged when crafting indicators1. The dominance model assumes that “more” of a trait within the respondent drives more extreme responses to trait indicators. The ideal point requires indicators to be sampled from representative locations all along the trait continuum. There has been some debate regarding which approach is less problematic (e.g., Oswald & Schell, 2010; Drasgow et al., 2010). The ideal point approach is most closely aligned with IRT and Rasch philosophies, although it also “works” with CTT.\nIf you are developing a true test, you need to follow the “ideal point” model. Inventories are different. With inventories, we borrow from both perspectives and recommend…\nIf you intend to evaluate your measure from the perspective of IRT or Rasch, then items targeted at different trait levels become more practically important (e.g., you should endeavor to oversample items at many different plausible trait points).",
     "crumbs": [
       "Scale Development",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Domain Sampling</span>"
@@ -425,7 +458,7 @@
     "href": "techreport.html#sec-techappend",
     "title": "10  Technical Report",
     "section": "10.9 Appendices",
-    "text": "10.9 Appendices\n\n\n\n\n\n\n\n\nFigure 10.5: Example Appendix information (Appendix title & substantive content)\n\n\n\nAll of your raw (unformatted) analytical information can go into Appendices, including any code used to produce the output. It’s quite likely noone will ever read it, but you did it and the odds are technically non-zero that it’ll be someday relevant, so go ahead and throw it in. Don’t go chasing Figure 10.4, but don’t be afraid if it’s looming.\nYou should have different appendices for qualitatively different content. These are lettered sequentially, starting with “Appendix A”.3 Some individuals prefer “clean” Appendix title pages, such that only the Appendix title is presented and some people include substantive content immediately after the Appendix title (as is done in Figure 10.5). It’s your design choice, but choose one structure and be consistent with it across all appendices.\nIt’s good practice to include your software installations here as well, which can be accomplished easily with . For example, running the sessionInfo() command on October 09, 2026 gives us:\n\n\nR version 4.6.1 (2026-06-24 ucrt)\nPlatform: x86_64-w64-mingw32/x64\nRunning under: Windows 10 x64 (build 19045)\n\nMatrix products: default\n  LAPACK version 3.12.1\n\nlocale:\n[1] LC_COLLATE=English_United States.utf8 \n[2] LC_CTYPE=English_United States.utf8   \n[3] LC_MONETARY=English_United States.utf8\n[4] LC_NUMERIC=C                          \n[5] LC_TIME=English_United States.utf8    \n\ntime zone: America/Chicago\ntzcode source: internal\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nloaded via a namespace (and not attached):\n [1] htmlwidgets_1.6.4 compiler_4.6.1    fastmap_1.2.0     cli_3.6.6        \n [5] tools_4.6.1       htmltools_0.5.9   otel_0.2.0        rstudioapi_0.19.0\n [9] yaml_2.3.12       rmarkdown_2.32    knitr_1.52        jsonlite_2.0.0   \n[13] xfun_0.61         digest_0.6.39     rlang_1.3.0       evaluate_1.0.5   \n\n\n\n\n\n\nAmerican Psychological Association. (2020). Publication manual of the american psychological association (7th ed.). American Psychological Association.\n\n\nModern Language Association of America. (2021). MLA handbook (9th ed.). Modern Language Association of America.",
+    "text": "10.9 Appendices\n\n\n\n\n\n\n\n\nFigure 10.5: Example Appendix information (Appendix title & substantive content)\n\n\n\nAll of your raw (unformatted) analytical information can go into Appendices, including any code used to produce the output. It’s quite likely noone will ever read it, but you did it and the odds are technically non-zero that it’ll be someday relevant, so go ahead and throw it in. Don’t go chasing Figure 10.4, but don’t be afraid if it’s looming.\nYou should have different appendices for qualitatively different content. These are lettered sequentially, starting with “Appendix A”.3 Some individuals prefer “clean” Appendix title pages, such that only the Appendix title is presented and some people include substantive content immediately after the Appendix title (as is done in Figure 10.5). It’s your design choice, but choose one structure and be consistent with it across all appendices.\nIt’s good practice to include your software installations here as well, which can be accomplished easily with . For example, running the sessionInfo() command on October 17, 2026 gives us:\n\n\nR version 4.6.1 (2026-06-24 ucrt)\nPlatform: x86_64-w64-mingw32/x64\nRunning under: Windows 10 x64 (build 19045)\n\nMatrix products: default\n  LAPACK version 3.12.1\n\nlocale:\n[1] LC_COLLATE=English_United States.utf8 \n[2] LC_CTYPE=English_United States.utf8   \n[3] LC_MONETARY=English_United States.utf8\n[4] LC_NUMERIC=C                          \n[5] LC_TIME=English_United States.utf8    \n\ntime zone: America/Chicago\ntzcode source: internal\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nloaded via a namespace (and not attached):\n [1] htmlwidgets_1.6.4 compiler_4.6.1    fastmap_1.2.0     cli_3.6.6        \n [5] tools_4.6.1       htmltools_0.5.9   otel_0.2.0        rstudioapi_0.19.0\n [9] yaml_2.3.12       rmarkdown_2.32    knitr_1.52        jsonlite_2.0.0   \n[13] xfun_0.61         digest_0.6.39     rlang_1.3.0       evaluate_1.0.5   \n\n\n\n\n\n\nAmerican Psychological Association. (2020). Publication manual of the american psychological association (7th ed.). American Psychological Association.\n\n\nModern Language Association of America. (2021). MLA handbook (9th ed.). Modern Language Association of America.",
     "crumbs": [
       "Documentation & Guides",
       "<span class='chapter-number'>10</span>  <span class='chapter-title'>Technical Report</span>"

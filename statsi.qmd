@@ -9,14 +9,49 @@ d2:
 
 # Foundational Statistics {#sec-statsi}
 
-Your analytical comprehension of Psychological measurement can be (mostly) built on deep understanding of a single statistic: the correlation. Your deep understanding of the correlation can be accomplished through focused attention placed on it's most crucial component: the deviation score. This chapter therefore is centered on the deviation score.
+Your analytical comprehension of Psychological measurement can be (mostly) built from deep conceptual understanding of a single statistic: the correlation. Your deep understanding of the correlation can be accomplished through focused attention placed on it's most crucial component: the deviation score. This chapter therefore is centered on the deviation score.^[and its manifestations: the standard deviation, variance, *z*--score, covariance, and correlation.]
 
+The comprehension goals of this chapter are:  
 
-The comprehension goals of this chaper are:  
-1. understanding how deviations inform correlation and standardization
-2. understanding of the relationship between a correlation and a covariance
+1. how deviations inform correlation and standardization  
+2. difference between raw and standardized scores
+3. the relationship between a correlation and a covariance
 
-Conceptual understanding of the correlation is facilitated by first understanding its ancestral grandparent, the deviation score.
+## Response data
+
+The convention within assessment applications is to represent respondent data digitally (aka within a *data file*) with different ***people*** representing rows and different ***items*** representing columns. Mathematically, the notation for row location is the italicized, lowercase Latin letter "i" (*i*), and the notation for column is the italicized, lowercase Latin letter "j" (*j*; see @tbl-nothing).
+
+```{r}
+#| label: tbl-nothing
+#| tbl-cap: "Example data file"
+
+library(gt)
+library(gtExtras)
+
+data.frame(
+           name = c("$i_{1}$", "$i_{2}$", "$i_{3}$", "$i_{4}$", "$i_{5}$"),
+           a = c("", "", "", "", ""), 
+           b = c("", "", "", "", ""), 
+           c = c("", "", "", "", ""), 
+           d = c("", "", "", "", "")) |>
+  gt() |>
+  fmt_markdown(columns = name) |> 
+  cols_label(
+    name= "",
+    a = md("$j_{1}$"),
+    b = md("$j_{2}$"),
+    c = md("$j_{3}$"),
+    d = md("$j_{4}$") 
+) |> 
+  tab_options(table.width = pct(100)) |>
+  cols_align(
+    align = "left") |>
+  gt_highlight_cols(columns=d, fill="lightblue", alpha=0.3) |>
+  gt_highlight_rows(rows = 2, fill = "#bad", alpha = 0.3)
+
+```
+
+Data files are, technically speaking, matrices. There are notational conventions used in matrices that we will adhere to when referencing data files. The first row and first column are typically reserved for item labels and respondent identifiers. In @tbl-nothing, we have highlighted *i* = 2 and *j* = 4. The intersection of row 2 and column 4 is denoted as Cell_2,4_. In @tbl-nothing those common values are replaced with mathematical notation. You will more typically see assessment data files similar to the small file represented in @tbl-math4item.  
 
 ## Raw scores
 
@@ -24,16 +59,14 @@ A raw score refers to a value yielded from an assessment and is typically expres
 
 ```{r}
 #| label: tbl-math4item
-#| tbl-cap: "Four (math) items with five respondents -- raw scores"
-
-library(gt)
+#| tbl-cap: "Four (math) items with five respondents: Raw scores"
 
 data.frame(
            name = c("Lucy", "Linus", "Chuck", "Persephone", "Snoopy"),
            a = c(2, 2, 0, 1, -4), 
            b = c(2, 3, 2, 9, 0), 
-           c = c(8, 8, 8, 8, 8), 
-           d = c(3, 2, 5, 1, "elephant")) |>
+           c = c(8, 8, 8, 8," 🐾"), 
+           d = c(2, 2, 5, 1, "oliphant")) |>
   gt() |>
   cols_label(
     name= "Student",
@@ -54,7 +87,7 @@ There are many different types of transformation that are frequently applied to 
 
 ```{r}
 #| label: tbl-math4itemscored
-#| tbl-cap: "Four (math) items with five respondents -- transformed scores"
+#| tbl-cap: "Four (math) items with five respondents: Transformed scores"
 
 library(gt)
 
@@ -141,11 +174,15 @@ covariance: |latex
 
 ```
 
-## Standard scores
+## Standard deviation scores (*z*--scores)
 
 Standard scores are also called "Z scores", and these are extremely important within Psychological measurement applications. Fundamentally, a  
 
-### Standard deviation
+### Standard scores
+
+Standard scores are 
+
+## Standard deviation
 
 Because the variance is reflecting an average *squared* deviation, and the squaring was applied to avoid summing raw deviation scores, this action is often "undone" so the index can more accurately reflect the original scale of measurement (before the squaring of the deviation score was calculated). This is simply a matter of "undoing" via radical application.
 
