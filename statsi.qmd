@@ -17,56 +17,23 @@ The comprehension goals of this chapter are:
 2. difference between raw and standardized scores
 3. the relationship between a correlation and a covariance
 
-## Response data
+## Response data representation
 
-The convention within assessment applications is to represent respondent data digitally (aka within a *data file*) with different ***people*** representing rows and different ***items*** representing columns. Mathematically, the notation for row location is the italicized, lowercase Latin letter "i" (*i*), and the notation for column is the italicized, lowercase Latin letter "j" (*j*; see @tbl-nothing).
+The convention within assessment applications is to represent assessment response data digitally (aka within a *data file*) with different ***respondents*** representing rows and different ***items*** representing columns. To demonstrate this organization scheme, consider a 4--item classroom mathematical (true) test that was administered to 5 individuals (see @tbl-math4item). Here, Lucy responded "2" to the question "1+1=" and Persephone responded "9" to the question, "5-3=". 
 
 ```{r}
-#| label: tbl-nothing
-#| tbl-cap: "Example data file"
+#| label: tbl-math4item
+#| tbl-cap: "Four (math) items with five respondents: Raw responses"
 
 library(gt)
 library(gtExtras)
 
 data.frame(
-           name = c("$i_{1}$", "$i_{2}$", "$i_{3}$", "$i_{4}$", "$i_{5}$"),
-           a = c("", "", "", "", ""), 
-           b = c("", "", "", "", ""), 
-           c = c("", "", "", "", ""), 
-           d = c("", "", "", "", "")) |>
-  gt() |>
-  fmt_markdown(columns = name) |> 
-  cols_label(
-    name= "",
-    a = md("$j_{1}$"),
-    b = md("$j_{2}$"),
-    c = md("$j_{3}$"),
-    d = md("$j_{4}$") 
-) |> 
-  tab_options(table.width = pct(100)) |>
-  cols_align(
-    align = "left") |>
-  gt_highlight_cols(columns=d, fill="lightblue", alpha=0.3) |>
-  gt_highlight_rows(rows = 2, fill = "#bad", alpha = 0.3)
-
-```
-
-Data files are, technically speaking, matrices. There are notational conventions used in matrices that we will adhere to when referencing data files. The first row and first column are typically reserved for item labels and respondent identifiers. In @tbl-nothing, we have highlighted *i* = 2 and *j* = 4. The intersection of row 2 and column 4 is denoted as Cell_2,4_. In @tbl-nothing those common values are replaced with mathematical notation. You will more typically see assessment data files similar to the small file represented in @tbl-math4item.  
-
-## Raw scores
-
-A raw score refers to a value yielded from an assessment and is typically expressed in units. Average score, total score, and percent score are common units. A raw score is (almost always) different than an individual response. To demonstrate the difference, consider a 4--item classroom mathematical (true) test that was administered to 5 individuals, as is represented in @tbl-math4item.
-
-```{r}
-#| label: tbl-math4item
-#| tbl-cap: "Four (math) items with five respondents: Raw scores"
-
-data.frame(
            name = c("Lucy", "Linus", "Chuck", "Persephone", "Snoopy"),
            a = c(2, 2, 0, 1, -4), 
            b = c(2, 3, 2, 9, 0), 
-           c = c(8, 8, 8, 8," 🐾"), 
-           d = c(2, 2, 5, 1, "oliphant")) |>
+           c = c(8, 8, 8, 8, "oliphant"), 
+           d = c(2, 2, 5, 1, " 🐾")) |>
   gt() |>
   cols_label(
     name= "Student",
@@ -81,13 +48,69 @@ data.frame(
 
 ```
 
-## [NOT]{.underline} raw scores (aka "transformed" scores)
+Data files such as @tbl-math4item are, technically speaking, matrices. A matrix is a data structure with more than one row and more than one column. Matrices have been used as organizing structures for data within mathematics for a very long time. Hence, there are well--established vocabulary and notation conventions that are used with matrices, and we will adhere to many of these conventions when referencing data files. 
 
-There are many different types of transformation that are frequently applied to raw scores. A very general label that can be applied is, "transformed scores", but the important characteristic to convey here is that the raw scores have been altered. @tbl-math4itemscored presents one example of transformed scores -- here responses have been altered from raw to "scored". Scoring is typically informed by a code sheet, and it is common practice (although not exclusive practice), to grossly categorize into correct (1) and incorrect (0). Notice that Snoopy's division answer would possibly benefit from greater (e.g., the simple correct/incorrect transformation algorithm here may be hiding important information). Notice that Chuck's response to the addition problem looks the same in both raw and transformed states. The score label is important to understand the meaning of the value (was a value of "0" provided or was the answer incorrect?).
+Conventionally, the notation for row location is the italicized, lowercase Latin letter "i" (*i*), and the notation for column is the italicized, lowercase Latin letter "j" (*j*). The intersection of any one row and one column is referred to as a "cell". @tbl-nothing presents an empty datafile with explicit row and column identifiers. You will never encounter a datafile resembling @tbl-nothing "in the wild", but it is shared here to highlight two important considerations:
+
+::: {.column-margin}
+![In the wild... Hunting for data](https://t4.ftcdn.net/jpg/01/22/96/03/360_F_122960393_kVJDrKfk6nEsqemStJs3rYUowCG17xah.jpg)
+:::
+
+```{r}
+#| label: tbl-nothing
+#| tbl-cap: "Example data file (empty)"
+
+data.frame(
+           name = c("$i_{1}$", "$i_{2}$", "$i_{3}$", "$i_{4}$", "$i_{5}$"),
+           a = c("", "", "", "", ""), 
+           b = c("", "", "", "", ""), 
+           c = c("", "", "", "$cell_{4,3}$", ""), 
+           d = c("", "", "", "", "")) |>
+  gt() |>
+  fmt_markdown(columns = c(name,c)) |> 
+  cols_label(
+    name= "",
+    a = md("$j_{1}$"),
+    b = md("$j_{2}$"),
+    c = md("$j_{3}$"),
+    d = md("$j_{4}$") 
+) |> 
+  tab_options(table.width = pct(100)) |>
+  opt_interactive(
+    active = FALSE,          # or FALSE if you want no interactivity at all
+    use_sorting = FALSE     # this is what removes the arrows
+  ) |>  
+  cols_align(
+    align = "left") |>
+  gt_highlight_rows(rows = 4, fill = "#bad", alpha = 0.3) |>
+  gt_highlight_cols(columns=c, fill="lightblue", alpha=0.3) 
+
+```
+
+1. The first row and first column of ***data*** matrices are typically reserved for respondent identifiers (row differentiation) and variable labels (column headers) 
+
+In @tbl-nothing those common values are replaced with symbols to highlight row and column notation. You will more typically see assessment data files that appear similar to @tbl-math4item (especially note the column headers -- this is a common data file format).
+
+2. A “cell” is located at the intersection of one column and one row
+
+In @tbl-nothing, we have highlighted the fourth row (*i*=4) and third column (*j*=3). The intersection of row 4 and column 3 is denoted as $cell_{4,3}$. Row identifiers always precede column identifiers, such that cells are always located with $cell_{i,j}$. Individual item responses occupy data cells. In @tbl-math4item, for example, $cell_{4,3}$ indicates that Persephone provided a correct answer to the question, "$2\cdot4=$".
+
+Each item response is provided by one respondent in consideration of one assessment item. These responses are commonly encountered in one of two primary forms: 1) raw, and 2) transformed/recoded. 
+
+### Individual Item Responses (Raw)
+
+A response that exactly represents the respondent's reaction to an item is referred to as a "raw value". 20 different individual item responses are presented in @tbl-math4item. Note that some of these response values are unique (Snoopy what is wrong with you?!?) and some are repeated, both within and across respondents and items. For example, the number "2" occurs quite frequently (6 different observations). @tbl-math4item is the desired format of data received by Psychometricians, because it represents original, unaltered responses to the assessment items. However, the values presented in @tbl-math4item need to be altered prior to being considered desirable from the perspective of the ***test--takers***.
+
+### Individual Item Responses (Transformed/Recoded)
+
+Transformations are (almost always) applied to raw item responses prior to test--takers receiving feedback. Three terms you might encounter are: 1. transformed responses, 2. recoded responses, and 3. scored responses. We avoid using the word "scored" because "score" is a bit of an overused word that already carries multiple meanings in different contexts.^[unfortunately, this is a very common and long--standing occurrance within the broader field of Psychology -- see, for example, @kelley1927interpretation] The important characteristic to convey here is that the raw responses have been altered. @tbl-math4itemscored presents one example of transformed (aka recoded) item responses -- here responses have been altered from raw to "more practical". These transformed responses are more practical than raw values because the transformation facilitates aggregation. Aggregated feedback is what assessment--takers are most interested in, and the process of obtaining the aggregated value is probably the most important task for a Psychometrician. 
+
+The transformations 
+Scoring is typically informed by a code sheet, and it is common practice (although not exclusive practice), to grossly categorize into correct (1) and incorrect (0). Notice that Snoopy's division answer would possibly benefit from greater (e.g., the simple correct/incorrect transformation algorithm here may be hiding important information). Notice that Chuck's response to the addition problem looks the same in both raw and transformed states. The score label is important to understand the meaning of the value (was a value of "0" provided or was the answer incorrect?).
 
 ```{r}
 #| label: tbl-math4itemscored
-#| tbl-cap: "Four (math) items with five respondents: Transformed scores"
+#| tbl-cap: "Four (math) items with five respondents: Transformed responses"
 
 library(gt)
 
@@ -110,6 +133,13 @@ data.frame(
     align = "left")
 
 ```
+
+## Scores
+
+Responses versus scores are important distinctions to make -- individual item response versus aggregated (across item) summary.
+
+
+and is typically expressed in units. Average score, total score, and percent score are common units. A raw score is (almost always) different than an individual response.
 
 
 ## Deviation scores

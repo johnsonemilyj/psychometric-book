@@ -5,7 +5,7 @@ project:
 book:
   title: "Applied Psychometrics Using R"
   author: "authors"
-  date: "date"
+  date: today
   navbar:
     right:
       - href: "https://github.com/johnsonemilyj/psychometric-book/issues"
