@@ -3,3 +3,21 @@ title: ""
 ---
 
 # Nomological Networks {#sec-nomological}
+
+## Theoretical Specification
+
+@cronbach1955construct introduced the concept of a nomological network in their introduction of the concept of ***construct validity***. Prior to 1955, the term "construct validity" held no meaning, although the concept had been "talked around" -- @cronbach1955construct cite several prior sources as being informative [@jenkins1946validity; @gulliksen1950intrinsic; @goodenough1950mental; @chronbach1949essentials; @guilford1946new; @mosier1947critical; @mosier1951problems; @peak1953problems]. The committee which Chronbach and Meehl were members of made the decision to categorize four different types of ***validation***, which was conflated by many as advocating for different forms of ***validity***. Careful reading of @cronbach1955construct will lead to differences of opinion on whether or not they intended to dissociate the procedures (validation, which can be approached differently) from the concept (validity). Contemporarily there is no ambiguity: validity is a unitarian concept that can be evaluated from multiple procedural designs.  
+
+The concept of a nomological network was first introduced by @cronbach1955construct and presented within a more pointed introduction to the concept of ***construct validity***.  It is one of those terms that has been notorious for conveying multiple meanings and uses across individuals and applications. We retain the following definition:
+
+> Definition here
+
+There have been many criticisms and reinterpretations of construct validity [see @haig2025repositioning for a recent]
+
+## Practical Implementation
+
+We have created a network of tools to help bring the theoretical concept of a nomological network into practical application. These tools include a GitHub repository and [shiny application](https://johnsonemilyjade.shinyapps.io/Psychology-Nomological-Network-App/). 
+
+The shiny app is a "front--end" product, intended as a tool for construct theorizers and measure developers. The GitHub repository is a "back--end" machine, intended for contributors who provide content that will eventually migrate to the shiny app. Here, subject matter experts -- individuals with deep knowledge of their construct -- propose, review, and approve of definitions and associations to be shared on the shiny app. 
+
+This has been attempted previously [see, for example, @li2011establishing]

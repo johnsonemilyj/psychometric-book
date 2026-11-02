@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.10.18">
+<meta name="generator" content="quarto-1.10.19">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -26,7 +26,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -44,7 +64,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-19cbf4cfd867b78f8c4d412a65ab4e72.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
@@ -285,8 +305,15 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#theoretical-specification" id="toc-theoretical-specification" class="nav-link active" data-scroll-target="#theoretical-specification"><span class="header-section-number">5.1</span> Theoretical Specification</a></li>
+  <li><a href="#practical-implementation" id="toc-practical-implementation" class="nav-link" data-scroll-target="#practical-implementation"><span class="header-section-number">5.2</span> Practical Implementation</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -310,8 +337,58 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="theoretical-specification" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="theoretical-specification"><span class="header-section-number">5.1</span> Theoretical Specification</h2>
+<p><span class="citation" data-cites="cronbach1955construct">Cronbach &amp; Meehl (<a href="references.html#ref-cronbach1955construct" role="doc-biblioref">1955</a>)</span> introduced the concept of a nomological network in their introduction of the concept of <strong><em>construct validity</em></strong>. Prior to 1955, the term “construct validity” held no meaning, although the concept had been “talked around” – <span class="citation" data-cites="cronbach1955construct">Cronbach &amp; Meehl (<a href="references.html#ref-cronbach1955construct" role="doc-biblioref">1955</a>)</span> cite several prior sources as being informative <span class="citation" data-cites="jenkins1946validity gulliksen1950intrinsic goodenough1950mental chronbach1949essentials guilford1946new mosier1947critical mosier1951problems peak1953problems">(<a href="references.html#ref-chronbach1949essentials" role="doc-biblioref">Cronbach, 1949</a>; <a href="references.html#ref-goodenough1950mental" role="doc-biblioref">Goodenough, 1950</a>; <a href="references.html#ref-guilford1946new" role="doc-biblioref">Guilford, 1946</a>; <a href="references.html#ref-gulliksen1950intrinsic" role="doc-biblioref">Gulliksen, 1950</a>; <a href="references.html#ref-jenkins1946validity" role="doc-biblioref">Jenkins, 1946</a>; <a href="references.html#ref-mosier1947critical" role="doc-biblioref">Mosier, 1947</a>, <a href="references.html#ref-mosier1951problems" role="doc-biblioref">1951</a>; <a href="references.html#ref-peak1953problems" role="doc-biblioref">Peak, 1953</a>)</span>. The committee which Chronbach and Meehl were members of made the decision to categorize four different types of <strong><em>validation</em></strong>, which was conflated by many as advocating for different forms of <strong><em>validity</em></strong>. Careful reading of <span class="citation" data-cites="cronbach1955construct">Cronbach &amp; Meehl (<a href="references.html#ref-cronbach1955construct" role="doc-biblioref">1955</a>)</span> will lead to differences of opinion on whether or not they intended to dissociate the procedures (validation, which can be approached differently) from the concept (validity). Contemporarily there is no ambiguity: validity is a unitarian concept that can be evaluated from multiple procedural designs.</p>
+<p>The concept of a nomological network was first introduced by <span class="citation" data-cites="cronbach1955construct">Cronbach &amp; Meehl (<a href="references.html#ref-cronbach1955construct" role="doc-biblioref">1955</a>)</span> and presented within a more pointed introduction to the concept of <strong><em>construct validity</em></strong>. It is one of those terms that has been notorious for conveying multiple meanings and uses across individuals and applications. We retain the following definition:</p>
+<blockquote class="blockquote">
+<p>Definition here</p>
+</blockquote>
+<p>There have been many criticisms and reinterpretations of construct validity <span class="citation" data-cites="haig2025repositioning">(see <a href="references.html#ref-haig2025repositioning" role="doc-biblioref">Haig, 2025</a> for a recent)</span></p>
+</section>
+<section id="practical-implementation" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="practical-implementation"><span class="header-section-number">5.2</span> Practical Implementation</h2>
+<p>We have created a network of tools to help bring the theoretical concept of a nomological network into practical application. These tools include a GitHub repository and <a href="https://johnsonemilyjade.shinyapps.io/Psychology-Nomological-Network-App/">shiny application</a>.</p>
+<p>The shiny app is a “front–end” product, intended as a tool for construct theorizers and measure developers. The GitHub repository is a “back–end” machine, intended for contributors who provide content that will eventually migrate to the shiny app. Here, subject matter experts – individuals with deep knowledge of their construct – propose, review, and approve of definitions and associations to be shared on the shiny app.</p>
+<p>This has been attempted previously <span class="citation" data-cites="li2011establishing">(see, for example, <a href="references.html#ref-li2011establishing" role="doc-biblioref">Li &amp; Larsen, 2011</a>)</span></p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list" style="display: none">
+<div id="ref-chronbach1949essentials" class="csl-entry" role="listitem">
+Cronbach, L. J. (1949). <em>Essentials of psychological testing (2nd ed.)</em>. Harper.
+</div>
+<div id="ref-cronbach1955construct" class="csl-entry" role="listitem">
+Cronbach, L. J., &amp; Meehl, P. E. (1955). Construct validity in psychological tests. <em>Psychological Bulletin</em>, <em>52</em>(4), 281.
+</div>
+<div id="ref-goodenough1950mental" class="csl-entry" role="listitem">
+Goodenough, F. L. (1950). <em>Mental testing: Its history, principles, and applications</em>. Rinehart; Co.
+</div>
+<div id="ref-guilford1946new" class="csl-entry" role="listitem">
+Guilford, J. P. (1946). New standards for test evaluation. <em>Educational and Psychological Measurement</em>, <em>6</em>, 427–439.
+</div>
+<div id="ref-gulliksen1950intrinsic" class="csl-entry" role="listitem">
+Gulliksen, H. (1950). Intrinsic validity. <em>American Psychologist</em>, <em>5</em>(10), 511.
+</div>
+<div id="ref-haig2025repositioning" class="csl-entry" role="listitem">
+Haig, B. D. (2025). Repositioning construct validity theory: From nomological networks to pragmatic theories and their evaluation by explanatory means. <em>Perspectives on Psychological Science</em>, <em>20</em>(2), 340–356.
+</div>
+<div id="ref-jenkins1946validity" class="csl-entry" role="listitem">
+Jenkins, J. G. (1946). Validity for what? <em>Journal of Consulting Psychology</em>, <em>10</em>(2), 93.
+</div>
+<div id="ref-li2011establishing" class="csl-entry" role="listitem">
+Li, J., &amp; Larsen, K. (2011). <em>Establishing nomological networks for behavioral science: A natural language processing based approach</em>.
+</div>
+<div id="ref-mosier1947critical" class="csl-entry" role="listitem">
+Mosier, C. I. (1947). A critical examination of the concepts of face validity. <em>Educational and Psychological Measurement</em>, <em>7</em>(2), 191–205.
+</div>
+<div id="ref-mosier1951problems" class="csl-entry" role="listitem">
+Mosier, C. I. (1951). I. Problems and designs of cross-validation 1. <em>Educational and Psychological Measurement</em>, <em>11</em>(1), 5–11.
+</div>
+<div id="ref-peak1953problems" class="csl-entry" role="listitem">
+Peak, H. (1953). Problems of objective observation. In L. Festinger &amp; D. Katz (Eds.), <em>Research methods in the behavioral sciences</em> (pp. 243–299). Dryden Press.
+</div>
+</div>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
